@@ -1,0 +1,315 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Nav Bar*/
+header {
+  background-color: #8fafc678;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav img {
+  height: 75px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, menu, dir {
+  display: grid;
+  grid-template: 1fr / 2fr repeat(5, 1fr) 2fr;
+}
+
+a {
+  color: #fedecb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 2.22rem;
+    /* display: inline-flex; */
+    /* width: 50%; */
+    /* justify-content: space-evenly; */
+    /* display: inline; */
+}
+
+li.n1 {
+  grid-column: 2 / 3;
+}
+
+
+
+/*Main*/
+main {
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+
+main h1 {
+  color: hsl(22, 96%, 89%);
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 74px;
+  margin: 0px 0px 80px;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  border: solid 2px;
+  border-color: hsla(22, 95%, 89%, 1);
+  min-width: 680px;
+  word-spacing: 0.2em;
+  max-width: 784px;
+}
+
+div.jumbotron .container {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.container {
+  margin: 0px;
+  padding: 13px 15px;
+  text-align: center;
+  /* max-width: 940px; */
+}
+
+.jumbotron {
+  /*height: 750px;*/
+  background-position: right;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
+  justify-items: center;
+}
+
+.container.about h1 {
+  grid-column: 2 / span 1;
+  border: none;
+  /*position: absolute;
+  right: 52%;
+  padding: 0.1em;
+  font-size: 5.5em;
+  min-width: 5.2em;
+  color: #cba08b;
+  border-color: #cba08b;*/
+}
+
+div.jumbotron.home {
+  background-image: url("../Images/ANI1.png");
+  height: 750px;
+}
+
+div.jumbotron.about {
+  background-image: url("../Images/KIEV.png");
+  background-position: right;
+  background-size: cover;
+  height: 750px;
+}
+
+div.jumbotron.portfolio {
+  background-image: url("../Images/KIEV2.png");
+  background-size: cover;
+  max-height: 750px;
+}
+
+div.jumbotron.random {
+  background-image: url("../Images/ludlow.png");
+  height: 750px;
+}
+
+div.jumbotron.contact {
+  background-image: url("../Images/atelier.png");
+  height: 750px;
+}
+
+
+
+
+/*Main Button Content Section*/
+.btn-main {
+  color: hsla(22, 95%, 89%, 1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  padding: 1px 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-style: solid none;
+  border-width: 4px;
+  border-color: hsla(22, 95%, 89%, 1);
+    /*background-color: #333;*/
+}
+
+a.btn-main:hover {
+  color: #9db8cc;
+  background-color: hsla(22, 95%, 89%, 1);
+}
+
+.btn-default {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  margin-bottom: 20px;      
+}
+
+.supporting {
+  padding-top: 0;
+  padding-bottom: 65px;
+  background-color: #e3e4e6;
+}
+
+.supporting .col {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top:25px;
+  color: #7d7d82;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting a.icon {
+  border: none;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.supporting a {
+  color: #7d7d82;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.supporting a.button {
+  padding: 3px;
+  border-style: solid none;
+  border-color: #7d7d82;
+  border-width: 2px 0px;
+}
+
+
+/*Sub Page Syle Edits- main content (currently Portfoloio/Contact)*/
+.supporting.sub {
+  background-color: #8fafc640;
+}
+
+.supporting.sub .col {
+  color: #fedecb;
+}
+
+.supporting.sub a {
+  color: #fedecb; 
+}
+
+.supporting.sub a.button {
+  color: #fedecb; 
+  border-color: #fedecb;
+}
+
+/*Page (Contact) Specific Syle Edits- main content*/
+.supporting.sub.contact {
+  background-color: hsla(300, 3%, 63%, 0.65);
+}
+
+
+
+
+/*Footer*/
+footer {
+  background-color: hsla(207, 20%, 45%, 1);
+  color: #fdccaf;
+  padding: 30px 0;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+
+
+
+/*Media Breaks*/
+@media only screen and (max-width: 986px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+
+@media only screen and (max-width: 1279px) {
+  main h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+    .supporting .col {
+    width: 100%;
+ 
+  }
+}
+
+/*@media only screen and (max-width: 680px) {
+  html {
+    font-size: 13px;
+  }
+}*/
