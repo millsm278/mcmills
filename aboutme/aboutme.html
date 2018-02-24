@@ -6,12 +6,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="../Icons/favicon.ico?v=2"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet"/>
     <link href='../CSS/style.css' type='text/css' rel='stylesheet'/>
+    <script type="text/javascript" src="../JS/instafeed.min.js"></script>
   </head>
 
   <body>
 
     <header>
-      <nav>
+      <nav class="nav">
           <ul>
             <li class="n1"> <a href="../aboutme/aboutme.html">About</a></li>  
             <li class="n2"> <a href="../portfolio/portfolio.html">Portfolio</a></li>
@@ -26,7 +27,7 @@
     <main>
       <div class="jumbotron about">
         <div class="container about">
-            <h1>About:</h1>
+            <h1 class="ab">About:</h1>
         </div>
       </div>
     </main>
@@ -55,7 +56,16 @@
         </div>
       </div>
     </section>
-
+    <div id="instafeed"></div>
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'hashtag',
+        userId: '36583190',
+        accessToken: '36583190.1677ed0.9d6c90bb3c1544e1bffc1608041f6b93'
+    });
+    feed.run();
+  </script>
     <footer>
       <div class="container">
         <p>&copy; MCM 2018</p>
