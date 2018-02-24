@@ -56,7 +56,7 @@
         </div>
       </div>
     </section>
-    <div id="instafeed"></div>
+    <!--<div id="instafeed"></div>
     <script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
@@ -65,7 +65,11 @@
         accessToken: '36583190.1677ed0.9d6c90bb3c1544e1bffc1608041f6b93'
     });
     feed.run();
-  </script>
+    var feed = new Instafeed({ 
+      get: 'user', 
+      userId: '2707079415', 
+      accessToken: 'NUMBER-HERE', limit:4, template:'<a target="_blank" href="{{link}}"><img src="{{image}}" /></a>', resolution: 'low_resolution' }); feed.run();
+  </script>-->
     <footer>
       <div class="container">
         <p>&copy; MCM 2018</p>
