@@ -20,10 +20,19 @@ $(document).ready(function () {
 			'color': 'hsla(22, 96%, 89%, 1)',
 			'border-color': 'hsla(22, 96%, 89%, 1)'
 		});
+	}
 
+	if (finalSize < -150) {
+		$('.resButt').attr('id', 'buttTop');
 
+	} else {
+		$('.resButt').attr('id', 'buttNormal');
+
+		
 	}
 
 	});
 	
 }); 
+
+
