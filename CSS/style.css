@@ -15,10 +15,16 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
+
+
 html, body {
   margin: 0;
   padding: 0;
 }
+
+
+
 
 /*Nav Bar*/
 header {
@@ -28,25 +34,40 @@ header {
   z-index: 5;
 }
 
-.nav img {
-  height: 75px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-ul, menu, dir {
+ul {
   display: grid;
   grid-template: 1fr / 2fr repeat(5, 1fr) 2fr;
 }
 
+nav ul li {
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  display: inline-flex;
+  justify-content: space-around;
+  list-style-type: disc;
+  padding-right: 2.22rem;
+}
+
 a {
-  color: #fedecb;
   text-decoration: none;
   cursor: pointer;
+  color: #fedecb;
 }
 
 .nav a:hover {
   text-decoration: underline;
+}
+
+.n1 {
+  grid-column-start: 2;
+}
+
+.nav img {
+  height: 75px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 nav li {
@@ -57,73 +78,40 @@ nav li {
   justify-content: space-around;
   align-items: center;
   padding-right: 2.22rem;
-    /* display: inline-flex; */
-    /* width: 50%; */
-    /* justify-content: space-evenly; */
-    /* display: inline; */
-}
-
-li.n1 {
-  grid-column: 2 / 3;
 }
 
 
 
-/*Main*/
-main {
-  text-align: center;
-  position: relative;
-  top: 0px;
-}
 
-main h1 {
-  color: hsl(22, 96%, 89%);
-  display: flex;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 64px;
-  margin: 0px 0px 80px;
-  padding: 0px 10px;
-  text-transform: uppercase;
-  border: solid 2px;
-  border-color: hsla(22, 95%, 89%, 1);
-  /* min-width: 722px; */
-  word-spacing: 0.2em;
-  text-align:  center;
-}
-
-#imgscroll {
-  margin: 60px 0px 60px;
-  display: inline-flex;
-  text-align: center;
-}
-
-div.jumbotron .container {
-  grid-area: 2 / 2 / 3 / 3;
-  justify-items: center;
-}
-
-.container {
-  margin: 0px;
-  /* padding: 13px 15px; */
-  text-align: center;
-}
-
-#pSub {
-  margin: 70px 0px 0px;
-}
-
-.jumbotron.home.container {
-  max-width: 90%;
-}
-
-.jumbotron {
-  /*height: 750px;*/
+/*Main Content Container*/
+div.jumbotron{
   background-position: right;
   background-size: cover;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
   justify-items: center;
+}
+
+div.container {
+  margin: 2em 0em 0em;
+  text-align: center;
+  grid-area: 2 / 2 / 3 / 3;
+  justify-items: center;
+}
+
+/*Home Pg Specific - Main Content Container*/
+div.jumbotron.home {
+  background-image: url("../Images/ANI1.png");
+  height: 750px;
+  justify-items: center;
+}
+
+/*About Pg Specific - Main Content Container*/
+div.jumbotron.about {
+  background-image: url("../Images/KIEV.png");
+  background-position: right;
+  background-size: cover;
+  height: 750px;
 }
 
 .jumbotron.about {
@@ -133,128 +121,212 @@ div.jumbotron .container {
 .container.about h1 {
   grid-column: 2 / span 1;
   border: none;
-  /*position: absolute;
-  right: 52%;
-  padding: 0.1em;
-  font-size: 5.5em;
-  min-width: 5.2em;
-  color: #cba08b;
-  border-color: #cba08b;*/
 }
 
-div.jumbotron.home {
-  background-image: url("../Images/ANI1.png");
-  height: 750px;
-  justify-items: center;
-}
-
-div.jumbotron.about {
-  background-image: url("../Images/KIEV.png");
-  background-position: right;
-  background-size: cover;
-  height: 750px;
-}
-
+/*Portfolio Pg Specific - Main Content Container*/
 div.jumbotron.portfolio {
   background-image: url("../Images/KIEV2.png");
   background-size: cover;
   max-height: 800px;
 }
 
-div.jumbotron.random {
+/*Other Pg Specific - Main Content Container*/
+div.jumbotron.other {
   background-image: url("../Images/ludlow.png");
   height: 750px;
 }
 
+.jumbotron.other {
+  background-position: right;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
+  justify-items: center;
+}
+
+/*Contact Pg Specific - Main Content Container*/
 div.jumbotron.contact {
   background-image: url("../Images/atelier.png");
   height: 750px;
 }
 
+/*Landing Pg Specific - Main Content Container*/
+div.jumbotron.landingpage{
+  background-position: center;
+  display: grid;
+  grid-template: 1fr 3fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+div.jumbotron.landingpage div.container {
+  margin: 2em 0em 0em;
+  text-align: center;
+  grid-area: 2 / 2 / 3 / 5;
+  justify-items: center;
+}
+
+div.jumbotron.landingpage {
+  background-image: url("../Images/landing.png");
+  background-size: cover;
+  height: 750px;
+}
 
 
 
-/*Main Button Content Section*/
-.btn-main {
-  color: hsla(22, 95%, 89%, 1);
+
+/*Main Title & Texts*/
+main {
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+
+main h1 {
+  color: #fedcc8;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  margin: 0.5em 0em 1.5em;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  border: solid 2px;
+  border-color: #fedcc8;
+  word-spacing: 0.2em;
+  text-align:  center;
+  /* min-width: 722px; */
+}
+
+/*Contact Pg Specific - Main Title & Texts*/
+div.jumbotron.contact h1 {
+  margin: 1.5em 0em .3em;
+}
+
+/*Other Pg Specific - Main Title & Texts*/
+div.imgscrollOther {
+  border: solid 2px;
+  border-color: #feece1;
+  margin: 3em;
+  background-color: #3d30432e;
+  position:  relative;
+}
+
+.imgscrollOther h3 {
+  color: #feece1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-style: italic;
+  text-transform: uppercase;
+  word-spacing: 0.2em;
+  text-align: center;
+  border: none;
+  margin: 1em 1em 0em;
+}
+
+.imgscrollOther h4 {
+  font-size: 1.1em;
+  color: #feece1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  word-spacing: 0.05em;
+  text-align: center;
+  border: none;
+  margin: 0em 0em 1.5em;
+}
+
+/*Landing Pg Specific - Main Title & Texts*/
+div.imgscrollOther.landing h3 {
+  color: #feece1;
+  font-weight: 700;
+  font-size: 2em;
+  font-style: normal;
+  margin: 0em;
+  padding: 1em .5em;
+}
+
+/*Main Buttons*/
+a.btn-main {
+  color: #fedcc8;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1.3px;
+  margin: 0px;
   padding: 1px 4px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-style: solid none;
   border-width: 4px;
-  border-color: hsla(22, 95%, 89%, 1);
-    /*background-color: #333;*/
+  border-color: #fedcc8;  
 }
 
 a.btn-main:hover {
   color: #9db8cc;
-  background-color: hsla(22, 95%, 89%, 1);
+  background-color: #fedcc8;
 }
 
+/*JS Classes*/
 #buttNormal:hover {
   color: #32222e;
 }
 
 #buttTop {
-    color: hsla(22, 96%, 89%, .10);
-    border-color: hsla(22, 96%, 89%, .10);
+  color: #fedcc81a;
+  border-color: #fedcc81a;
 }
 
-.btn-default {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 1.3px;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;  
-  margin-bottom: 20px;      
+#imgscroll {
+  display: inline-flex;
+  text-align: center;
 }
 
-.supporting {
-  padding-top: 0;
-  padding-bottom: 65px;
+div.portContainer h1 {
+  margin: 1em 0px 1em;
+}
+
+
+
+/*Pg Nav Blocks*/
+section.pgLinks {
   background-color: #e3e4e6;
+  text-align: center;
 }
 
-.supporting .col {
+div.linkContent .col {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   display: inline-block;
   width: 200px;
-  height: 200px;
-  position: relative;
+  /* height: 200px; */
+  /*position: relative;*/
   top:25px;
   color: #7d7d82;
+  margin: 1.5em .1em 2em;
 }
 
-.supporting img {
+.pgLinks img {
   height: 32px;
 }
 
-.supporting a.icon {
-  border: none;
-}
-
-.supporting h2 {
+.pgLinks h2 {
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
+  color: #7d7d82;
 }
 
-.supporting p {
+.pgLinks p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   padding: 0 20px;
   margin-bottom: 20px;
+  color: #7d7d82;
 }
 
-.supporting a {
+.pgLinks a {
   color: #7d7d82;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -265,47 +337,73 @@ a.btn-main:hover {
   margin-bottom: 10px;
 }
 
-.supporting a.button {
+/*Pg Nav Blocks -- Button Section*/
+.pgLinks a.button {
   padding: 3px;
   border-style: solid none;
   border-color: #7d7d82;
   border-width: 2px 0px;
 }
 
-.supporting a.button:hover {
+.pgLinks a.button:hover {
   color: #e3e4e6;
   background-color: #7d7d82;
 }
 
-
-/*Sub Page Syle Edits- main content (currently Portfoloio/Contact)*/
-.supporting.sub {
+/*Pg Nav Block- Pg Specific Style Edits*/
+div.jumbotron section.pgLinks {
+  margin: 5em 0em 0em;
   background-color: #8fafc640;
 }
 
-.supporting.sub .col {
+h2.subPg, p.subPg {
   color: #fedecb;
 }
 
-.supporting.sub a {
-  color: #fedecb; 
-}
-
-.supporting.sub a.button {
+div.jumbotron a.button {
   color: #fedecb; 
   border-color: #fedecb;
 }
 
-.supporting.sub a.button:hover {
+div.jumbotron a.button:hover {
   color: #3f424c;
   background-color: #fedecb;
 }
 
-/*Page (Contact) Specific Syle Edits- main content*/
-.supporting.sub.contact {
-  background-color: hsla(300, 3%, 63%, 0.65);
+/*Pg Nav Block- Pg Specific Style Edits*/
+/*Adjust contact page nav block background*/
+div.jumbotron.contact section.pgLinks {
+  background-color: #a39ea3a6;
 }
 
+/*Adjust Other page nav block*/
+div.linkContent.other {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  position: unset;
+  justify-items: stretch;
+  align-items: center;
+}
+div.jumbotron.other section.pgLinks {
+  border: solid 2px;
+  border-color: #feece1;
+  background-color: #3d30438a;
+}
+
+div.blk1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+div.blk2 {
+  grid-area: 1 / 2 / 2 / 3;
+  display:;
+}
+div.blk3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+div.blk1, div.blk2, div.blk3 {
+  padding: 2em .5em;
+}
 
 
 
@@ -350,8 +448,3 @@ footer p {
   }
 }
 
-/*@media only screen and (max-width: 680px) {
-  html {
-    font-size: 13px;
-  }
-}*/

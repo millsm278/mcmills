@@ -22,7 +22,49 @@ $(document).ready(function () {
 		});
 	}
 
-	if (finalSize < -150) {
+	if (finalSize < -100) {
+		$('#imgscrollOther').css({
+			'color': '#feece11a',
+			'border-color': '#feece11a',
+			'background-color': '#ffffff1a'
+		});
+
+	} else {
+		$('#imgscrollOther').css({
+			'color': '#feece1',
+			'border-color': '#feece1',
+			'background-color': '#3d30432e'
+		});
+	}
+
+
+	if (finalSize < -100) {
+		$('#textscrollOther, #textscrollOther').css({
+			'color': '#feece11a',
+			'border-color': '#feece11a',
+		});
+
+	} else {
+		$('#textscrollOther, #textscrollOther').css({
+			'color': '#feece1',
+			'border-color': '#feece1',
+		});
+	}
+
+	//if (finalSize < -70) {
+	//	$('#textscrollOther, #textscrollOther').css({
+	//		'color': 'hsla(22, 96%, 89%, .10)',
+	//		'border-color': 'hsla(22, 96%, 89%, .10)'
+	//	});
+
+	//} else {
+	//	$('#textscrollOther, #textscrollOther').css({
+	//		'color': 'hsla(22, 96%, 89%, 1)',
+	//		'border-color': 'hsla(22, 96%, 89%, 1)'
+	//	});
+	//}
+
+	if (finalSize < -200) {
 		$('.resButt').attr('id', 'buttTop');
 
 	} else {
