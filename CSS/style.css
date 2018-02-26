@@ -307,10 +307,11 @@ div.linkContent .col {
 }
 
 .pgLinks img {
-  height: 32px;
+  height: 40px;
 }
 
 .pgLinks h2 {
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
@@ -318,6 +319,7 @@ div.linkContent .col {
 }
 
 .pgLinks p {
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -357,6 +359,7 @@ div.jumbotron section.pgLinks {
 }
 
 h2.subPg, p.subPg {
+  font-family: 'Raleway', sans-serif;
   color: #fedecb;
 }
 
@@ -388,6 +391,16 @@ div.jumbotron.other section.pgLinks {
   border: solid 2px;
   border-color: #feece1;
   background-color: #3d30438a;
+}
+
+div.linkContent.other p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 div.blk1 {
