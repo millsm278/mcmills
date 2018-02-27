@@ -360,6 +360,12 @@ div.linkContent .col {
 }
 
 /*Pg Nav Block- Pg Specific Style Edits*/
+/*Main*/
+section.pgLinks.pink {
+  background-color: #feece1;
+}
+
+/*Pg Nav Block- Pg Specific Style Edits*/
 div.jumbotron section.pgLinks {
   margin: 5em 0em 0em;
   background-color: #8fafc640;
