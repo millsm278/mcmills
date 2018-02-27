@@ -26,14 +26,12 @@ $(document).ready(function () {
 		$('#imgscrollOther').css({
 			'color': '#feece11a',
 			'border-color': '#feece11a',
-			'background-color': '#ffffff1a'
 		});
 
 	} else {
 		$('#imgscrollOther').css({
 			'color': '#feece1',
-			'border-color': '#feece1',
-			'background-color': '#3d30432e'
+			'border-color': '#feece1'
 		});
 	}
 
@@ -46,8 +44,21 @@ $(document).ready(function () {
 
 	} else {
 		$('#textscrollOther, #textscrollOther').css({
-			'color': '#feece1',
-			'border-color': '#feece1',
+			'color': '#64445c',
+			'border-color': '#64445c',
+		});
+	}
+
+	if (finalSize < -70) {
+		$('#pinkAppear').css({
+			'color': 'hsla(22, 96%, 89%, .10)',
+			'border-color': 'hsla(22, 96%, 89%, .10)'
+		});
+
+	} else {
+		$('#pinkAppear').css({
+			'color': 'hsla(22, 96%, 89%, 1)',
+			'border-color': 'hsla(22, 96%, 89%, 1)'
 		});
 	}
 
