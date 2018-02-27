@@ -49,19 +49,6 @@ $(document).ready(function () {
 		});
 	}
 
-	if (finalSize < -70) {
-		$('#pinkAppear').css({
-			'color': 'hsla(22, 96%, 89%, .10)',
-			'border-color': 'hsla(22, 96%, 89%, .10)'
-		});
-
-	} else {
-		$('#pinkAppear').css({
-			'color': 'hsla(22, 96%, 89%, 1)',
-			'border-color': 'hsla(22, 96%, 89%, 1)'
-		});
-	}
-
 	//if (finalSize < -70) {
 	//	$('#textscrollOther, #textscrollOther').css({
 	//		'color': 'hsla(22, 96%, 89%, .10)',
