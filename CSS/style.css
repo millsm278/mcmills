@@ -275,6 +275,17 @@ a.btn-main:hover {
 }
 
 /*JS Classes*/
+/*Index Button Dissapear*/
+#indexButtNormal:hover {
+  color: #a2bcce;
+}
+
+#indexButtTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+
+/*Portfolio Button Dissapear*/
 #buttNormal:hover {
   color: #32222e;
 }
@@ -355,7 +366,7 @@ div.linkContent .col {
 }
 
 .pgLinks a.button:hover {
-  color: #e3e4e6;
+  color: #feece1;
   background-color: #7d7d82;
 }
 

@@ -22,6 +22,8 @@ $(document).ready(function () {
 		});
 	}
 
+
+
 	if (finalSize < -100) {
 		$('#imgscrollOther').css({
 			'color': '#feece11a',
@@ -34,6 +36,7 @@ $(document).ready(function () {
 			'border-color': '#feece1'
 		});
 	}
+
 
 
 	if (finalSize < -100) {
@@ -49,30 +52,38 @@ $(document).ready(function () {
 		});
 	}
 
-	//if (finalSize < -70) {
-	//	$('#textscrollOther, #textscrollOther').css({
-	//		'color': 'hsla(22, 96%, 89%, .10)',
-	//		'border-color': 'hsla(22, 96%, 89%, .10)'
-	//	});
 
-	//} else {
-	//	$('#textscrollOther, #textscrollOther').css({
-	//		'color': 'hsla(22, 96%, 89%, 1)',
-	//		'border-color': 'hsla(22, 96%, 89%, 1)'
-	//	});
-	//}
+
+	if (finalSize < -258) {
+		$('#pinkAppear').css({
+			'color': '#fedecb14'
+		});
+
+	} else {
+		$('#pinkAppear').css({
+			'color': '#fedecb'
+		});
+	}
+
+
 
 	if (finalSize < -200) {
 		$('.resButt').attr('id', 'buttTop');
 
 	} else {
-		$('.resButt').attr('id', 'buttNormal');
-
-		
+		$('.resButt').attr('id', 'buttNormal');	
+	
 	}
 
-	});
-	
-}); 
+	if (finalSize < -361) {
+		$('.indexButt').attr('id', 'indexButtTop');
 
+	} else {
+		$('.indexButt').attr('id', 'indexButtNormal');	
+	
+	}
+
+
+	});
+}); 
 
