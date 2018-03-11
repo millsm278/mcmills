@@ -50,27 +50,28 @@
 
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
-  #ani1, #headsh {
-    background-size: contain;
-    height: 40em;
+  #ani1 {
+    background: url("../../../../Images/ANI1.png") fixed;
+    background-size: cover;
+    background-position-y: initial;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 102em;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
-    background-position: initial;
-  }
-
-  #ani1 {
-    @include parallax-background("../../../../Images/ANI1.png");
-    background-size: contain;
-    background-position: initial;
-    height: 40em;
   }
 
   #headsh {
-    @include parallax-background("../../../../Images/headsh.png");
+    background: url(../../../../Images/headsh.png) fixed;
     background-size: contain;
-    background-position: bottom;
-    height: 40em;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 34em;
+    transform: translateZ(-2px);
+    overflow-x: hidden;
+    overflow-y: auto;
   } 
 
   #ani1 div.jumbo {
