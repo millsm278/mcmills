@@ -50,21 +50,25 @@
 
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
-  
-  #ani1, #headsh {
-    background-size: contain;
-  }
-
-  #ani1 {
-    background-position: inherit;
-    height: 70vh;
+    #ani1 {
+    @include parallax-background("../../../../Images/ANI1.png");
+    width: 100%;
+    height: $parallax-height;
+    perspective: 1px;
+    transform: translateZ(-1px);
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   #headsh {
-    background-position: inherit;
-    background-position-y: 100%;
-    height: 58vh;
-  }    
+    @include parallax-background("../../../../Images/headsh.png");
+    width: 100%;
+    height: $parallax-height;
+    perspective: 1px;
+    transform: translateZ(-1px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  } 
 
   #ani1 div.jumbo {
     display: grid;
@@ -83,9 +87,9 @@
     align-items: center;
 
     h1 {
-      font-size: 40px;
+      font-size: 4em;
       margin: .5em 0em 1.5em;
-      padding: 0px;
+      padding: 0px 10px;
     }
   }
 
@@ -191,7 +195,7 @@
 @media only screen and (max-width: 600px) {**/
 
   /* On screens that are 600px or less*/
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   #ani1 {
     @include parallax-background("../../../../Images/ANI1.png");
     width: 100%;
@@ -221,4 +225,4 @@
   footer {
     padding: 1px 0;
   }
-}
+}*/
