@@ -22,7 +22,6 @@ $center-margin: 0px auto;
 #headsh {
   @include parallax-background("../../../../Images/headsh.png");
   background-position: top;
-  background-size: cover;
 }
 
 #ani1, #headsh {

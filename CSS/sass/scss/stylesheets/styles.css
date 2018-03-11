@@ -531,10 +531,9 @@ div.grid.linkContent.comm {
   -o-background-size: cover;
   background-size: cover;
   background-position: top;
-  background-size: cover;
 }
 
-/* line 28, ../sass/pages/_parallaxhome.scss */
+/* line 27, ../sass/pages/_parallaxhome.scss */
 #ani1, #headsh {
   height: 100vh;
   width: 100%;
@@ -545,7 +544,7 @@ div.grid.linkContent.comm {
   overflow-y: auto;
 }
 
-/* line 43, ../sass/pages/_parallaxhome.scss */
+/* line 42, ../sass/pages/_parallaxhome.scss */
 .ani1 {
   margin: 2em 0em 0em;
   text-align: center;
@@ -559,7 +558,7 @@ div.grid.linkContent.comm {
   overflow-x: hidden;
   overflow-y: auto;*/
 }
-/* line 56, ../sass/pages/_parallaxhome.scss */
+/* line 55, ../sass/pages/_parallaxhome.scss */
 .ani1 h1 {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
@@ -577,7 +576,7 @@ div.grid.linkContent.comm {
   letter-spacing: 0.06em;
   text-align: center;
 }
-/* line 73, ../sass/pages/_parallaxhome.scss */
+/* line 72, ../sass/pages/_parallaxhome.scss */
 .ani1 .btn-main.indexbutt {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
@@ -598,13 +597,13 @@ div.grid.linkContent.comm {
   display: grid;
 }
 
-/* line 94, ../sass/pages/_parallaxhome.scss */
+/* line 93, ../sass/pages/_parallaxhome.scss */
 #navdrop {
   background-image: url("../../../../Images/sheeta.png");
   background-size: cover;
 }
 
-/* line 99, ../sass/pages/_parallaxhome.scss */
+/* line 98, ../sass/pages/_parallaxhome.scss */
 .pgLinks.pink {
   margin: 0px auto;
   padding: 3%;
@@ -725,164 +724,64 @@ div.portContainer h1 {
 }
 
 /*Media Breaks*/
-/*******@media screen and (max-width: 986px) {
-  html {
-    font-size: 13px;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  main h1 {
-    font-size: 48px;
-  }
-}*******/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
 /**************/
 /**************/
 /**************/
 /**************/
 /**XLarge devices (laptops/desktops, 1200px and up)**/
-/**XLarge devices (laptops/desktops, 1200px and up)**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
+/**XLarge devices (laptops/desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {}**/
 /**************/
 /**************/
 /**************/
 /**************/
 /**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
-/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
-/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))
+@media only screen and (min-width: 992px) {}**/
 /**************/
 /**************/
 /**************/
 /**************/
 /**Med devices (tablets 768px and up (to 998px))**/
-/**Med devices (tablets 768px and up (to 998px))**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
+/**Med devices (tablets 768px and up (to 998px))
+@media only screen and (min-width: 768px) {}**/
 /**************/
 /**************/
 /**************/
 /**************/
 /**Sm/Med devices (tablets/phones 601px to 768px)**/
-/**Sm/Med devices (tablets/phones 600px to 768px)**/
-@media only screen and (max-width: 768px) {
-  /* line 173, ../sass/helpers/_mediabreakpts.scss */
+/**Sm/Med devices (tablets/phones 600px to 768px)
+@media only screen and (max-width: 768px) {**/
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+  /* line 54, ../sass/helpers/_mediabreakpts.scss */
   #ani1, #headsh {
     background-size: contain;
   }
 
-  /* line 177, ../sass/helpers/_mediabreakpts.scss */
+  /* line 58, ../sass/helpers/_mediabreakpts.scss */
   #ani1 {
     background-position: inherit;
     height: 70vh;
   }
 
-  /* line 182, ../sass/helpers/_mediabreakpts.scss */
+  /* line 63, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
     background-position: inherit;
     background-position-y: 100%;
     height: 58vh;
   }
 
-  /* line 188, ../sass/helpers/_mediabreakpts.scss */
+  /* line 69, ../sass/helpers/_mediabreakpts.scss */
   #ani1 div.jumbo {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr;
+    grid-template: 2fr 1fr 2fr / 1fr;
     perspective: .5px;
     justify-items: center;
     align-items: center;
   }
 
-  /* line 196, ../sass/helpers/_mediabreakpts.scss */
+  /* line 77, ../sass/helpers/_mediabreakpts.scss */
   .ani1 {
     margin: 0 auto;
     text-align: center;
@@ -891,27 +790,27 @@ div.portContainer h1 {
     justify-content: center;
     align-items: center;
   }
-  /* line 204, ../sass/helpers/_mediabreakpts.scss */
+  /* line 85, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
     font-size: 40px;
     margin: .5em 0em 1.5em;
     padding: 0px;
   }
 
-  /* line 211, ../sass/helpers/_mediabreakpts.scss */
+  /* line 92, ../sass/helpers/_mediabreakpts.scss */
   a.btn-main {
     font-size: 14px;
     margin: 0px;
     border-width: 3px;
   }
 
-  /* line 217, ../sass/helpers/_mediabreakpts.scss */
+  /* line 98, ../sass/helpers/_mediabreakpts.scss */
   #navdrop {
     background-image: url("../../../../Images/sheeth.png");
     background-size: cover;
   }
 
-  /* line 222, ../sass/helpers/_mediabreakpts.scss */
+  /* line 103, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks.pink {
     grid-template: 5% 90% 5% / 1fr;
     justify-content: center;
@@ -921,7 +820,7 @@ div.portContainer h1 {
     padding: 8%;
   }
 
-  /* line 231, ../sass/helpers/_mediabreakpts.scss */
+  /* line 112, ../sass/helpers/_mediabreakpts.scss */
   div.grid.linkContent {
     grid-area: 2 / 1 / 3 / 2;
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
@@ -931,32 +830,32 @@ div.portContainer h1 {
     position: inherit;
   }
 
-  /* line 241, ../sass/helpers/_mediabreakpts.scss */
+  /* line 122, ../sass/helpers/_mediabreakpts.scss */
   div.blk1, div.blk2, div.blk3, div.blk4 {
     padding: 1em 0em 0em 0em;
   }
 
-  /* line 245, ../sass/helpers/_mediabreakpts.scss */
+  /* line 126, ../sass/helpers/_mediabreakpts.scss */
   div.blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  /* line 249, ../sass/helpers/_mediabreakpts.scss */
+  /* line 130, ../sass/helpers/_mediabreakpts.scss */
   div.blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
 
-  /* line 253, ../sass/helpers/_mediabreakpts.scss */
+  /* line 134, ../sass/helpers/_mediabreakpts.scss */
   div.blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
 
-  /* line 257, ../sass/helpers/_mediabreakpts.scss */
+  /* line 138, ../sass/helpers/_mediabreakpts.scss */
   div.blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
 
-  /* line 261, ../sass/helpers/_mediabreakpts.scss */
+  /* line 142, ../sass/helpers/_mediabreakpts.scss */
   .blk1 .mediabox, .blk2 .mediabox, .blk3 .mediabox, .blk4 .mediabox {
     border: #ccbab3 1px solid;
     display: inline-block;
@@ -966,7 +865,7 @@ div.portContainer h1 {
     background-color: #fbe3d559;
   }
 
-  /* line 270, ../sass/helpers/_mediabreakpts.scss */
+  /* line 151, ../sass/helpers/_mediabreakpts.scss */
   footer {
     padding: 2px 0;
   }
@@ -975,77 +874,69 @@ div.portContainer h1 {
 /**************/
 /**************/
 /**************/
-/**************/
-/**************/
-/**************/
-@media only screen and (max-width: 690px) {
-  /* line 284, ../sass/helpers/_mediabreakpts.scss */
+/**@media only screen and (max-width: 690px) {
   #ani1 {
     height: 62vh;
   }
 
-  /* line 288, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
     height: 54vh;
-  }
+  }    
 }
 @media only screen and (max-width: 645px) {
-  /* line 293, ../sass/helpers/_mediabreakpts.scss */
   #ani1 {
     height: 58vh;
   }
 
-  /* line 297, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
     height: 50vh;
-  }
-}
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
-/**************/
+  }    
+}**/
 /**************/
 /**************/
 /**************/
 /**************/
 /**Extra small devices (phones, 600px and down)**/
-/**Extra small devices (phones, 600px and down)**/
-@media only screen and (max-width: 600px) {
-  /* line 336, ../sass/helpers/_mediabreakpts.scss */
+/**Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {**/
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  /* line 195, ../sass/helpers/_mediabreakpts.scss */
   #ani1 {
-    height: 48vh;
+    background: url("../../../../Images/ANI1.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    perspective: 1px;
+    transform: translateZ(-1px);
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
-  /* line 340, ../sass/helpers/_mediabreakpts.scss */
+  /* line 205, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
-    height: 40vh;
+    background: url("../../../../Images/headsh.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    perspective: 1px;
+    transform: translateZ(-1px);
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
-  /* line 345, ../sass/helpers/_mediabreakpts.scss */
+  /* line 216, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
     font-size: 2em;
   }
 
-  /* line 350, ../sass/helpers/_mediabreakpts.scss */
+  /* line 221, ../sass/helpers/_mediabreakpts.scss */
   footer {
     padding: 1px 0;
   }
