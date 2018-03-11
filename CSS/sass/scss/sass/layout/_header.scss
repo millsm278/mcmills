@@ -1,5 +1,3 @@
-@import "helpers/jsbehaviors";
-
 /*header - page consistent*/
 header{
   &.nav {
@@ -7,7 +5,7 @@ header{
     position: fixed;
     z-index: 5;
     width: -webkit-fill-available;  
-    /* display: inline-block; */
+
   }
 
     nav ul li {
@@ -20,7 +18,7 @@ header{
     list-style-type: disc;
     padding-left: 1em;
     padding-right: 1em;
-    /* width: auto; */
+
   }
 
   ul {
@@ -28,8 +26,6 @@ header{
     grid-template: 1fr/ 1fr repeat(5, 1fr) 1fr;
     -webkit-padding-start: initial;
     justify-items:  center;
-    /* width: -webkit-fill-available; */
-    /* -webkit-padding-end: 1em; */
   }
 
   li {

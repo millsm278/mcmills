@@ -23,7 +23,6 @@ main {
 
 main h1 {
   color: #fedcc8;
-  display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
@@ -34,5 +33,15 @@ main h1 {
   border-color: #fedcc8;
   word-spacing: 0.2em;
   text-align:  center;
-  /* min-width: 722px; */
+}
+
+#ani1 div.jumbo {
+  position: absolute;
+  display: grid;
+  width:  -webkit-fill-available;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  perspective: 0.5px;
+  justify-items: center;
+  align-items: center;
 }

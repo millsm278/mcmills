@@ -1,5 +1,4 @@
 /***Site/Pg Nav Block***/
-/***Site/Pg Nav Block***/
 section.pgLinks {
   background-color: #e3e4e6;
   text-align: center;
@@ -11,30 +10,13 @@ div.grid.linkContent {
   justify-content: baseline;
   justify-items: center;
   align-items: center;
-
   /**grid rules called from helpers/_grid.scss**/
-  /*grid-area: 1 / 2 / 2 / 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;*/ 
 }
 
 div.blk1, div.blk2, div.blk3, div.blk4 {
   padding: 3em 0em;
+  /**grid rules called from helpers/_grid.scss**/
 }
-
-/**grid rules called from helpers/_grid.scss**/
-/*div.blk1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-div.blk2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-div.blk3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-div.blk4 {
-  grid-area: 1 / 4 / 2 / 5;
-}*/
 
 .pgLinks img {
   height: 40px;
@@ -71,17 +53,7 @@ div.blk4 {
 
 section.pgLinks.pink {
   background-color: #feece1;
-
   /**grid rules called from helpers/_grid.scss**/
-  /*display: grid;
-  grid-template: 1fr / 1fr 8fr 1fr;*/ 
-
-  /**old?**/
-  /*display: grid;
-  grid-template: 1fr / 1fr 4fr 1fr;
-  position: unset;
-  justify-items: stretch;
-  align-items: center;**/
 }
 
 /*Pg Nav Block -- Button Section*/
@@ -99,13 +71,8 @@ section.pgLinks.pink {
 
 
 
-
-
-
 /***(W/IN PG)Nav Block- Pg Specific Style Edits***/
-/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
-
-/*layout/_pgnavblock.scss*//*needs cleaning - all stated on layout page until sorted*/
+/*layout/_pgnavblock.scss* - needs cleaning - all stated on layout page until sorted*/
 div.jumbotron section.pgLinks {
   margin: 5em 0em 0em;
   background-color: #8fafc640;
@@ -126,10 +93,9 @@ div.jumbotron a.button:hover {
   background-color: #fedecb;
 }
 
-/*Adjust Other page (w/in pg)nav block*/
 /*Adjust contact page (w/in pg)nav block background*/
 div.jumbotron.contact section.pgLinks {
-  background-color: #566071b3; /*#a39ea3a6*/
+  background-color: #566071b3;
   border: solid 2px #fedcc8;
 }
 
@@ -144,10 +110,7 @@ div.linkContent.other {
   position: unset;
   justify-items: stretch;
   align-items: center;
-
   /**grid rules called from helpers/_grid.scss**/
-  /*display: grid;
-  grid-template: 1fr / repeat(3, 1fr);*/
 }
 
 div.jumbotron.other section.pgLinks {

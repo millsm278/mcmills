@@ -1,58 +1,14 @@
 /*Media Breaks*/
 
-
-                /**************/
-                /**************/
-                /**************/
-                /**************/
-
-
-/**XLarge devices (laptops/desktops, 1200px and up)**/
-/**XLarge devices (laptops/desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {}**/
-
-
-                /**************/
-                /**************/
-                /**************/
-                /**************/
-
-
-
-/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
-/**Lg devices (laptops/desktops, 992px and up (to 1200px))
-@media only screen and (min-width: 992px) {}**/
-
-
-                /**************/
-                /**************/
-                /**************/
-                /**************/
-
-
-/**Med devices (tablets 768px and up (to 998px))**/
-/**Med devices (tablets 768px and up (to 998px))
-@media only screen and (min-width: 768px) {}**/
-
-
-                /**************/
-                /**************/
-                /**************/
-                /**************/
-
-
-/**Sm/Med devices (tablets/phones 601px to 768px)**/
-/**Sm/Med devices (tablets/phones 600px to 768px)
-@media only screen and (max-width: 768px) {**/
-
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
   #ani1 {
     background: url("../../../../Images/ani1_media.png") fixed;
-    background-size: contain;
+    background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
     transform: translateZ(-1px);
+    perspective: 1px;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
@@ -66,6 +22,7 @@
     background-position-x: center;
     background-repeat: no-repeat;
     transform: translateZ(-1px);
+    perspective: 1px;
     width: 100%;
     height: 31vh;
   } 
@@ -158,72 +115,91 @@
   }
 }
 
-
-                  /**************/
-                  /**************/
                   /**************/
                   /**************/
 
-
-/**@media only screen and (max-width: 690px) {
-  #ani1 {
-    height: 62vh;
-  }
-
-  #headsh {
-    height: 54vh;
-  }    
-}
-@media only screen and (max-width: 645px) {
-  #ani1 {
-    height: 58vh;
-  }
-
-  #headsh {
-    height: 50vh;
-  }    
-}**/
-
-
-                  /**************/
-                  /**************/
-                  /**************/
-                  /**************/
-
-
-/**Extra small devices (phones, 600px and down)**/
-/**Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {**/
-
-  /* On screens that are 600px or less*/
 /*@media screen and (max-width: 600px) {
-  #ani1 {
-    @include parallax-background("../../../../Images/ANI1.png");
+  
+  main#ani1 {
+    background: url("../../../../Images/mediahome.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
     width: 100%;
-    height: $parallax-height;
-    perspective: 1px;
+    perspective: 2px;
     transform: translateZ(-1px);
-    overflow-x: hidden;
-    overflow-y: auto;
+  }
+
+  div.jumbo {
+    height: 80%;
+  }
+
+  .ani1 h1 {
+    font-size: 2em;
+    padding: 0px 10px;
+  }
+  
+  .ani1 {
+    background: none;
+  }
+
+  a.btn-main {
+    font-size: 12px;
+    margin: 0px;
+    border-width: 2px;
   }
 
   #headsh {
-    @include parallax-background("../../../../Images/headsh.png");
+    background: url(../../../../Images/headsh_media.png) fixed;
+    background-size: contain;
+    background-position: bottom;
+    display: -webkit-box;
+    height: 30vh;
     width: 100%;
-    height: $parallax-height;
-    perspective: 1px;
+    perspective: 2px;
     transform: translateZ(-1px);
-    overflow-x: hidden;
-    overflow-y: auto;
-  }    
-
-  .ani1 {
-    h1 {
-      font-size: 2em;
-    }
   }
 
-  footer {
-    padding: 1px 0;
+  section.pgLinks.pink {
+    margin: 0;
+  }
+
+  footer p {
+    font-size: .1em;
+    margin: .5em
   }
 }*/
+
+
+/**XLarge devices (laptops/desktops, 1200px and up)**/
+/**XLarge devices (laptops/desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {}**/
+
+                /**************/
+                /**************/
+
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))
+@media only screen and (min-width: 992px) {}**/
+
+                /**************/
+                /**************/
+
+/**Med devices (tablets 768px and up (to 998px))**/
+/**Med devices (tablets 768px and up (to 998px))
+@media only screen and (min-width: 768px) {}**/
+
+
+                /**************/
+                /**************/
+
+/**Sm/Med devices (tablets/phones 601px to 768px)**/
+/**Sm/Med devices (tablets/phones 600px to 768px)
+@media only screen and (max-width: 768px) {**/
+
+
+/*@import "bootstrap-compass";*/
+/*@import "bootstrap-variables";*/
+/*@import "bootstrap";*/

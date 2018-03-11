@@ -17,7 +17,6 @@ html, body {
 
 @import "pages/about";
 @import "pages/contact";
-@import "pages/home";
 @import "pages/landing";
 @import "pages/other";
 @import "pages/parallaxhome";
@@ -27,7 +26,7 @@ html, body {
 
 @import "helpers/jsbehaviors";
 @import "helpers/mediabreakpts";
-@import "helpers/variables";
+/*@import "helpers/variables";
 /*@import "helpers/functions";
 @import "helpers/mixins";
 @import "helpers/placeholders";

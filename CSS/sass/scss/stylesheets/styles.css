@@ -47,8 +47,7 @@ a.btn-main:hover {
   background-color: #fedcc8;
 }
 
-/*landing pg button*/
-/*stated on landing.scss*/
+/*landing pg button stated on landing.scss*/
 /*a.btn-main.pinkAppear {
   margin-top: 5em;
 }*/
@@ -73,7 +72,8 @@ footer {
   background-image: url("../../../../Images/sheeta.png");
   box-shadow: inset 0 0 0 1000px rgba(108, 143, 167, 0.7);
 }
-/* line 8, ../sass/layout/_footer.scss */
+
+/* line 9, ../sass/layout/_footer.scss */
 footer p {
   font-family: "Lucida Grande", sans-serif;
   font-style: oblique;
@@ -92,121 +92,66 @@ footer.homeFoot {
   background-image: url("../../../../Images/sheeta.png");
   background-color: #faede7;
 }
-/* line 26, ../sass/layout/_footer.scss */
+
+/* line 27, ../sass/layout/_footer.scss */
 footer.homeFoot p {
   background-color: #7d7d823d;
   color: #f3edea;
 }
 
-/***Site/Pg Nav Block***/
-/***Site/Pg Nav Block***/
-/* line 4, ../sass/layout/_grid.scss */
+/***GRIDS***/
+/***Site/Pg Nav Block GRIDS***/
+/* line 3, ../sass/layout/_grid.scss */
 div.grid.linkContent {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* line 10, ../sass/layout/_grid.scss */
+/* line 9, ../sass/layout/_grid.scss */
 section.pgLinks.pink {
   display: grid;
   grid-template: 1fr / 1fr 8fr 1fr;
-  /**old?**/
-  /*display: grid;
-  grid-template: 1fr / 1fr 4fr 1fr;
-  position: unset;
-  justify-items: stretch;
-  align-items: center;**/
 }
 
-/* line 22, ../sass/layout/_grid.scss */
+/* line 14, ../sass/layout/_grid.scss */
 div.blk1 {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-/* line 25, ../sass/layout/_grid.scss */
+/* line 17, ../sass/layout/_grid.scss */
 div.blk2 {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-/* line 28, ../sass/layout/_grid.scss */
+/* line 20, ../sass/layout/_grid.scss */
 div.blk3 {
   grid-area: 1 / 3 / 2 / 4;
 }
 
-/* line 31, ../sass/layout/_grid.scss */
+/* line 23, ../sass/layout/_grid.scss */
 div.blk4 {
   grid-area: 1 / 4 / 2 / 5;
 }
 
-/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
-/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
+/***(W/IN PG)Nav Block GRIDS- Pg Specific Style Edits***/
 /*(w/in pg)Nav Block- Pg Specific Grid Edits*/
 /*Adjust Other page (w/in pg)nav block*/
-/* line 42, ../sass/layout/_grid.scss */
+/* line 31, ../sass/layout/_grid.scss */
 div.linkContent.other {
   display: grid;
   grid-template: 1fr/repeat(3, 1fr);
 }
 
-/*JS Classes*/
-/*Index Button Dissapear*/
-/* line 3, ../sass/helpers/_jsbehaviors.scss */
-#indexButtNormal:hover {
-  color: #a2bcce;
-}
-
-/* line 7, ../sass/helpers/_jsbehaviors.scss */
-#indexButtTop {
-  color: #fedcc81a;
-  border-color: #fedcc81a;
-}
-
-/*Portfolio Button Dissapear*/
-/* line 13, ../sass/helpers/_jsbehaviors.scss */
-#buttNormal:hover {
-  color: #32222e;
-}
-
-/* line 17, ../sass/helpers/_jsbehaviors.scss */
-#buttTop {
-  color: #fedcc81a;
-  border-color: #fedcc81a;
-}
-
-/* line 22, ../sass/helpers/_jsbehaviors.scss */
-#imgscroll {
-  display: inline-flex;
-  text-align: center;
-}
-
-/* header smooth color change transitions */
-/* line 29, ../sass/helpers/_jsbehaviors.scss */
-header.nav {
-  -webkit-transition: all 1.0s ease-out;
-  -moz-transition: all 1.0s ease-out;
-  -o-transition: all 1.0s ease-out;
-  -ms-transition: all 1.0s ease-out;
-  transition: all 1.0s ease-out;
-}
-
-/* line 37, ../sass/helpers/_jsbehaviors.scss */
-header.nav.scrolled {
-  /*background: rgba(143, 175, 198, 0.47);  IE */
-  background: rgba(108, 143, 167, 0.9);
-  /* NON-IE */
-}
-
 /*header - page consistent*/
-/* line 5, ../sass/layout/_header.scss */
+/* line 3, ../sass/layout/_header.scss */
 header.nav {
   background-color: #8fafc678;
   position: fixed;
   z-index: 5;
   width: -webkit-fill-available;
-  /* display: inline-block; */
 }
-/* line 13, ../sass/layout/_header.scss */
+/* line 11, ../sass/layout/_header.scss */
 header nav ul li {
   align-items: center;
   font-family: 'Raleway', sans-serif;
@@ -217,32 +162,29 @@ header nav ul li {
   list-style-type: disc;
   padding-left: 1em;
   padding-right: 1em;
-  /* width: auto; */
 }
-/* line 26, ../sass/layout/_header.scss */
+/* line 24, ../sass/layout/_header.scss */
 header ul {
   display: grid;
   grid-template: 1fr/1fr repeat(5, 1fr) 1fr;
   -webkit-padding-start: initial;
   justify-items: center;
-  /* width: -webkit-fill-available; */
-  /* -webkit-padding-end: 1em; */
 }
-/* line 35, ../sass/layout/_header.scss */
+/* line 31, ../sass/layout/_header.scss */
 header li {
   text-align: -webkit-match-parent;
 }
-/* line 39, ../sass/layout/_header.scss */
+/* line 35, ../sass/layout/_header.scss */
 header .n1 {
   grid-column-start: 2;
 }
-/* line 43, ../sass/layout/_header.scss */
+/* line 39, ../sass/layout/_header.scss */
 header a {
   text-decoration: none;
   cursor: pointer;
   color: #fedecb;
 }
-/* line 49, ../sass/layout/_header.scss */
+/* line 45, ../sass/layout/_header.scss */
 header .nav img {
   height: 75px;
   margin-top: 0px;
@@ -277,7 +219,6 @@ main {
 /* line 24, ../sass/layout/_jumbotron.scss */
 main h1 {
   color: #fedcc8;
-  display: flex;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
@@ -288,54 +229,49 @@ main h1 {
   border-color: #fedcc8;
   word-spacing: 0.2em;
   text-align: center;
-  /* min-width: 722px; */
+}
+
+/* line 38, ../sass/layout/_jumbotron.scss */
+#ani1 div.jumbo {
+  position: absolute;
+  display: grid;
+  width: -webkit-fill-available;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  perspective: 0.5px;
+  justify-items: center;
+  align-items: center;
 }
 
 /***Site/Pg Nav Block***/
-/***Site/Pg Nav Block***/
-/* line 3, ../sass/layout/_pgnavblock.scss */
+/* line 2, ../sass/layout/_pgnavblock.scss */
 section.pgLinks {
   background-color: #e3e4e6;
   text-align: center;
   position: relative;
 }
 
-/* line 9, ../sass/layout/_pgnavblock.scss */
+/* line 8, ../sass/layout/_pgnavblock.scss */
 div.grid.linkContent {
   position: unset;
   justify-content: baseline;
   justify-items: center;
   align-items: center;
   /**grid rules called from helpers/_grid.scss**/
-  /*grid-area: 1 / 2 / 2 / 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;*/
+}
+
+/* line 16, ../sass/layout/_pgnavblock.scss */
+div.blk1, div.blk2, div.blk3, div.blk4 {
+  padding: 3em 0em;
+  /**grid rules called from helpers/_grid.scss**/
 }
 
 /* line 21, ../sass/layout/_pgnavblock.scss */
-div.blk1, div.blk2, div.blk3, div.blk4 {
-  padding: 3em 0em;
-}
-
-/**grid rules called from helpers/_grid.scss**/
-/*div.blk1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-div.blk2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-div.blk3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-div.blk4 {
-  grid-area: 1 / 4 / 2 / 5;
-}*/
-/* line 39, ../sass/layout/_pgnavblock.scss */
 .pgLinks img {
   height: 40px;
 }
 
-/* line 43, ../sass/layout/_pgnavblock.scss */
+/* line 25, ../sass/layout/_pgnavblock.scss */
 .pgLinks h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -344,7 +280,7 @@ div.blk4 {
   color: #7d7d82;
 }
 
-/* line 51, ../sass/layout/_pgnavblock.scss */
+/* line 33, ../sass/layout/_pgnavblock.scss */
 .pgLinks p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -355,7 +291,7 @@ div.blk4 {
   color: #7d7d82;
 }
 
-/* line 61, ../sass/layout/_pgnavblock.scss */
+/* line 43, ../sass/layout/_pgnavblock.scss */
 .pgLinks a {
   color: #7d7d82;
   font-family: 'Raleway', sans-serif;
@@ -367,22 +303,14 @@ div.blk4 {
   margin-bottom: 10px;
 }
 
-/* line 72, ../sass/layout/_pgnavblock.scss */
+/* line 54, ../sass/layout/_pgnavblock.scss */
 section.pgLinks.pink {
   background-color: #feece1;
   /**grid rules called from helpers/_grid.scss**/
-  /*display: grid;
-  grid-template: 1fr / 1fr 8fr 1fr;*/
-  /**old?**/
-  /*display: grid;
-  grid-template: 1fr / 1fr 4fr 1fr;
-  position: unset;
-  justify-items: stretch;
-  align-items: center;**/
 }
 
 /*Pg Nav Block -- Button Section*/
-/* line 88, ../sass/layout/_pgnavblock.scss */
+/* line 60, ../sass/layout/_pgnavblock.scss */
 .pgLinks a.button {
   padding: 3px;
   border-style: solid none;
@@ -390,50 +318,46 @@ section.pgLinks.pink {
   border-width: 2px 0px;
 }
 
-/* line 95, ../sass/layout/_pgnavblock.scss */
+/* line 67, ../sass/layout/_pgnavblock.scss */
 .pgLinks a.button:hover {
   color: #feece1;
   background-color: #7d7d82;
 }
 
 /***(W/IN PG)Nav Block- Pg Specific Style Edits***/
-/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
-/*layout/_pgnavblock.scss*/
-/*needs cleaning - all stated on layout page until sorted*/
-/* line 109, ../sass/layout/_pgnavblock.scss */
+/*layout/_pgnavblock.scss* - needs cleaning - all stated on layout page until sorted*/
+/* line 76, ../sass/layout/_pgnavblock.scss */
 div.jumbotron section.pgLinks {
   margin: 5em 0em 0em;
   background-color: #8fafc640;
 }
 
-/* line 114, ../sass/layout/_pgnavblock.scss */
+/* line 81, ../sass/layout/_pgnavblock.scss */
 h2.subPg, p.subPg {
   font-family: 'Raleway', sans-serif;
   color: #fedecb;
 }
 
-/* line 119, ../sass/layout/_pgnavblock.scss */
+/* line 86, ../sass/layout/_pgnavblock.scss */
 div.jumbotron a.button {
   color: #fedecb;
   border-color: #fedecb;
 }
 
-/* line 124, ../sass/layout/_pgnavblock.scss */
+/* line 91, ../sass/layout/_pgnavblock.scss */
 div.jumbotron a.button:hover {
   color: #3f424c;
   background-color: #fedecb;
 }
 
-/*Adjust Other page (w/in pg)nav block*/
 /*Adjust contact page (w/in pg)nav block background*/
-/* line 131, ../sass/layout/_pgnavblock.scss */
+/* line 97, ../sass/layout/_pgnavblock.scss */
 div.jumbotron.contact section.pgLinks {
   background-color: #566071b3;
-  /*#a39ea3a6*/
   border: solid 2px #fedcc8;
 }
 
-/* line 136, ../sass/layout/_pgnavblock.scss */
+/* line 102, ../sass/layout/_pgnavblock.scss */
 div.linkContent.comm .col {
   color: #7d7d82;
   margin: 2.5em .1em 3.5em;
@@ -441,24 +365,22 @@ div.linkContent.comm .col {
 }
 
 /*Adjust Other page nav block*/
-/* line 143, ../sass/layout/_pgnavblock.scss */
+/* line 109, ../sass/layout/_pgnavblock.scss */
 div.linkContent.other {
   position: unset;
   justify-items: stretch;
   align-items: center;
   /**grid rules called from helpers/_grid.scss**/
-  /*display: grid;
-  grid-template: 1fr / repeat(3, 1fr);*/
 }
 
-/* line 153, ../sass/layout/_pgnavblock.scss */
+/* line 116, ../sass/layout/_pgnavblock.scss */
 div.jumbotron.other section.pgLinks {
   border: solid 2px;
   border-color: #feece1;
   background-color: #3d30438a;
 }
 
-/* line 159, ../sass/layout/_pgnavblock.scss */
+/* line 122, ../sass/layout/_pgnavblock.scss */
 div.linkContent.other p {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -513,12 +435,6 @@ div.grid.linkContent.comm {
   justify-items: center;
 }
 
-/*Home Pg Specific - jumbotron - Main Content Container*/
-/*div.jumbotron.home {
-  background-image: url("../../../../Images/ANI1.png");
-  height: 750px;
-  justify-items: center;
-}*/
 /*Landing Pg Specific - jumbotron - Main Content Container*/
 /* line 2, ../sass/pages/_landing.scss */
 div.jumbotron.landingpage {
@@ -630,40 +546,32 @@ div.imgscrollOther {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: top;
 }
 
-/* line 27, ../sass/pages/_parallaxhome.scss */
+/* line 26, ../sass/pages/_parallaxhome.scss */
 #ani1, #headsh {
   height: 100vh;
   width: 100%;
   height: 100vh;
-  perspective: 1px;
+  perspective: 2px;
   transform: translateZ(-1px);
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* line 41, ../sass/pages/_parallaxhome.scss */
+/* line 40, ../sass/pages/_parallaxhome.scss */
 .ani1 {
   margin: 2em 0em 0em;
   text-align: center;
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 1 / 3 / 2;
   justify-items: center;
-  /*height: $parallax-height;
-  width: 100%;
-  height: 100vh;
-  perspective: 1px;
-  transform: translateZ(-1px);
-  overflow-x: hidden;
-  overflow-y: auto;*/
 }
-/* line 54, ../sass/pages/_parallaxhome.scss */
+/* line 46, ../sass/pages/_parallaxhome.scss */
 .ani1 h1 {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 5em;
   margin: 0.5em 0em 1.5em;
   padding: 0px 10px;
   text-transform: uppercase;
@@ -671,19 +579,17 @@ div.imgscrollOther {
   border-color: #fedcc8;
   word-spacing: 0.2em;
   text-align: center;
-  /* min-width: 722px; */
   transform: translateZ(-0.1px);
   letter-spacing: 0.06em;
   text-align: center;
 }
-/* line 71, ../sass/pages/_parallaxhome.scss */
+/* line 63, ../sass/pages/_parallaxhome.scss */
 .ani1 .btn-main.indexbutt {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1.3px;
-  /* margin: 60px; */
   padding: 0px 0px;
   text-align: center;
   text-decoration: none;
@@ -691,19 +597,18 @@ div.imgscrollOther {
   border-style: solid none;
   border-width: 4px;
   border-color: #fedcc8;
-  /* display: flex; */
   grid-area: 3 / 2 / 4 / 3;
   align-items: center;
   display: grid;
 }
 
-/* line 92, ../sass/pages/_parallaxhome.scss */
+/* line 82, ../sass/pages/_parallaxhome.scss */
 #navdrop {
   background-image: url("../../../../Images/sheeta.png");
   background-size: cover;
 }
 
-/* line 97, ../sass/pages/_parallaxhome.scss */
+/* line 87, ../sass/pages/_parallaxhome.scss */
 .pgLinks.pink {
   margin: 0px auto;
   padding: 3%;
@@ -711,6 +616,29 @@ div.imgscrollOther {
   font-size: 20px;
   font-weight: 200;
   line-height: 1.4;
+}
+
+/*base - moble styling <600px*/
+/* line 97, ../sass/pages/_parallaxhome.scss */
+.banner-container {
+  position: relative;
+  width: inherit;
+}
+
+/* line 102, ../sass/pages/_parallaxhome.scss */
+#banner {
+  position: fixed;
+  width: inherit;
+  z-index: -1;
+  top: 0;
+  box-sizing: border-box;
+}
+
+/* line 110, ../sass/pages/_parallaxhome.scss */
+.parallax-img-file {
+  width: inherit;
+  display: block;
+  vertical-align: middle;
 }
 
 /*Portfolio Pg Specific - jumbotron - Main Content Container*/
@@ -727,51 +655,73 @@ div.portContainer h1 {
   margin: 1em 0px 1em;
 }
 
+/*JS Classes*/
+/*Index Button Dissapear*/
+/* line 3, ../sass/helpers/_jsbehaviors.scss */
+#indexButtNormal:hover {
+  color: #a2bcce;
+}
+
+/* line 7, ../sass/helpers/_jsbehaviors.scss */
+#indexButtTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+
+/*Portfolio Button Dissapear*/
+/* line 13, ../sass/helpers/_jsbehaviors.scss */
+#buttNormal:hover {
+  color: #32222e;
+}
+
+/* line 18, ../sass/helpers/_jsbehaviors.scss */
+#buttTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+
+/* line 23, ../sass/helpers/_jsbehaviors.scss */
+#imgscroll {
+  display: inline-flex;
+  text-align: center;
+}
+
+/* header smooth color change transitions */
+/* line 29, ../sass/helpers/_jsbehaviors.scss */
+header.nav {
+  -webkit-transition: all 1.0s ease-out;
+  -moz-transition: all 1.0s ease-out;
+  -o-transition: all 1.0s ease-out;
+  -ms-transition: all 1.0s ease-out;
+  transition: all 1.0s ease-out;
+}
+
+/* line 37, ../sass/helpers/_jsbehaviors.scss */
+header.nav.scrolled {
+  background: rgba(143, 175, 198, 0.47);
+  /* IE */
+  background: rgba(108, 143, 167, 0.9);
+  /* NON-IE */
+}
+
 /*Media Breaks*/
-/**************/
-/**************/
-/**************/
-/**************/
-/**XLarge devices (laptops/desktops, 1200px and up)**/
-/**XLarge devices (laptops/desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {}**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
-/**Lg devices (laptops/desktops, 992px and up (to 1200px))
-@media only screen and (min-width: 992px) {}**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**Med devices (tablets 768px and up (to 998px))**/
-/**Med devices (tablets 768px and up (to 998px))
-@media only screen and (min-width: 768px) {}**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**Sm/Med devices (tablets/phones 601px to 768px)**/
-/**Sm/Med devices (tablets/phones 600px to 768px)
-@media only screen and (max-width: 768px) {**/
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
-  /* line 50, ../sass/helpers/_mediabreakpts.scss */
+  /* line 5, ../sass/helpers/_mediabreakpts.scss */
   #ani1 {
     background: url("../../../../Images/ani1_media.png") fixed;
-    background-size: contain;
+    background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
     transform: translateZ(-1px);
+    perspective: 1px;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
     height: 80vh;
   }
 
-  /* line 62, ../sass/helpers/_mediabreakpts.scss */
+  /* line 18, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
     background: url(../../../../Images/headsh_media.png) fixed;
     background-size: contain;
@@ -779,11 +729,12 @@ div.portContainer h1 {
     background-position-x: center;
     background-repeat: no-repeat;
     transform: translateZ(-1px);
+    perspective: 1px;
     width: 100%;
     height: 31vh;
   }
 
-  /* line 73, ../sass/helpers/_mediabreakpts.scss */
+  /* line 30, ../sass/helpers/_mediabreakpts.scss */
   #ani1 div.jumbo {
     display: grid;
     height: 100%;
@@ -793,7 +744,7 @@ div.portContainer h1 {
     align-items: center;
   }
 
-  /* line 82, ../sass/helpers/_mediabreakpts.scss */
+  /* line 39, ../sass/helpers/_mediabreakpts.scss */
   .ani1 {
     margin: 0 auto;
     text-align: center;
@@ -802,27 +753,27 @@ div.portContainer h1 {
     justify-content: center;
     align-items: center;
   }
-  /* line 90, ../sass/helpers/_mediabreakpts.scss */
+  /* line 47, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
     font-size: 4em;
     margin: .5em 0em 1.5em;
     padding: 0px 10px;
   }
 
-  /* line 97, ../sass/helpers/_mediabreakpts.scss */
+  /* line 54, ../sass/helpers/_mediabreakpts.scss */
   a.btn-main {
     font-size: 14px;
     margin: 0px;
     border-width: 3px;
   }
 
-  /* line 103, ../sass/helpers/_mediabreakpts.scss */
+  /* line 60, ../sass/helpers/_mediabreakpts.scss */
   #navdrop {
     background-image: url("../../../../Images/sheeth.png");
     background-size: cover;
   }
 
-  /* line 108, ../sass/helpers/_mediabreakpts.scss */
+  /* line 65, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks.pink {
     grid-template: 5% 90% 5% / 1fr;
     justify-content: center;
@@ -832,7 +783,7 @@ div.portContainer h1 {
     padding: 8%;
   }
 
-  /* line 117, ../sass/helpers/_mediabreakpts.scss */
+  /* line 74, ../sass/helpers/_mediabreakpts.scss */
   div.grid.linkContent {
     grid-area: 2 / 1 / 3 / 2;
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
@@ -842,32 +793,32 @@ div.portContainer h1 {
     position: inherit;
   }
 
-  /* line 127, ../sass/helpers/_mediabreakpts.scss */
+  /* line 84, ../sass/helpers/_mediabreakpts.scss */
   div.blk1, div.blk2, div.blk3, div.blk4 {
     padding: 1em 0em 0em 0em;
   }
 
-  /* line 131, ../sass/helpers/_mediabreakpts.scss */
+  /* line 88, ../sass/helpers/_mediabreakpts.scss */
   div.blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  /* line 135, ../sass/helpers/_mediabreakpts.scss */
+  /* line 92, ../sass/helpers/_mediabreakpts.scss */
   div.blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
 
-  /* line 139, ../sass/helpers/_mediabreakpts.scss */
+  /* line 96, ../sass/helpers/_mediabreakpts.scss */
   div.blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
 
-  /* line 143, ../sass/helpers/_mediabreakpts.scss */
+  /* line 100, ../sass/helpers/_mediabreakpts.scss */
   div.blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
 
-  /* line 147, ../sass/helpers/_mediabreakpts.scss */
+  /* line 104, ../sass/helpers/_mediabreakpts.scss */
   .blk1 .mediabox, .blk2 .mediabox, .blk3 .mediabox, .blk4 .mediabox {
     border: #ccbab3 1px solid;
     display: inline-block;
@@ -877,72 +828,88 @@ div.portContainer h1 {
     background-color: #fbe3d559;
   }
 
-  /* line 156, ../sass/helpers/_mediabreakpts.scss */
+  /* line 113, ../sass/helpers/_mediabreakpts.scss */
   footer {
     padding: 2px 0;
   }
 }
 /**************/
 /**************/
-/**************/
-/**************/
-/**@media only screen and (max-width: 690px) {
-  #ani1 {
-    height: 62vh;
-  }
-
-  #headsh {
-    height: 54vh;
-  }    
-}
-@media only screen and (max-width: 645px) {
-  #ani1 {
-    height: 58vh;
-  }
-
-  #headsh {
-    height: 50vh;
-  }    
-}**/
-/**************/
-/**************/
-/**************/
-/**************/
-/**Extra small devices (phones, 600px and down)**/
-/**Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {**/
-/* On screens that are 600px or less*/
 /*@media screen and (max-width: 600px) {
-  #ani1 {
-    @include parallax-background("../../../../Images/ANI1.png");
+  
+  main#ani1 {
+    background: url("../../../../Images/mediahome.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
     width: 100%;
-    height: $parallax-height;
-    perspective: 1px;
+    perspective: 2px;
     transform: translateZ(-1px);
-    overflow-x: hidden;
-    overflow-y: auto;
+  }
+
+  div.jumbo {
+    height: 80%;
+  }
+
+  .ani1 h1 {
+    font-size: 2em;
+    padding: 0px 10px;
+  }
+  
+  .ani1 {
+    background: none;
+  }
+
+  a.btn-main {
+    font-size: 12px;
+    margin: 0px;
+    border-width: 2px;
   }
 
   #headsh {
-    @include parallax-background("../../../../Images/headsh.png");
+    background: url(../../../../Images/headsh_media.png) fixed;
+    background-size: contain;
+    background-position: bottom;
+    display: -webkit-box;
+    height: 30vh;
     width: 100%;
-    height: $parallax-height;
-    perspective: 1px;
+    perspective: 2px;
     transform: translateZ(-1px);
-    overflow-x: hidden;
-    overflow-y: auto;
-  }    
-
-  .ani1 {
-    h1 {
-      font-size: 2em;
-    }
   }
 
-  footer {
-    padding: 1px 0;
+  section.pgLinks.pink {
+    margin: 0;
+  }
+
+  footer p {
+    font-size: .1em;
+    margin: .5em
   }
 }*/
+/**XLarge devices (laptops/desktops, 1200px and up)**/
+/**XLarge devices (laptops/desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {}**/
+/**************/
+/**************/
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))
+@media only screen and (min-width: 992px) {}**/
+/**************/
+/**************/
+/**Med devices (tablets 768px and up (to 998px))**/
+/**Med devices (tablets 768px and up (to 998px))
+@media only screen and (min-width: 768px) {}**/
+/**************/
+/**************/
+/**Sm/Med devices (tablets/phones 601px to 768px)**/
+/**Sm/Med devices (tablets/phones 600px to 768px)
+@media only screen and (max-width: 768px) {**/
+/*@import "bootstrap-compass";*/
+/*@import "bootstrap-variables";*/
+/*@import "bootstrap";*/
+/*@import "helpers/variables";
 /*@import "helpers/functions";
 @import "helpers/mixins";
 @import "helpers/placeholders";
