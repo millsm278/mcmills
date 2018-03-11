@@ -50,11 +50,10 @@
 
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
-    #ani1 {
+  #ani1 {
     @include parallax-background("../../../../Images/ANI1.png");
-    width: 100%;
-    height: $parallax-height;
     perspective: 1px;
+    height: 100vh;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
@@ -62,9 +61,8 @@
 
   #headsh {
     @include parallax-background("../../../../Images/headsh.png");
-    width: 100%;
-    height: $parallax-height;
     perspective: 1px;
+    height: 100vh;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
@@ -72,8 +70,9 @@
 
   #ani1 div.jumbo {
     display: grid;
-    grid-template: 2fr 1fr 2fr / 1fr;
-    perspective: .5px;
+    height: 100%;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    perspective: 0.5px;
     justify-items: center;
     align-items: center;
   }
