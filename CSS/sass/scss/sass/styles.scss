@@ -20,7 +20,7 @@ html, body {
 @import "pages/home";
 @import "pages/landing";
 @import "pages/other";
-/*_parallaxhome.scss imported through _home.scss*/
+@import "pages/parallaxhome";
 @import "pages/portfolio";
 
 
