@@ -1,0 +1,39 @@
+/*Landing Pg Specific - jumbotron - Main Content Container*/
+div.jumbotron.landingpage{
+  background-position: center;
+  display: grid;
+  grid-template: 1fr 3fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+div.jumbotron.landingpage div.container {
+  margin: 2em 0em 0em;
+  text-align: center;
+  grid-area: 2 / 2 / 3 / 5;
+  justify-items: center;
+}
+
+div.jumbotron.landingpage {
+  background-image: url("../../../../Images/landing.png");
+  background-size: cover;
+  height: 900px;
+}
+
+/*Landing Pg Specific - jumbotron - Main Title & Texts*/
+div.pinkAppear.landing h3 {
+  color: #fedecb;
+  font-weight: 500;
+  font-size: 2.5em;
+  font-style: normal;
+  margin: 2em 3em 2em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  word-spacing: 0.2em;
+  text-align: center;
+  border: none;
+}
+
+a.btn-main.pinkAppear {
+  margin-top: 5em;
+}

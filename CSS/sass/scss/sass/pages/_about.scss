@@ -1,0 +1,16 @@
+/*About Pg Specific - jumbotron - Main Content Container*/
+div.jumbotron.about {
+  background: url("../../../../Images/KIEV.png");
+  background-position: right;
+  background-size: cover;
+  height: 750px;
+}
+
+.jumbotron.about {
+  justify-items: left;
+}
+
+.container.about h1 {
+  grid-column: 2 / span 1;
+  border: none;
+}

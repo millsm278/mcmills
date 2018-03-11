@@ -1,0 +1,170 @@
+/***Site/Pg Nav Block***/
+/***Site/Pg Nav Block***/
+section.pgLinks {
+  background-color: #e3e4e6;
+  text-align: center;
+  position: relative
+}
+
+div.grid.linkContent {
+  position: unset;
+  justify-content: baseline;
+  justify-items: center;
+  align-items: center;
+
+  /**grid rules called from helpers/_grid.scss**/
+  /*grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;*/ 
+}
+
+div.blk1, div.blk2, div.blk3, div.blk4 {
+  padding: 3em 0em;
+}
+
+/**grid rules called from helpers/_grid.scss**/
+/*div.blk1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+div.blk2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+div.blk3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+div.blk4 {
+  grid-area: 1 / 4 / 2 / 5;
+}*/
+
+.pgLinks img {
+  height: 40px;
+}
+
+.pgLinks h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #7d7d82;
+}
+
+.pgLinks p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: #7d7d82;
+}
+
+.pgLinks a {
+  color: #7d7d82;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+section.pgLinks.pink {
+  background-color: #feece1;
+
+  /**grid rules called from helpers/_grid.scss**/
+  /*display: grid;
+  grid-template: 1fr / 1fr 8fr 1fr;*/ 
+
+  /**old?**/
+  /*display: grid;
+  grid-template: 1fr / 1fr 4fr 1fr;
+  position: unset;
+  justify-items: stretch;
+  align-items: center;**/
+}
+
+/*Pg Nav Block -- Button Section*/
+.pgLinks a.button {
+  padding: 3px;
+  border-style: solid none;
+  border-color: #7d7d82;
+  border-width: 2px 0px;
+}
+
+.pgLinks a.button:hover {
+  color: #feece1;
+  background-color: #7d7d82;
+}
+
+
+
+
+
+
+/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
+/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
+
+/*layout/_pgnavblock.scss*//*needs cleaning - all stated on layout page until sorted*/
+
+div.jumbotron section.pgLinks {
+  margin: 5em 0em 0em;
+  background-color: #8fafc640;
+}
+
+h2.subPg, p.subPg {
+  font-family: 'Raleway', sans-serif;
+  color: #fedecb;
+}
+
+div.jumbotron a.button {
+  color: #fedecb; 
+  border-color: #fedecb;
+}
+
+div.jumbotron a.button:hover {
+  color: #3f424c;
+  background-color: #fedecb;
+}
+
+/*Adjust Other page (w/in pg)nav block*/
+/*Adjust contact page (w/in pg)nav block background*/
+div.jumbotron.contact section.pgLinks {
+  background-color: #566071b3; /*#a39ea3a6*/
+  border: solid 2px #fedcc8;
+}
+
+div.linkContent.comm .col {
+  color: #7d7d82;
+  margin: 2.5em .1em 3.5em;
+  padding: 1em 2.5em;
+}
+
+/*Adjust Other page nav block*/
+div.linkContent.other {
+  position: unset;
+  justify-items: stretch;
+  align-items: center;
+
+  /**grid rules called from helpers/_grid.scss**/
+  /*display: grid;
+  grid-template: 1fr / repeat(3, 1fr);*/
+}
+
+div.jumbotron.other section.pgLinks {
+  border: solid 2px;
+  border-color: #feece1;
+  background-color: #3d30438a;
+}
+
+div.linkContent.other p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+

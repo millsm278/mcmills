@@ -1,0 +1,30 @@
+footer {
+  text-align: -webkit-right;
+  padding: 5px 20px;
+  background-color: #6c8fa7;
+  background-image: url("../../../../Images/sheeta.png");
+  box-shadow: inset 0 0 0 1000px rgba(108, 143, 167, 0.7);
+  
+  p {
+    font-family: "Lucida Grande", sans-serif;
+    font-style: oblique;
+    font-size: 13px;
+    text-align: start;
+    font-weight: 700;
+    display: inline-block;
+    padding: 5px 32px 5px 1px;
+    color: rgb(108, 143, 167);
+    background-color: #a2bcce;
+  }
+}
+
+/*home-pg footer - use throughout when content-bulk added to sub-pages?*/
+footer.homeFoot {
+  background-image: url("../../../../Images/sheeta.png");  
+  background-color: #faede7;
+  
+  p {
+    background-color: #7d7d823d;
+    color: #f3edea;
+  }
+}

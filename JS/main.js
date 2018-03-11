@@ -1,3 +1,4 @@
+//scroll disappear behavior
 $(document).ready(function () {
 	$(window).bind('scroll', function(){
 	console.log('your mom');
@@ -75,7 +76,7 @@ $(document).ready(function () {
 	
 	}
 
-	if (finalSize < -361) {
+	if (finalSize < -200) {
 		$('.indexButt').attr('id', 'indexButtTop');
 
 	} else {
@@ -83,7 +84,48 @@ $(document).ready(function () {
 	
 	}
 
-
 	});
 }); 
+
+
+$(document).ready(function () {
+	$(window).bind('scroll', function(){
+
+	var vPos = $(window).scrollTop();
+	//
+	var tHeight = $('body').offset().top;
+	//
+	var finalSize = tHeight - vPos;
+	//
+
+	/**change header opacity class */
+	function checkScroll(){
+	    var scrollY = $('.nav').height() * 2; //The point where the navbar changes in px
+
+	    console.log(finalSize);
+
+	    console.log("scrolled");
+
+	    console.log(scrollY);
+
+	    
+	    //($(window).scrollTop() > scrollY){
+	    if (finalSize < -222) {
+	        $('.nav').addClass("scrolled");
+	    }else{
+	        $('.nav').removeClass("scrolled");
+	    }
+	}
+
+
+	if($('.nav').length > 0){
+	    $(window).on("scroll load resize", function(){
+	        checkScroll();
+	    })
+	}
+
+	});
+});
+
+
 

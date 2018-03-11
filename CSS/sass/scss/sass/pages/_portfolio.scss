@@ -1,0 +1,11 @@
+/*Portfolio Pg Specific - jumbotron - Main Content Container*/
+div.jumbotron.portfolio {
+  background-image: url("../../../../Images/KIEV2.png");
+  background-size: cover;
+  max-height: 800px;
+}
+
+/*portfolio Pg Specific - jumbotron - Main Title & Texts*/
+div.portContainer h1 {
+  margin: 1em 0px 1em;
+}

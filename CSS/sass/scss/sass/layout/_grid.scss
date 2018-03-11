@@ -1,0 +1,45 @@
+/***Site/Pg Nav Block***/
+/***Site/Pg Nav Block***/
+
+div.grid.linkContent {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.pgLinks.pink {
+  display: grid;
+  grid-template: 1fr / 1fr 8fr 1fr;
+
+  /**old?**/
+  /*display: grid;
+  grid-template: 1fr / 1fr 4fr 1fr;
+  position: unset;
+  justify-items: stretch;
+  align-items: center;**/
+}
+
+div.blk1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+div.blk2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+div.blk3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+div.blk4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+
+
+/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
+/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
+
+/*(w/in pg)Nav Block- Pg Specific Grid Edits*/
+/*Adjust Other page (w/in pg)nav block*/
+div.linkContent.other {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+}

@@ -1,0 +1,40 @@
+/*JS Classes*/
+/*Index Button Dissapear*/
+#indexButtNormal:hover {
+  color: #a2bcce;
+}
+
+#indexButtTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+
+/*Portfolio Button Dissapear*/
+#buttNormal:hover {
+  color: #32222e;
+}
+
+#buttTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+
+#imgscroll {
+  display: inline-flex;
+  text-align: center;
+}
+
+
+/* header smooth color change transitions */
+header.nav {
+    -webkit-transition: all 1.0s ease-out;
+    -moz-transition: all 1.0s ease-out;
+    -o-transition: all 1.0s ease-out;
+    -ms-transition: all 1.0s ease-out;
+    transition: all 1.0s ease-out;
+}
+
+header.nav.scrolled {
+    /*background: rgba(143, 175, 198, 0.47);  IE */
+    background: rgba(108, 143, 167, 0.9); /* NON-IE */
+}

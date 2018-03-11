@@ -1,0 +1,40 @@
+/*overall pg*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*sass file imports*/
+@import "assets/fonts";
+
+@import "components/buttons";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/jumbotron";
+@import "layout/pgnavblock";
+
+@import "pages/about";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/landing";
+@import "pages/other";
+/*_parallaxhome.scss imported through _home.scss*/
+@import "pages/portfolio";
+
+
+
+@import "helpers/jsbehaviors";
+@import "helpers/mediabreakpts";
+@import "helpers/variables";
+/*@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+*/
+
+/*@import "bootstrap-compass";*/
+/*@import "bootstrap-variables";*/
+/*@import "bootstrap";*/
+
+

@@ -1,0 +1,20 @@
+/*Contact Pg Specific - jumbotron - Main Content Container*/
+div.jumbotron.contact {
+  background-image: url("../../../../Images/atelier.png");
+  height: 750px;
+}
+
+/*Contact Pg Specific - jumbotron - Main Title & Texts*/
+div.jumbotron.contact h1 {
+  margin: 1.5em 0em .3em;
+}
+
+/*contact page pglink container*/
+div.grid.linkContent.comm {
+  /* grid-area: 1 / 2 / 2 / 3; */
+  display:  grid;
+  /* position: unset; */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: unset; */
+  justify-items: center;
+}

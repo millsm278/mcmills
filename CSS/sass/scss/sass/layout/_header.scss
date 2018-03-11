@@ -1,0 +1,55 @@
+@import "helpers/jsbehaviors";
+
+/*header - page consistent*/
+header{
+  &.nav {
+    background-color: #8fafc678;
+    position: fixed;
+    z-index: 5;
+    width: -webkit-fill-available;  
+    /* display: inline-block; */
+  }
+
+    nav ul li {
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    display: inline-flex;
+    justify-content: space-around;
+    list-style-type: disc;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* width: auto; */
+  }
+
+  ul {
+    display: grid;
+    grid-template: 1fr/ 1fr repeat(5, 1fr) 1fr;
+    -webkit-padding-start: initial;
+    justify-items:  center;
+    /* width: -webkit-fill-available; */
+    /* -webkit-padding-end: 1em; */
+  }
+
+  li {
+    text-align: -webkit-match-parent;
+  }
+
+  .n1 {
+    grid-column-start: 2;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fedecb;
+  }
+
+  .nav img {
+    height: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+

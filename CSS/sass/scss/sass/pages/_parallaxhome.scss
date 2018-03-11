@@ -1,0 +1,106 @@
+@mixin parallax-background($file) {
+  background: url($file) no-repeat center center fixed;
+  @include background-size(cover);
+}
+
+$parallax-height: 100vh;
+$center-margin: 0px auto;
+
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+
+#ani1 {
+  @include parallax-background("../../../../Images/ANI1.png");
+  
+}
+
+#headsh {
+  @include parallax-background("../../../../Images/headsh.png");
+  background-position: top;
+  background-size: cover;
+}
+
+#ani1, #headsh {
+  height: $parallax-height;
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .jumbo {
+    @extend .jumbotron;
+  }
+}
+
+
+.ani1 {
+  margin: 2em 0em 0em;
+  text-align: center;
+  grid-area: 2 / 2 / 3 / 3;
+  justify-items: center;
+  /*height: $parallax-height;
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;*/
+
+	h1{
+    color: #fedcc8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    margin: 0.5em 0em 1.5em;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    border: solid 2px;
+    border-color: #fedcc8;
+    word-spacing: 0.2em;
+    text-align: center;
+    /* min-width: 722px; */
+    transform: translateZ(-0.1px);
+	  letter-spacing: 0.06em;
+	  text-align: center;
+	}
+  .btn-main.indexbutt {
+    color: #fedcc8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    /* margin: 60px; */
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-style: solid none;
+    border-width: 4px;
+    border-color: #fedcc8;
+    /* display: flex; */
+    grid-area: 3 / 2 / 4 / 3;
+    align-items: center;
+    display: grid;
+  }
+}
+
+#navdrop {
+  background-image: url("../../../../Images/sheeta.png");
+  background-size: cover;
+}
+
+.pgLinks.pink {
+  margin: $center-margin;
+	padding: 3%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.4;
+}

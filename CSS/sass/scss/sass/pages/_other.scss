@@ -1,0 +1,47 @@
+/*Other Pg Specific - jumbotron - Main Content Container*/
+div.jumbotron.other {
+  background-image: url("../../../../Images/ludlow.png");
+  height: 750px;
+}
+
+.jumbotron.other {
+  background-position: right;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
+  justify-items: center;
+}
+
+
+/*Other Pg Specific - jumbotron - Main Title & Texts*/
+div.imgscrollOther {
+  margin: 3em;
+  position:  relative;
+}
+
+.imgscrollOther h3 {
+  color: #64445c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  word-spacing: 0.2em;
+  text-align: center;
+  border: none;
+  margin: 0em;
+}
+
+.imgscrollOther h4 {
+  font-size: 1em;
+  color: #64445c;
+  font-family: 'Nanum Myeongjo', serif;
+  font-style: italic;
+  font-weight: 400;
+  word-spacing: 0.05em;
+  text-align: center;
+  border: none;
+  margin: 0em 0em 0em;
+}
+
+
+/*other specific footer*/

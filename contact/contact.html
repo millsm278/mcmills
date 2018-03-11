@@ -2,13 +2,16 @@
 <html>
   
   <head>
+    <meta charset="UTF-8" />
     <title>Contact | MCM</title>
     <link rel="shortcut icon" type="image/x-icon" href="../Icons/favicon.ico?v=2"/>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
-    <link href='../CSS/style.css' type='text/css' rel='stylesheet'/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet"/>
+    <!--<link href='../CSS/style.css' type='text/css' rel='stylesheet'/>-->
+    <link href="../CSS/sass/scss/stylesheets/styles.css" type='text/css' rel='stylesheet'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../JS/main.js" type="text/javascript"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="../JS/main.js" type="text/javascript"></script>    
+    <!--<script type="text/javascript" src="../JS/instafeed.min.js"></script>-->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114906271-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -19,13 +22,14 @@
   </head>
 
   <body>
-    <header>
-      <nav class="nav">
+
+    <header class="nav">
+        <nav>
         <ul>
           <li class="n1"> <a href="../aboutme/aboutme.html">About</a></li>  
           <li class="n2"> <a href="../portfolio/portfolio.html">Portfolio</a></li>
           <li class="nav"><a href="../index.html"><img src="../Icons/homelogo.png"></a></li> 
-          <li class="n3"> <a href="../other/other.html">Other</a></li>
+          <li class="n3"> <a href="../other/other.html">Personal</a></li>
           <li class="n4"> <a href="../contact/contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -37,23 +41,23 @@
           <h1 id="imgscroll">Contact</h1>
           
           <section class="pgLinks">
-            <div class="linkContent">
+            <div class="grid linkContent comm">
               
-              <div class="col">
+              <div class="col blk1">
                 <a class="icon" href="../landingpage/landingpage.html"><img src="../Icons/pbook.png">
                 <h2 class="subPg">Email</h2></a>
                 <p class="subPg"> </p>
                 <a class="button" href="../landingpage/landingpage.html">&ensp;&#9651;&ensp;</a><br>
               </div>
                 
-              <div class="col">
+              <div class="col blk2">
                 <a class="icon" href="../landingpage/landingpage.html"><img src="../Icons/pprogramming.png">
                 <h2 class="subPg">Social</h2></a>
                 <p class="subPg"> </p>
                 <a class="button" href="../landingpage/landingpage.html">&ensp;&#9651;&ensp;</a><br>
               </div>
                 
-              <div class="col">
+              <div class="col blk3">
                 <a class="icon" href="../landingpage/landingpage.html"><img src="../Icons/ppainting.png">
                 <h2 class="subPg">inquiries</h2></a>
                 <p class="subPg"> </p>
@@ -66,6 +70,48 @@
         </div>
       </div>
     </main>
+
+    <section id="navdrop" class="pgLinks pink">
+      <div class="grid linkContent">
+        
+        <div class="col blk1">
+          <div class="mediabox">
+            <a class="icon" href="../aboutme/aboutme.html"><img src="../Icons/bird.png">
+            <h2>About</h2></a>
+            <p>Who I Am<br>&amp;<br>Waht I Do</p>
+            <a class="button" href="../aboutme/aboutme.html">More</a><br>
+          </div>
+        </div>
+        
+        <div class="col blk2">
+          <div class="mediabox">
+            <a class="icon" href="../portfolio/portfolio.html"><img src="../Icons/frame.png">
+            <h2>Portfolio</h2></a>
+            <p>Selected<br>Work &amp;<br>Resumé</p>
+            <a class="button" href="../portfolio/portfolio.html">More</a><br>
+          </div>
+        </div>
+        
+        <div class="col blk3">
+          <div class="mediabox">
+            <a class="icon" href="../other/other.html"><img src="../Icons/stones1.png">
+            <h2>Personal</h2></a>
+            <p>Side Projects<br>&amp;<br>Interests</p>
+            <a class="button" href="../other/other.html">More</a><br>
+          </div>
+        </div>
+
+        <div class="col blk4">
+          <div class="mediabox">
+            <a class="icon" href="../contact/contact.html"><img src="../Icons/contactmail.png">
+            <h2>Contact</h2></a>
+            <p>Connect<br>With<br>Me</p>
+            <a class="button" href="../contact/contact.html">More</a><br>
+          </div>
+        </div>
+        
+      </div>
+    </section>
 
     <footer>
       <div class="container">

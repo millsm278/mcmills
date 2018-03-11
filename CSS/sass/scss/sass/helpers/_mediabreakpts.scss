@@ -1,0 +1,353 @@
+@import "pages/parallaxhome";
+@import "layout/jumbotron";
+@import "layout/pgnavblock";
+/*Media Breaks*/
+
+
+/*******@media screen and (max-width: 986px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  main h1 {
+    font-size: 48px;
+  }
+}*******/
+
+
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+
+
+
+/**XLarge devices (laptops/desktops, 1200px and up)**/
+/**XLarge devices (laptops/desktops, 1200px and up)**/
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+
+
+
+
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
+/**Lg devices (laptops/desktops, 992px and up (to 1200px))**/
+@media only screen and (min-width: 992px) {
+
+}
+
+
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+
+
+
+
+ 
+/**Med devices (tablets 768px and up (to 998px))**/
+/**Med devices (tablets 768px and up (to 998px))**/
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+
+
+
+
+
+/**Sm/Med devices (tablets/phones 601px to 768px)**/
+/**Sm/Med devices (tablets/phones 600px to 768px)**/
+@media only screen and (max-width: 768px) {
+  #ani1, #headsh {
+    background-size: contain;
+  }
+
+  #ani1 {
+    background-position: inherit;
+    height: 70vh;
+  }
+
+  #headsh {
+    background-position: inherit;
+    background-position-y: 100%;
+    height: 58vh;
+  }    
+
+  #ani1 div.jumbo {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    perspective: .5px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .ani1 {
+    margin: 0 auto;
+    text-align: center;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-items: left;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 40px;
+      margin: .5em 0em 1.5em;
+      padding: 0px;
+    }
+  }
+
+  a.btn-main {
+    font-size: 14px;
+    margin: 0px;
+    border-width: 3px;
+  }
+
+  #navdrop {
+    background-image: url("../../../../Images/sheeth.png");
+    background-size: cover;
+  }
+
+  section.pgLinks.pink {
+    grid-template: 5% 90% 5% / 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 8%;
+  }
+
+  div.grid.linkContent {
+    grid-area: 2 / 1 / 3 / 2;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    margin: 0px auto;
+    justify-items: center;
+    align-items: center;
+    position: inherit;
+  }
+  
+
+  div.blk1, div.blk2, div.blk3, div.blk4 {
+    padding: 1em 0em 0em 0em;
+  }
+
+  div.blk1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  div.blk2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  div.blk3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  div.blk4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .blk1 .mediabox, .blk2 .mediabox, .blk3 .mediabox, .blk4 .mediabox {
+    border: #ccbab3 1px solid;
+    display: inline-block;
+    padding: 1em;
+    margin: .75em;
+    width: 200px;
+    background-color: #fbe3d559;
+  }
+
+  footer {
+    padding: 2px 0;
+  }
+}
+
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+
+@media only screen and (max-width: 690px) {
+  #ani1 {
+    height: 62vh;
+  }
+
+  #headsh {
+    height: 54vh;
+  }    
+}
+@media only screen and (max-width: 645px) {
+  #ani1 {
+    height: 58vh;
+  }
+
+  #headsh {
+    height: 50vh;
+  }    
+}
+
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+/**************/
+
+
+
+
+/**Extra small devices (phones, 600px and down)**/
+/**Extra small devices (phones, 600px and down)**/
+@media only screen and (max-width: 600px) {
+  #ani1 {
+    height: 48vh;
+  }
+
+  #headsh {
+    height: 40vh;
+  }    
+
+  .ani1 {
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  footer {
+    padding: 1px 0;
+  }
+}
