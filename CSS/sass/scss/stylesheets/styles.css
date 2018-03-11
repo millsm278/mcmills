@@ -755,12 +755,12 @@ div.portContainer h1 {
 @media screen and (max-width: 992px) {
   /* line 53, ../sass/helpers/_mediabreakpts.scss */
   #ani1 {
-    background: url("../../../../Images/ANI1.png") fixed;
+    background: url("../../../../Images/ani1_media.png") fixed;
     background-size: cover;
     background-position-y: initial;
     background-position-x: center;
     background-repeat: no-repeat;
-    height: 102em;
+    height: 92em;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
@@ -768,7 +768,7 @@ div.portContainer h1 {
 
   /* line 65, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
-    background: url(../../../../Images/headsh.png) fixed;
+    background: url(../../../../Images/headsh_media.png) fixed;
     background-size: contain;
     background-position-y: bottom;
     background-position-x: center;

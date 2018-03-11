@@ -51,19 +51,19 @@
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
   #ani1 {
-    background: url("../../../../Images/ANI1.png") fixed;
+    background: url("../../../../Images/ani1_media.png") fixed;
     background-size: cover;
     background-position-y: initial;
     background-position-x: center;
     background-repeat: no-repeat;
-    height: 102em;
+    height: 92em;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
   }
 
   #headsh {
-    background: url(../../../../Images/headsh.png) fixed;
+    background: url(../../../../Images/headsh_media.png) fixed;
     background-size: contain;
     background-position-y: bottom;
     background-position-x: center;
