@@ -761,28 +761,30 @@ div.portContainer h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    perspective: 1px;
-    height: 100vh;
+    background-size: cover;
+    perspective: initial;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
+    background-position: center;
   }
 
-  /* line 62, ../sass/helpers/_mediabreakpts.scss */
+  /* line 63, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
     background: url("../../../../Images/headsh.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    perspective: 1px;
-    height: 100vh;
+    background-size: cover;
+    perspective: initial;
     transform: translateZ(-1px);
     overflow-x: hidden;
     overflow-y: auto;
+    background-position: center;
   }
 
-  /* line 71, ../sass/helpers/_mediabreakpts.scss */
+  /* line 73, ../sass/helpers/_mediabreakpts.scss */
   #ani1 div.jumbo {
     display: grid;
     height: 100%;
@@ -792,7 +794,7 @@ div.portContainer h1 {
     align-items: center;
   }
 
-  /* line 80, ../sass/helpers/_mediabreakpts.scss */
+  /* line 82, ../sass/helpers/_mediabreakpts.scss */
   .ani1 {
     margin: 0 auto;
     text-align: center;
@@ -801,27 +803,27 @@ div.portContainer h1 {
     justify-content: center;
     align-items: center;
   }
-  /* line 88, ../sass/helpers/_mediabreakpts.scss */
+  /* line 90, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
     font-size: 4em;
     margin: .5em 0em 1.5em;
     padding: 0px 10px;
   }
 
-  /* line 95, ../sass/helpers/_mediabreakpts.scss */
+  /* line 97, ../sass/helpers/_mediabreakpts.scss */
   a.btn-main {
     font-size: 14px;
     margin: 0px;
     border-width: 3px;
   }
 
-  /* line 101, ../sass/helpers/_mediabreakpts.scss */
+  /* line 103, ../sass/helpers/_mediabreakpts.scss */
   #navdrop {
     background-image: url("../../../../Images/sheeth.png");
     background-size: cover;
   }
 
-  /* line 106, ../sass/helpers/_mediabreakpts.scss */
+  /* line 108, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks.pink {
     grid-template: 5% 90% 5% / 1fr;
     justify-content: center;
@@ -831,7 +833,7 @@ div.portContainer h1 {
     padding: 8%;
   }
 
-  /* line 115, ../sass/helpers/_mediabreakpts.scss */
+  /* line 117, ../sass/helpers/_mediabreakpts.scss */
   div.grid.linkContent {
     grid-area: 2 / 1 / 3 / 2;
     grid-template: 1fr 1fr 1fr 1fr / 1fr;
@@ -841,32 +843,32 @@ div.portContainer h1 {
     position: inherit;
   }
 
-  /* line 125, ../sass/helpers/_mediabreakpts.scss */
+  /* line 127, ../sass/helpers/_mediabreakpts.scss */
   div.blk1, div.blk2, div.blk3, div.blk4 {
     padding: 1em 0em 0em 0em;
   }
 
-  /* line 129, ../sass/helpers/_mediabreakpts.scss */
+  /* line 131, ../sass/helpers/_mediabreakpts.scss */
   div.blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
 
-  /* line 133, ../sass/helpers/_mediabreakpts.scss */
+  /* line 135, ../sass/helpers/_mediabreakpts.scss */
   div.blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
 
-  /* line 137, ../sass/helpers/_mediabreakpts.scss */
+  /* line 139, ../sass/helpers/_mediabreakpts.scss */
   div.blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
 
-  /* line 141, ../sass/helpers/_mediabreakpts.scss */
+  /* line 143, ../sass/helpers/_mediabreakpts.scss */
   div.blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
 
-  /* line 145, ../sass/helpers/_mediabreakpts.scss */
+  /* line 147, ../sass/helpers/_mediabreakpts.scss */
   .blk1 .mediabox, .blk2 .mediabox, .blk3 .mediabox, .blk4 .mediabox {
     border: #ccbab3 1px solid;
     display: inline-block;
@@ -876,7 +878,7 @@ div.portContainer h1 {
     background-color: #fbe3d559;
   }
 
-  /* line 154, ../sass/helpers/_mediabreakpts.scss */
+  /* line 156, ../sass/helpers/_mediabreakpts.scss */
   footer {
     padding: 2px 0;
   }
