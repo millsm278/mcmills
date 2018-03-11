@@ -118,6 +118,12 @@
                   /**************/
                   /**************/
 
+@media screen and (max-width: 422px) {
+  #ani1 {
+    background-size: contain;
+  }
+}
+
 /*@media screen and (max-width: 600px) {
   
   main#ani1 {

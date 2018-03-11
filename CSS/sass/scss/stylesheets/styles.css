@@ -835,6 +835,12 @@ header.nav.scrolled {
 }
 /**************/
 /**************/
+@media screen and (max-width: 422px) {
+  /* line 122, ../sass/helpers/_mediabreakpts.scss */
+  #ani1 {
+    background-size: contain;
+  }
+}
 /*@media screen and (max-width: 600px) {
   
   main#ani1 {
