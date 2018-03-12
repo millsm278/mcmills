@@ -1,25 +1,13 @@
-/*header - page consistent*/
+/*******HEADER*******/
+/*******HEADER*******/
+header.nav {
+  background-color: #8fafc678;
+  position: fixed;
+  z-index: 5;
+  width: -webkit-fill-available;  
+}
+
 header{
-  &.nav {
-    background-color: #8fafc678;
-    position: fixed;
-    z-index: 5;
-    width: -webkit-fill-available;  
-
-  }
-
-    nav ul li {
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    display: inline-flex;
-    justify-content: space-around;
-    list-style-type: disc;
-    padding-left: 1em;
-    padding-right: 1em;
-
-  }
 
   ul {
     display: grid;
@@ -28,9 +16,23 @@ header{
     justify-items:  center;
   }
 
+  nav ul li {
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    display: inline-flex;
+    justify-content: space-around;
+    list-style-type: disc;
+    padding-left: 1em;
+    padding-right: 1em; 
+  }
+
+
   li {
     text-align: -webkit-match-parent;
   }
+
 
   .n1 {
     grid-column-start: 2;
@@ -42,10 +44,27 @@ header{
     color: #fedecb;
   }
 
-  .nav img {
+  a:hover, a:focus {
+    color: #fedecb;
+    text-decoration: none;
+  }
+
+  a:active, a:hover {
+    outline: #fedecb;
+    outline-style: solid;
+    outline-width: thin;
+    outline-offset: .5em;
+  }
+}
+
+.logo {
+
+  img {
     height: 75px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 0px;
   }
 }
 
+/**************/
+/**************/

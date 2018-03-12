@@ -1,9 +1,12 @@
-/*jumbotron - Main Content Container*/
+/*******'JUMBOTRON'*******/
+/*******'JUMBOTRON'*******/
+/**Jumbotron - Content Container**/
 div.jumbotron {
   background-position: right;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
   justify-items: center;
+  margin-bottom: 0px;
 }
 
 div .container {
@@ -13,8 +16,19 @@ div .container {
   justify-items: center;
 }
 
+/*home specific*/
+#ani1 div.jumbo {
+  position: absolute;
+  display: grid;
+  width:  -webkit-fill-available;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  perspective: 0.5px;
+  justify-items: center;
+  align-items: center;
+}
 
-/*Main Title & Texts*/
+/**Jumbotron Title & Texts**/
 main {
   text-align: center;
   position: relative;
@@ -35,13 +49,5 @@ main h1 {
   text-align:  center;
 }
 
-#ani1 div.jumbo {
-  position: absolute;
-  display: grid;
-  width:  -webkit-fill-available;
-  height: 100%;
-  grid-template: 1fr 1fr 1fr / 1fr;
-  perspective: 0.5px;
-  justify-items: center;
-  align-items: center;
-}
+/**************/
+/**************/

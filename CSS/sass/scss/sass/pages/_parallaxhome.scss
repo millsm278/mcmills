@@ -1,3 +1,5 @@
+/*******HOME PG --PARALLAX/SPECIFIC-- STYLING*******/
+/*******HOME PG --PARALLAX/SPECIFIC-- STYLING*******/
 @mixin parallax-background($file) {
   background: url($file) no-repeat center center fixed;
   @include background-size(cover);
@@ -93,7 +95,7 @@ $center-margin: 0px auto;
 	line-height: 1.4;
 }
 
-/*base - moble styling <600px*/
+/*base - moble styling <600px
 .banner-container {
   position: relative;
   width: inherit;
@@ -111,4 +113,7 @@ $center-margin: 0px auto;
   width: inherit;
   display: block;
   vertical-align: middle;
-}
+}*/
+
+/**************/
+/**************/

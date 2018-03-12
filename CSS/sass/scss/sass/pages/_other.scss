@@ -1,4 +1,7 @@
-/*Other Pg Specific - jumbotron - Main Content Container*/
+/*******OTHER PG SPECIFIC STYLING*******/
+/*******OTHER PG SPECIFIC STYLING*******/
+
+/**OTHERpg: Jumbotron - Content/Container**/
 div.jumbotron.other {
   background-image: url("../../../../Images/ludlow.png");
   height: 750px;
@@ -12,8 +15,6 @@ div.jumbotron.other {
   justify-items: center;
 }
 
-
-/*Other Pg Specific - jumbotron - Main Title & Texts*/
 div.imgscrollOther {
   margin: 3em;
   position:  relative;
@@ -43,5 +44,29 @@ div.imgscrollOther {
   margin: 0em 0em 0em;
 }
 
+/**OTHERpg: (W/IN-Pg)Nav block**/
+div.linkContent.other {
+  position: unset;
+  justify-items: stretch;
+  align-items: center;
+  /*grid rules called from helpers/_grid.scss*/
+}
 
-/*other specific footer*/
+div.jumbotron.other section.pgLinks {
+  border: solid 2px;
+  border-color: #feece1;
+  background-color: #3d30438a;
+}
+
+div.linkContent.other p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/**************/
+/**************/

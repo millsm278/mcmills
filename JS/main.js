@@ -1,13 +1,16 @@
-//scroll disappear behavior
+//JS FACILITATED STYLE FUNCTIONS
+//JS FACILITATED STYLE FUNCTIONS
+
+//**JUMBOTRON Disappear on Scroll**//
 $(document).ready(function () {
 	$(window).bind('scroll', function(){
 	console.log('your mom');
 	var vPos = $(window).scrollTop();
-	//
+	
 	var tHeight = $('body').offset().top;
-	//
+	
 	var finalSize = tHeight - vPos;
-	//
+	
 	console.log(finalSize);
 
 	if (finalSize < -70) {
@@ -87,20 +90,20 @@ $(document).ready(function () {
 	});
 }); 
 
-
+//**HEADER/NAV BAR Opacify on Scroll**//
 $(document).ready(function () {
 	$(window).bind('scroll', function(){
 
 	var vPos = $(window).scrollTop();
-	//
+	
 	var tHeight = $('body').offset().top;
-	//
+	
 	var finalSize = tHeight - vPos;
-	//
+	
 
-	/**change header opacity class */
+	//change header class
 	function checkScroll(){
-	    var scrollY = $('.nav').height() * 2; //The point where the navbar changes in px
+	    var scrollY = $('.nav').height() * 2; //navbar px change point
 
 	    console.log(finalSize);
 

@@ -1,31 +1,8 @@
-/*JS Classes*/
-/*Index Button Dissapear*/
-#indexButtNormal:hover {
-  color: #a2bcce;
-}
+/*******JS CLASSES*******/
+/*******JS CLASSES*******/
 
-#indexButtTop {
-  color: #fedcc81a;
-  border-color: #fedcc81a;
-}
-
-/*Portfolio Button Dissapear*/
-#buttNormal:hover {
-  color: #32222e;
-}
-
-
-#buttTop {
-  color: #fedcc81a;
-  border-color: #fedcc81a;
-}
-
-#imgscroll {
-  display: inline-flex;
-  text-align: center;
-}
-
-/* header smooth color change transitions */
+/**HEADER/NAVBAR: (f)Smooth Color Change Transition**/
+/*.nav if(finalSize<-222) addClass .scrolled; else(removeClass .scrolled;*/
 header.nav {
   -webkit-transition: all 1.0s ease-out;
   -moz-transition: all 1.0s ease-out;
@@ -35,7 +12,49 @@ header.nav {
 }
 
 header.nav.scrolled {
-  background: rgba(143, 175, 198, 0.47);  /* IE */
-  background: rgba(108, 143, 167, 0.9);
-  /* NON-IE */
+  background: rgba(143, 175, 198, 0.47); /* IE */
+  background: rgba(108, 143, 167, 0.9); /* NON-IE */
 }
+
+/**HOME: BUTTON: (f)Dissapear on Scroll**/
+/*.indexButt to #indexButtTop if(finalSize<-200); else(#indexButtNormal)*/
+#indexButtTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+#indexButtNormal:hover {
+  color: #a2bcce;
+}
+
+/*#pinkAppear if(finalSize<-258)=color:#fedecb14; else=color:#fedecb*/
+
+/**PORTFOLIO: TITLE: (f)Dissapear on Scroll**/
+/*#imgscroll if(finalSize<-100)=color:hsla(22,96%,89%,.10),border-color:hsla(22,96%,89%,.10); 
+else=color:hsla(22,96%,89%,1),border-color:hsla(22,96%,89%,1)*/
+/*Additional ID Aattached Styles*/
+#imgscroll {
+  display: inline-flex;
+  text-align: center;
+}
+
+/**PORTFOLIO: BUTTON: (f)Dissapear on Scroll**/
+/*.resButt to #buttTop if(finalSize< -200); else(#buttNormal)*/
+#buttTop {
+  color: #fedcc81a;
+  border-color: #fedcc81a;
+}
+#buttNormal:hover {
+  color: #32222e;
+}
+
+/**OTHER: TITLE: (f)Dissapear on Scroll**/
+/*#imgscrollOther if(finalSize<-100)=color:#feece11a,border-color:#feece11a; 
+else=color:#feece1,border-color:#feece1*/
+
+/**OTHER: TITLE: (f)Dissapear on Scroll**/
+/*#textscrollOther if(finalSize<-100)=color:#feece11a,border-color:#feece11a; 
+else=color:#64445c,border-color:#64445c*/
+
+/**************/
+/**************/
+

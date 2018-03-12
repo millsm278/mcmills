@@ -4,36 +4,41 @@ html, body {
   padding: 0;
 }
 
-/*sass file imports*/
+/**ASSETS/_.sass file imports**/
 @import "assets/fonts";
 
-@import "components/buttons";
-
-@import "layout/footer";
+/**LAYOUT/_.sass file imports**/
 @import "layout/grid";
 @import "layout/header";
 @import "layout/jumbotron";
 @import "layout/pgnavblock";
+@import "layout/footer";
 
+/**COMPONENTS/_.sass file imports**/
+@import "components/buttons";
+
+/**PAGES/_.sass file imports**/
+@import "pages/parallaxhome";
 @import "pages/about";
+@import "pages/portfolio";
+@import "pages/other";
 @import "pages/contact";
 @import "pages/landing";
-@import "pages/other";
-@import "pages/parallaxhome";
-@import "pages/portfolio";
 
-
-
+/**HELPERS/_.sass file imports**/
 @import "helpers/jsbehaviors";
-@import "helpers/mediabreakpts";
-/*@import "helpers/variables";
-/*@import "helpers/functions";
+@import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/placeholders";
-*/
+@import "helpers/functions";
+@import "helpers/mediabreakpts";
 
-/*@import "bootstrap-compass";*/
-/*@import "bootstrap-variables";*/
-/*@import "bootstrap";*/
+/****/
+/****/
+/****/
+/****/
+
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
 
 

@@ -1,4 +1,7 @@
-/*Landing Pg Specific - jumbotron - Main Content Container*/
+/*******LANDING PG SPECIFIC STYLING*******/
+/*******LANDING PG SPECIFIC STYLING*******/
+
+/**LANDINGpg: Jumbotron - Content/Container**/
 div.jumbotron.landingpage{
   background-position: center;
   display: grid;
@@ -19,7 +22,6 @@ div.jumbotron.landingpage {
   height: 900px;
 }
 
-/*Landing Pg Specific - jumbotron - Main Title & Texts*/
 div.pinkAppear.landing h3 {
   color: #fedecb;
   font-weight: 500;
@@ -34,6 +36,10 @@ div.pinkAppear.landing h3 {
   border: none;
 }
 
+/**LANDINGpg: Main Buttons**/
 a.btn-main.pinkAppear {
   margin-top: 5em;
 }
+
+/**************/
+/**************/

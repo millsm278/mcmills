@@ -1,21 +1,24 @@
-/***Site/Pg Nav Block***/
+/*******NAV-BLOCKS*******/
+/*******NAV-BLOCKS*******/
+
+/**(SITE Pgs)Nav Block**/
 section.pgLinks {
   background-color: #e3e4e6;
   text-align: center;
   position: relative
 }
 
-div.grid.linkContent {
+div.linkContent {
   position: unset;
   justify-content: baseline;
   justify-items: center;
   align-items: center;
-  /**grid rules called from helpers/_grid.scss**/
+  /*grid rules called from helpers/_grid.scss*/
 }
 
 div.blk1, div.blk2, div.blk3, div.blk4 {
   padding: 3em 0em;
-  /**grid rules called from helpers/_grid.scss**/
+  /*grid rules called from helpers/_grid.scss*/
 }
 
 .pgLinks img {
@@ -53,26 +56,11 @@ div.blk1, div.blk2, div.blk3, div.blk4 {
 
 section.pgLinks.pink {
   background-color: #feece1;
-  /**grid rules called from helpers/_grid.scss**/
+  /*grid rules called from helpers/_grid.scss*/
 }
 
-/*Pg Nav Block -- Button Section*/
-.pgLinks a.button {
-  padding: 3px;
-  border-style: solid none;
-  border-color: #7d7d82;
-  border-width: 2px 0px;
-}
-
-.pgLinks a.button:hover {
-  color: #feece1;
-  background-color: #7d7d82;
-}
-
-
-
-/***(W/IN PG)Nav Block- Pg Specific Style Edits***/
-/*layout/_pgnavblock.scss* - needs cleaning - all stated on layout page until sorted*/
+/**(W/IN PG)Nav Block**/
+/*needs cleaning - all stated on this layout/_.scss page until sorted*/
 div.jumbotron section.pgLinks {
   margin: 5em 0em 0em;
   background-color: #8fafc640;
@@ -83,50 +71,5 @@ h2.subPg, p.subPg {
   color: #fedecb;
 }
 
-div.jumbotron a.button {
-  color: #fedecb; 
-  border-color: #fedecb;
-}
-
-div.jumbotron a.button:hover {
-  color: #3f424c;
-  background-color: #fedecb;
-}
-
-/*Adjust contact page (w/in pg)nav block background*/
-div.jumbotron.contact section.pgLinks {
-  background-color: #566071b3;
-  border: solid 2px #fedcc8;
-}
-
-div.linkContent.comm .col {
-  color: #7d7d82;
-  margin: 2.5em .1em 3.5em;
-  padding: 1em 2.5em;
-}
-
-/*Adjust Other page nav block*/
-div.linkContent.other {
-  position: unset;
-  justify-items: stretch;
-  align-items: center;
-  /**grid rules called from helpers/_grid.scss**/
-}
-
-div.jumbotron.other section.pgLinks {
-  border: solid 2px;
-  border-color: #feece1;
-  background-color: #3d30438a;
-}
-
-div.linkContent.other p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-
+/**************/
+/**************/

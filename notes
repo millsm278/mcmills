@@ -1,0 +1,17 @@
+interpolate:
+
+body
+    height: calc(100% - #{$body_padding})
+For this case, border-box would also suffice:
+
+body
+    box-sizing: border-box
+    height: 100%
+    padding-top: $body_padding
+
+
+
+    display: grid;
+    grid-template: 5% 90% 5% / 1fr;
+
+        grid-area: 2 / 1 / 3 / 2;
