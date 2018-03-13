@@ -31,13 +31,13 @@ $(document).ready(function () {
 	if (finalSize < -100) {
 		$('#imgscrollOther').css({
 			'color': '#feece11a',
-			'border-color': '#feece11a',
+			//'border-color': '#feece11a',
 		});
 
 	} else {
 		$('#imgscrollOther').css({
-			'color': '#feece1',
-			'border-color': '#feece1'
+			'color': '#3e445b',
+			//'border-color': '#feece1'
 		});
 	}
 
@@ -46,13 +46,13 @@ $(document).ready(function () {
 	if (finalSize < -100) {
 		$('#textscrollOther, #textscrollOther').css({
 			'color': '#feece11a',
-			'border-color': '#feece11a',
+			//'border-color': '#feece11a',
 		});
 
 	} else {
 		$('#textscrollOther, #textscrollOther').css({
-			'color': '#64445c',
-			'border-color': '#64445c',
+			'color': '#3e445b',
+			//'border-color': '#64445c',
 		});
 	}
 

@@ -20,7 +20,7 @@ header{
     align-items: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.2em;
     display: inline-flex;
     justify-content: space-around;
     list-style-type: disc;
@@ -32,7 +32,6 @@ header{
   li {
     text-align: -webkit-match-parent;
   }
-
 
   .n1 {
     grid-column-start: 2;
@@ -55,15 +54,28 @@ header{
     outline-width: thin;
     outline-offset: .5em;
   }
+
+  li.current {
+    font-weight: bolder;
+  }
+
+  li.current a {
+    border-bottom: solid 2px;
+  }
 }
 
 .logo {
+
+  a:hover {
+    outline: none;
+  }
 
   img {
     height: 75px;
     margin-top: 10px;
     margin-bottom: 0px;
   }
+
 }
 
 /**************/

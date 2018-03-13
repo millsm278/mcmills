@@ -2,71 +2,58 @@
 /*******OTHER PG SPECIFIC STYLING*******/
 
 /**OTHERpg: Jumbotron - Content/Container**/
-div.jumbotron.other {
-  background-image: url("../../../../Images/ludlow.png");
-  height: 750px;
-}
-
 .jumbotron.other {
-  background-position: right;
-  background-size: cover;
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
-  justify-items: center;
+  background-image: url("../../../../Images/ludlow.png");
+
+  .container {
+
+    .title {
+      margin-top: 6em;
+
+      .imgscrollOther {
+        color: #3e445b;
+        margin: 0 auto;
+        /*margin: 3em;*/
+        border: none;
+
+        h3 {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 700;
+          font-size: 2em;
+          text-transform: uppercase;
+          word-spacing: 0.2em;
+          text-align: center;
+          border: none;
+          margin: 0em;
+        }
+
+        h4 {
+          font-family: 'Nanum Myeongjo', serif;
+          font-weight: 400;
+          font-size: 1em;
+          font-style: italic; 
+          word-spacing: 0.05em;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    /**OTHERpg: (W/IN-Pg)Nav block**/
+    section.inPageNav {
+      margin: 8%;
+      padding: 7% 2%;
+      border: solid 2px;
+      border-color: #feece1;
+    }
+  }
 }
 
-div.imgscrollOther {
-  margin: 3em;
-  position:  relative;
-}
-
-.imgscrollOther h3 {
-  color: #64445c;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 2em;
-  text-transform: uppercase;
-  word-spacing: 0.2em;
-  text-align: center;
-  border: none;
-  margin: 0em;
-}
-
-.imgscrollOther h4 {
-  font-size: 1em;
-  color: #64445c;
-  font-family: 'Nanum Myeongjo', serif;
-  font-style: italic;
-  font-weight: 400;
-  word-spacing: 0.05em;
-  text-align: center;
-  border: none;
-  margin: 0em 0em 0em;
-}
-
-/**OTHERpg: (W/IN-Pg)Nav block**/
-div.linkContent.other {
-  position: unset;
-  justify-items: stretch;
-  align-items: center;
-  /*grid rules called from helpers/_grid.scss*/
-}
-
-div.jumbotron.other section.pgLinks {
+/**OTHERpg: (W/IN-Pg)Nav block*
+.inPageNav.other {
   border: solid 2px;
   border-color: #feece1;
   background-color: #3d30438a;
-}
-
-div.linkContent.other p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
+}*/
 
 /**************/
 /**************/

@@ -20,31 +20,18 @@ a.btn-main {
 a.btn-main:hover {
   color: #9db8cc;
   background-color: #fedcc8;
-}
-
-/**Nav Block - Buttons**/
-.pgLinks a.button {
-  padding: 3px;
-  border-style: solid none;
-  border-color: #7d7d82;
-  border-width: 2px 0px;
-}
-
-.pgLinks a.button:hover {
-  color: #feece1;
-  background-color: #7d7d82;
   text-decoration: none;
 }
 
-/**(W/IN PG)Nav Block**/
-div.jumbotron a.button {
-  color: #fedecb; 
-  border-color: #fedecb;
+/**Nav Block / (W/IN PG)Nav Block - Buttons**/
+a.button {
+  padding: 3px;
+  border-style: solid none;
+  border-width: 2px 0px;
 }
 
-div.jumbotron a.button:hover {
-  color: #3f424c;
-  background-color: #fedecb;
+a.button:hover {
+  text-decoration: none;
 }
 
 /**************/

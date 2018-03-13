@@ -2,74 +2,145 @@
 /*******NAV-BLOCKS*******/
 
 /**(SITE Pgs)Nav Block**/
+/*section grid rules called from helpers/_grid.scss*/
+#navdrop {
+  background-image: url("../../../../Images/sheeta.png");
+  background-size: cover;
+}
+
 section.pgLinks {
   background-color: #e3e4e6;
   text-align: center;
-  position: relative
-}
+  position: relative;
 
-div.linkContent {
-  position: unset;
-  justify-content: baseline;
-  justify-items: center;
-  align-items: center;
-  /*grid rules called from helpers/_grid.scss*/
-}
-
-div.blk1, div.blk2, div.blk3, div.blk4 {
-  padding: 3em 0em;
-  /*grid rules called from helpers/_grid.scss*/
-}
-
-.pgLinks img {
-  height: 40px;
-}
-
-.pgLinks h2 {
   font-family: 'Raleway', sans-serif;
+  color: #7d7d82;
   font-weight: 600;
-  font-size: 23px;
-  text-transform: uppercase;
-  color: #7d7d82;
-}
+  line-height: 1.4;
 
-.pgLinks p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #7d7d82;
-}
+  margin: 0px auto;
+  padding: 3%;
+  text-align: center;
 
-.pgLinks a {
-  color: #7d7d82;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+  .linkContent {
+    position: unset;
+    justify-content: baseline;
+    justify-items: center;
+    align-items: center;
 
-section.pgLinks.pink {
-  background-color: #feece1;
-  /*grid rules called from helpers/_grid.scss*/
+    .col {
+      padding: 3em 0em;
+    }
+  }
+
+  a {
+    font-family: inherit;
+    color: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    &.button {
+      border-color: #7d7d82;
+    }
+
+    &.button:hover {
+      color: #feece1;
+      background-color: #7d7d82;
+    }
+
+    img {
+      height: 40px;
+    }
+
+    h2 {
+      font-family: inherit;
+      color: inherit;
+      font-weight: inherit;
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    font-family: inherit;
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    
+  }
 }
 
 /**(W/IN PG)Nav Block**/
-/*needs cleaning - all stated on this layout/_.scss page until sorted*/
-div.jumbotron section.pgLinks {
-  margin: 5em 0em 0em;
-  background-color: #8fafc640;
-}
+/**(W/IN PG)Nav Block**/
+/*section grid rules called from helpers/_grid.scss*/
+section.inPageNav {
+  background-color: #566071b3;
+  text-align: center;
+  position: relative;
+  margin: 10%;
+  padding: 8% 2%;
 
-h2.subPg, p.subPg {
   font-family: 'Raleway', sans-serif;
   color: #fedecb;
-}
+  font-weight: 600;
 
+  .sectionLinks {
+    position: unset;
+    justify-content: baseline;
+    justify-items: stretch;
+    align-items: center;
+  }
+
+  a {
+    font-family: inherit;
+    color: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    &.button {
+      color: #fedecb;
+      border-color: #fedecb;
+    }
+
+    &.button:hover {
+      color: #3f424c;
+      background-color: #fedecb;
+    }
+
+    img {
+      height: 40px;
+    }
+
+    h2 {
+      font-family: inherit;
+      color: inherit;
+      font-weight: inherit;
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    font-family: inherit;
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    
+  }
+}
 /**************/
 /**************/

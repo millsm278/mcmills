@@ -18,7 +18,17 @@ $center-margin: 0px auto;
 
 #ani1 {
   @include parallax-background("../../../../Images/ANI1.png");
-  
+
+  div.jumbo {
+    position: absolute;
+    display: grid;
+    width:  -webkit-fill-available;
+    height: 100%;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    perspective: 0.5px;
+    justify-items: center;
+    align-items: center;
+  }
 }
 
 #headsh {
@@ -33,11 +43,7 @@ $center-margin: 0px auto;
   transform: translateZ(-1px);
   overflow-x: hidden;
   overflow-y: auto;
-
-  .jumbo {
-  }
 }
-
 
 .ani1 {
   margin: 2em 0em 0em;
@@ -79,20 +85,6 @@ $center-margin: 0px auto;
     align-items: center;
     display: grid;
   }
-}
-
-#navdrop {
-  background-image: url("../../../../Images/sheeta.png");
-  background-size: cover;
-}
-
-.pgLinks.pink {
-  margin: $center-margin;
-	padding: 3%;
-	text-align: center;
-	font-size: 20px;
-	font-weight: 200;
-	line-height: 1.4;
 }
 
 /*base - moble styling <600px

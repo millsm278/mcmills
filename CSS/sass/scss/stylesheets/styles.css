@@ -32,16 +32,16 @@ html, body {
 /*******GRIDS*******/
 /***Site/Pg Nav Block GRIDS***/
 /* line 4, ../sass/layout/_grid.scss */
+section.pgLinks {
+  display: grid;
+  grid-template: 1fr / 1fr 8fr 1fr;
+}
+
+/* line 9, ../sass/layout/_grid.scss */
 div.linkContent {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-/* line 10, ../sass/layout/_grid.scss */
-section.pgLinks.pink {
-  display: grid;
-  grid-template: 1fr / 1fr 8fr 1fr;
 }
 
 /* line 15, ../sass/layout/_grid.scss */
@@ -64,12 +64,28 @@ div.blk4 {
   grid-area: 1 / 4 / 2 / 5;
 }
 
-/***(W/IN-Pg)Nav Block GRIDS- Pg Specific Style Edits***/
-/*Adjust OTHER page (W/IN-Pg)nav block*/
-/* line 33, ../sass/layout/_grid.scss */
-div.linkContent.other {
+/**(W/IN-Pg)Nav Block**/
+/* line 32, ../sass/layout/_grid.scss */
+section.inPageNav {
+  justify-items: center;
+}
+/* line 35, ../sass/layout/_grid.scss */
+section.inPageNav div.sectionLinks {
   display: grid;
   grid-template: 1fr/repeat(3, 1fr);
+  justify-items: center;
+}
+/* line 44, ../sass/layout/_grid.scss */
+section.inPageNav div.sectionLinks .link1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+/* line 48, ../sass/layout/_grid.scss */
+section.inPageNav div.sectionLinks .link2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+/* line 52, ../sass/layout/_grid.scss */
+section.inPageNav div.sectionLinks .link3 {
+  grid-area: 1 / 3 / 2 / 4;
 }
 
 /**************/
@@ -96,7 +112,7 @@ header nav ul li {
   align-items: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.2em;
   display: inline-flex;
   justify-content: space-around;
   list-style-type: disc;
@@ -107,30 +123,42 @@ header nav ul li {
 header li {
   text-align: -webkit-match-parent;
 }
-/* line 37, ../sass/layout/_header.scss */
+/* line 36, ../sass/layout/_header.scss */
 header .n1 {
   grid-column-start: 2;
 }
-/* line 41, ../sass/layout/_header.scss */
+/* line 40, ../sass/layout/_header.scss */
 header a {
   text-decoration: none;
   cursor: pointer;
   color: #fedecb;
 }
-/* line 47, ../sass/layout/_header.scss */
+/* line 46, ../sass/layout/_header.scss */
 header a:hover, header a:focus {
   color: #fedecb;
   text-decoration: none;
 }
-/* line 52, ../sass/layout/_header.scss */
+/* line 51, ../sass/layout/_header.scss */
 header a:active, header a:hover {
   outline: #fedecb;
   outline-style: solid;
   outline-width: thin;
   outline-offset: .5em;
 }
-
+/* line 58, ../sass/layout/_header.scss */
+header li.current {
+  font-weight: bolder;
+}
 /* line 62, ../sass/layout/_header.scss */
+header li.current a {
+  border-bottom: solid 2px;
+}
+
+/* line 69, ../sass/layout/_header.scss */
+.logo a:hover {
+  outline: none;
+}
+/* line 73, ../sass/layout/_header.scss */
 .logo img {
   height: 75px;
   margin-top: 10px;
@@ -142,141 +170,191 @@ header a:active, header a:hover {
 /*******'JUMBOTRON'*******/
 /*******'JUMBOTRON'*******/
 /**Jumbotron - Content Container**/
-/* line 4, ../sass/layout/_jumbotron.scss */
-div.jumbotron {
-  background-position: right;
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
-  justify-items: center;
-  margin-bottom: 0px;
-}
-
-/* line 12, ../sass/layout/_jumbotron.scss */
-div .container {
-  margin: 2em 0em 0em;
-  text-align: center;
-  grid-area: 2 / 2 / 3 / 3;
-  justify-items: center;
-}
-
-/*home specific*/
-/* line 20, ../sass/layout/_jumbotron.scss */
-#ani1 div.jumbo {
-  position: absolute;
-  display: grid;
-  width: -webkit-fill-available;
-  height: 100%;
-  grid-template: 1fr 1fr 1fr / 1fr;
-  perspective: 0.5px;
-  justify-items: center;
-  align-items: center;
-}
-
-/**Jumbotron Title & Texts**/
-/* line 32, ../sass/layout/_jumbotron.scss */
+/* line 5, ../sass/layout/_jumbotron.scss */
 main {
+  width: 100% auto;
+  height: max-content;
   text-align: center;
   position: relative;
   top: 0px;
 }
-
-/* line 38, ../sass/layout/_jumbotron.scss */
-main h1 {
+/* line 12, ../sass/layout/_jumbotron.scss */
+main .jumbotron {
+  background-size: cover;
+  max-height: 1000px;
+  background-position: right;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
+  justify-items: center;
+  margin: 0 auto;
+}
+/* line 21, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-items: center;
+  margin: 0 auto;
+}
+/* line 26, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container .title {
+  margin: 0 auto;
+}
+/* line 29, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container .title h1 {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
-  margin: 0.5em 0em 1.5em;
+  margin: 2em 0em 0em;
   padding: 0px 10px;
   text-transform: uppercase;
   border: solid 2px;
   border-color: #fedcc8;
   word-spacing: 0.2em;
-  text-align: center;
 }
 
+/**Jumbotron Title & Texts**/
 /**************/
 /**************/
 /*******NAV-BLOCKS*******/
 /*******NAV-BLOCKS*******/
 /**(SITE Pgs)Nav Block**/
-/* line 5, ../sass/layout/_pgnavblock.scss */
+/*section grid rules called from helpers/_grid.scss*/
+/* line 6, ../sass/layout/_pgnavblock.scss */
+#navdrop {
+  background-image: url("../../../../Images/sheeta.png");
+  background-size: cover;
+}
+
+/* line 11, ../sass/layout/_pgnavblock.scss */
 section.pgLinks {
   background-color: #e3e4e6;
   text-align: center;
   position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: #7d7d82;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0px auto;
+  padding: 3%;
+  text-align: center;
 }
-
-/* line 11, ../sass/layout/_pgnavblock.scss */
-div.linkContent {
+/* line 25, ../sass/layout/_pgnavblock.scss */
+section.pgLinks .linkContent {
   position: unset;
   justify-content: baseline;
   justify-items: center;
   align-items: center;
-  /*grid rules called from helpers/_grid.scss*/
 }
-
-/* line 19, ../sass/layout/_pgnavblock.scss */
-div.blk1, div.blk2, div.blk3, div.blk4 {
+/* line 31, ../sass/layout/_pgnavblock.scss */
+section.pgLinks .linkContent .col {
   padding: 3em 0em;
-  /*grid rules called from helpers/_grid.scss*/
 }
-
-/* line 24, ../sass/layout/_pgnavblock.scss */
-.pgLinks img {
+/* line 36, ../sass/layout/_pgnavblock.scss */
+section.pgLinks a {
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+/* line 46, ../sass/layout/_pgnavblock.scss */
+section.pgLinks a.button {
+  border-color: #7d7d82;
+}
+/* line 50, ../sass/layout/_pgnavblock.scss */
+section.pgLinks a.button:hover {
+  color: #feece1;
+  background-color: #7d7d82;
+}
+/* line 55, ../sass/layout/_pgnavblock.scss */
+section.pgLinks a img {
   height: 40px;
 }
-
-/* line 28, ../sass/layout/_pgnavblock.scss */
-.pgLinks h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+/* line 59, ../sass/layout/_pgnavblock.scss */
+section.pgLinks a h2 {
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
   font-size: 23px;
   text-transform: uppercase;
-  color: #7d7d82;
 }
-
-/* line 36, ../sass/layout/_pgnavblock.scss */
-.pgLinks p {
-  font-family: 'Raleway', sans-serif;
+/* line 68, ../sass/layout/_pgnavblock.scss */
+section.pgLinks p {
+  font-family: inherit;
+  color: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   padding: 0 20px;
   margin-bottom: 20px;
-  color: #7d7d82;
-}
-
-/* line 46, ../sass/layout/_pgnavblock.scss */
-.pgLinks a {
-  color: #7d7d82;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-/* line 57, ../sass/layout/_pgnavblock.scss */
-section.pgLinks.pink {
-  background-color: #feece1;
-  /*grid rules called from helpers/_grid.scss*/
 }
 
 /**(W/IN PG)Nav Block**/
-/*needs cleaning - all stated on this layout/_.scss page until sorted*/
-/* line 64, ../sass/layout/_pgnavblock.scss */
-div.jumbotron section.pgLinks {
-  margin: 5em 0em 0em;
-  background-color: #8fafc640;
-}
-
-/* line 69, ../sass/layout/_pgnavblock.scss */
-h2.subPg, p.subPg {
+/**(W/IN PG)Nav Block**/
+/*section grid rules called from helpers/_grid.scss*/
+/* line 83, ../sass/layout/_pgnavblock.scss */
+section.inPageNav {
+  background-color: #566071b3;
+  text-align: center;
+  position: relative;
+  margin: 10%;
+  padding: 8% 2%;
   font-family: 'Raleway', sans-serif;
   color: #fedecb;
+  font-weight: 600;
+}
+/* line 94, ../sass/layout/_pgnavblock.scss */
+section.inPageNav .sectionLinks {
+  position: unset;
+  justify-content: baseline;
+  justify-items: stretch;
+  align-items: center;
+}
+/* line 101, ../sass/layout/_pgnavblock.scss */
+section.inPageNav a {
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+/* line 111, ../sass/layout/_pgnavblock.scss */
+section.inPageNav a.button {
+  color: #fedecb;
+  border-color: #fedecb;
+}
+/* line 116, ../sass/layout/_pgnavblock.scss */
+section.inPageNav a.button:hover {
+  color: #3f424c;
+  background-color: #fedecb;
+}
+/* line 121, ../sass/layout/_pgnavblock.scss */
+section.inPageNav a img {
+  height: 40px;
+}
+/* line 125, ../sass/layout/_pgnavblock.scss */
+section.inPageNav a h2 {
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+/* line 134, ../sass/layout/_pgnavblock.scss */
+section.inPageNav p {
+  font-family: inherit;
+  color: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 /**************/
@@ -340,35 +418,20 @@ a.btn-main {
 a.btn-main:hover {
   color: #9db8cc;
   background-color: #fedcc8;
+  text-decoration: none;
 }
 
-/**Nav Block - Buttons**/
-/* line 26, ../sass/components/_buttons.scss */
-.pgLinks a.button {
+/**Nav Block / (W/IN PG)Nav Block - Buttons**/
+/* line 27, ../sass/components/_buttons.scss */
+a.button {
   padding: 3px;
   border-style: solid none;
-  border-color: #7d7d82;
   border-width: 2px 0px;
 }
 
 /* line 33, ../sass/components/_buttons.scss */
-.pgLinks a.button:hover {
-  color: #feece1;
-  background-color: #7d7d82;
+a.button:hover {
   text-decoration: none;
-}
-
-/**(W/IN PG)Nav Block**/
-/* line 40, ../sass/components/_buttons.scss */
-div.jumbotron a.button {
-  color: #fedecb;
-  border-color: #fedecb;
-}
-
-/* line 45, ../sass/components/_buttons.scss */
-div.jumbotron a.button:hover {
-  color: #3f424c;
-  background-color: #fedecb;
 }
 
 /**************/
@@ -384,8 +447,19 @@ div.jumbotron a.button:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+/* line 22, ../sass/pages/_parallaxhome.scss */
+#ani1 div.jumbo {
+  position: absolute;
+  display: grid;
+  width: -webkit-fill-available;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  perspective: 0.5px;
+  justify-items: center;
+  align-items: center;
+}
 
-/* line 24, ../sass/pages/_parallaxhome.scss */
+/* line 34, ../sass/pages/_parallaxhome.scss */
 #headsh {
   background: url("../../../../Images/headsh.png") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -394,7 +468,7 @@ div.jumbotron a.button:hover {
   background-size: cover;
 }
 
-/* line 28, ../sass/pages/_parallaxhome.scss */
+/* line 38, ../sass/pages/_parallaxhome.scss */
 #ani1, #headsh {
   height: 100vh;
   width: 100%;
@@ -405,14 +479,14 @@ div.jumbotron a.button:hover {
   overflow-y: auto;
 }
 
-/* line 42, ../sass/pages/_parallaxhome.scss */
+/* line 48, ../sass/pages/_parallaxhome.scss */
 .ani1 {
   margin: 2em 0em 0em;
   text-align: center;
   grid-area: 2 / 1 / 3 / 2;
   justify-items: center;
 }
-/* line 48, ../sass/pages/_parallaxhome.scss */
+/* line 54, ../sass/pages/_parallaxhome.scss */
 .ani1 h1 {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
@@ -429,7 +503,7 @@ div.jumbotron a.button:hover {
   letter-spacing: 0.06em;
   text-align: center;
 }
-/* line 65, ../sass/pages/_parallaxhome.scss */
+/* line 71, ../sass/pages/_parallaxhome.scss */
 .ani1 .btn-main.indexbutt {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
@@ -446,22 +520,6 @@ div.jumbotron a.button:hover {
   grid-area: 3 / 2 / 4 / 3;
   align-items: center;
   display: grid;
-}
-
-/* line 84, ../sass/pages/_parallaxhome.scss */
-#navdrop {
-  background-image: url("../../../../Images/sheeta.png");
-  background-size: cover;
-}
-
-/* line 89, ../sass/pages/_parallaxhome.scss */
-.pgLinks.pink {
-  margin: 0px auto;
-  padding: 3%;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1.4;
 }
 
 /*base - moble styling <600px
@@ -491,49 +549,49 @@ div.jumbotron a.button:hover {
 /* line 5, ../sass/pages/_about.scss */
 div.jumbotron.about {
   background: url(../../../../Images/KIEV.png);
-  background-position: right;
+  background-position: center;
   background-size: cover;
   height: 750px;
   display: flex;
+  padding-top: calc(2em + 95px);
 }
-
 /* line 13, ../sass/pages/_about.scss */
-div.container.about {
-  margin: calc(.5em + 95px) 1em 0.5em 1em;
+div.jumbotron.about div.container.about {
   display: grid;
-  grid-template: 1fr / 40% 35%;
-  grid-column-gap: 25%;
+  grid-template: 1fr / 37% 33%;
+  grid-column-gap: 30%;
   justify-items: stretch;
   align-items: stretch;
+  width: 100%;
+  margin: 1.4em 1.5em;
 }
-
 /* line 22, ../sass/pages/_about.scss */
-div.aboutColLeft {
+div.jumbotron.about div.container.about div.aboutColLeft {
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-area: 1 / 1 / 2 / 2;
-  background-color: #00000061;
+  background-color: #44596980;
 }
 /* line 28, ../sass/pages/_about.scss */
-div.aboutColLeft span.aboutTitle {
+div.jumbotron.about div.container.about div.aboutColLeft span.aboutTitle {
   grid-area: 1 / 1 / 2 / 2;
   align-items: left;
 }
 /* line 32, ../sass/pages/_about.scss */
-div.aboutColLeft span.aboutTitle h1 {
+div.jumbotron.about div.container.about div.aboutColLeft span.aboutTitle h1 {
   color: #fedcc8;
-  font-size: 64px;
   border: none;
   text-align: left;
   margin: 0em .25em;
   padding: .5em .1em 0em;
+  font-size: 61px;
 }
 /* line 42, ../sass/pages/_about.scss */
-div.aboutColLeft span.aboutCopy1 {
+div.jumbotron.about div.container.about div.aboutColLeft span.aboutCopy1 {
   grid-area: 2 / 1 / 3 / 2;
 }
 /* line 45, ../sass/pages/_about.scss */
-div.aboutColLeft span.aboutCopy1 p {
+div.jumbotron.about div.container.about div.aboutColLeft span.aboutCopy1 p {
   color: #fedcc8;
   font-size: 20px;
   border: none;
@@ -542,37 +600,36 @@ div.aboutColLeft span.aboutCopy1 p {
   margin: 0em .25em;
   padding: .5em 1em 0em;
 }
-
 /* line 57, ../sass/pages/_about.scss */
-div.aboutColRight {
+div.jumbotron.about div.container.about div.aboutColRight {
   display: grid;
   grid-template: 2fr 3fr / 1fr;
   grid-area: 1 / 2 / 2 / 3;
-  background-color: #00000061;
+  background-color: #44596980;
 }
 /* line 63, ../sass/pages/_about.scss */
-div.aboutColRight span.aboutBody {
+div.jumbotron.about div.container.about div.aboutColRight span.aboutBody {
   grid-area: 1 / 1 / 2 / 2;
   margin: 0em .25em;
-  padding: .5em 1em 0em;
+  padding: 1.5em 1em 0em;
   text-align: left;
 }
 /* line 69, ../sass/pages/_about.scss */
-div.aboutColRight span.aboutBody p {
+div.jumbotron.about div.container.about div.aboutColRight span.aboutBody p {
   color: #fedcc8;
   font-size: 20px;
   border: none;
   border: none;
   text-align: left;
   margin: 0em .25em;
-  padding: .5em 1em 0em;
+  padding: .5em 0em 0em;
 }
 /* line 80, ../sass/pages/_about.scss */
-div.aboutColRight span.aboutCopy2 {
+div.jumbotron.about div.container.about div.aboutColRight span.aboutCopy2 {
   grid-area: 2 / 1 / 3 / 2;
 }
 /* line 83, ../sass/pages/_about.scss */
-div.aboutColRight span.aboutCopy2 p {
+div.jumbotron.about div.container.about div.aboutColRight span.aboutCopy2 p {
   color: #fedcc8;
   font-size: 20px;
   border: none;
@@ -590,13 +647,22 @@ div.aboutColRight span.aboutCopy2 p {
 /* line 5, ../sass/pages/_portfolio.scss */
 div.jumbotron.portfolio {
   background-image: url("../../../../Images/KIEV2.png");
-  background-size: cover;
-  max-height: 800px;
 }
-
-/* line 11, ../sass/pages/_portfolio.scss */
-div.portContainer h1 {
-  margin: 1em 0px 1em;
+/* line 8, ../sass/pages/_portfolio.scss */
+div.jumbotron.portfolio .container {
+  /**OTHERpg: (W/IN-Pg)Nav block**/
+}
+/* line 12, ../sass/pages/_portfolio.scss */
+div.jumbotron.portfolio .container .title h1 {
+  margin: 12% 0px 6%;
+}
+/* line 17, ../sass/pages/_portfolio.scss */
+div.jumbotron.portfolio .container .btn-main {
+  margin: 0 auto;
+}
+/* line 22, ../sass/pages/_portfolio.scss */
+div.jumbotron.portfolio .container section.inPageNav {
+  margin: 8% 10% 10%;
 }
 
 /**************/
@@ -605,29 +671,26 @@ div.portContainer h1 {
 /*******OTHER PG SPECIFIC STYLING*******/
 /**OTHERpg: Jumbotron - Content/Container**/
 /* line 5, ../sass/pages/_other.scss */
-div.jumbotron.other {
-  background-image: url("../../../../Images/ludlow.png");
-  height: 750px;
-}
-
-/* line 10, ../sass/pages/_other.scss */
 .jumbotron.other {
-  background-position: right;
-  background-size: cover;
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
-  justify-items: center;
+  background-image: url("../../../../Images/ludlow.png");
 }
-
-/* line 18, ../sass/pages/_other.scss */
-div.imgscrollOther {
-  margin: 3em;
-  position: relative;
+/* line 8, ../sass/pages/_other.scss */
+.jumbotron.other .container {
+  /**OTHERpg: (W/IN-Pg)Nav block**/
 }
-
-/* line 23, ../sass/pages/_other.scss */
-.imgscrollOther h3 {
-  color: #64445c;
+/* line 10, ../sass/pages/_other.scss */
+.jumbotron.other .container .title {
+  margin-top: 6em;
+}
+/* line 13, ../sass/pages/_other.scss */
+.jumbotron.other .container .title .imgscrollOther {
+  color: #3e445b;
+  margin: 0 auto;
+  /*margin: 3em;*/
+  border: none;
+}
+/* line 19, ../sass/pages/_other.scss */
+.jumbotron.other .container .title .imgscrollOther h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 2em;
@@ -637,82 +700,45 @@ div.imgscrollOther {
   border: none;
   margin: 0em;
 }
-
-/* line 35, ../sass/pages/_other.scss */
-.imgscrollOther h4 {
-  font-size: 1em;
-  color: #64445c;
+/* line 30, ../sass/pages/_other.scss */
+.jumbotron.other .container .title .imgscrollOther h4 {
   font-family: 'Nanum Myeongjo', serif;
-  font-style: italic;
   font-weight: 400;
+  font-size: 1em;
+  font-style: italic;
   word-spacing: 0.05em;
-  text-align: center;
-  border: none;
-  margin: 0em 0em 0em;
+  margin: 0 auto;
+}
+/* line 42, ../sass/pages/_other.scss */
+.jumbotron.other .container section.inPageNav {
+  margin: 8%;
+  padding: 7% 2%;
+  border: solid 2px;
+  border-color: #feece1;
 }
 
-/**OTHERpg: (W/IN-Pg)Nav block**/
-/* line 48, ../sass/pages/_other.scss */
-div.linkContent.other {
-  position: unset;
-  justify-items: stretch;
-  align-items: center;
-  /*grid rules called from helpers/_grid.scss*/
-}
-
-/* line 55, ../sass/pages/_other.scss */
-div.jumbotron.other section.pgLinks {
+/**OTHERpg: (W/IN-Pg)Nav block*
+.inPageNav.other {
   border: solid 2px;
   border-color: #feece1;
   background-color: #3d30438a;
-}
-
-/* line 61, ../sass/pages/_other.scss */
-div.linkContent.other p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
+}*/
 /**************/
 /**************/
 /*******CONTACT PG SPECIFIC STYLING*******/
 /*******CONTACT PG SPECIFIC STYLING*******/
 /**CONTACTpg: Jumbotron - Content/Container**/
 /* line 4, ../sass/pages/_contact.scss */
-div.jumbotron.contact {
+.jumbotron.contact {
   background-image: url("../../../../Images/atelier.png");
-  height: 750px;
 }
-
-/* line 9, ../sass/pages/_contact.scss */
-div.jumbotron.contact h1 {
+/* line 11, ../sass/pages/_contact.scss */
+.jumbotron.contact .container .title h1 {
   margin: 1.5em 0em .3em;
 }
-
-/**CONTACTpg: (W/IN-Pg)Nav Block**/
-/* line 14, ../sass/pages/_contact.scss */
-div.grid.linkContent.comm {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-/* line 20, ../sass/pages/_contact.scss */
-div.jumbotron.contact section.pgLinks {
-  background-color: #566071b3;
-  border: solid 2px #fedcc8;
-}
-
-/* line 25, ../sass/pages/_contact.scss */
-div.linkContent.comm .col {
-  color: #7d7d82;
-  margin: 2.5em .1em 3.5em;
-  padding: 1em 2.5em;
+/* line 16, ../sass/pages/_contact.scss */
+.jumbotron.contact .container .btn-main {
+  margin: 0 auto;
 }
 
 /**************/
