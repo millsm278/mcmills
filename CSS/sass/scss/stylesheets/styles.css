@@ -119,48 +119,44 @@ header nav ul li {
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 32, ../sass/layout/_header.scss */
-header li {
-  text-align: -webkit-match-parent;
-}
-/* line 36, ../sass/layout/_header.scss */
-header .n1 {
-  grid-column-start: 2;
-}
-/* line 40, ../sass/layout/_header.scss */
-header a {
+/* line 30, ../sass/layout/_header.scss */
+header nav ul li a {
   text-decoration: none;
   cursor: pointer;
   color: #fedecb;
 }
-/* line 46, ../sass/layout/_header.scss */
-header a:hover, header a:focus {
+/* line 36, ../sass/layout/_header.scss */
+header nav ul li a:hover, header nav ul li a:focus {
   color: #fedecb;
   text-decoration: none;
 }
-/* line 51, ../sass/layout/_header.scss */
-header a:active, header a:hover {
+/* line 41, ../sass/layout/_header.scss */
+header nav ul li a:active, header nav ul li a:hover {
   outline: #fedecb;
   outline-style: solid;
   outline-width: thin;
   outline-offset: .5em;
 }
-/* line 58, ../sass/layout/_header.scss */
+/* line 49, ../sass/layout/_header.scss */
+header .n1 {
+  grid-column-start: 2;
+}
+/* line 53, ../sass/layout/_header.scss */
 header li.current {
   font-weight: bolder;
 }
-/* line 62, ../sass/layout/_header.scss */
+/* line 57, ../sass/layout/_header.scss */
 header li.current a {
   border-bottom: solid 2px;
 }
-/* line 68, ../sass/layout/_header.scss */
-header .logo img {
+/* line 63, ../sass/layout/_header.scss */
+header #logo img {
   height: 75px;
   margin-top: 10px;
   margin-bottom: 0px;
 }
-/* line 73, ../sass/layout/_header.scss */
-header .logo img a:hover {
+/* line 69, ../sass/layout/_header.scss */
+header #logo a:hover {
   outline: none;
 }
 
