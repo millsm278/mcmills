@@ -282,7 +282,6 @@ section.pgLinks p {
   color: inherit;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   padding: 0 20px;
   margin-bottom: 20px;
 }
@@ -290,7 +289,7 @@ section.pgLinks p {
 /**(W/IN PG)Nav Block**/
 /**(W/IN PG)Nav Block**/
 /*section grid rules called from helpers/_grid.scss*/
-/* line 83, ../sass/layout/_pgnavblock.scss */
+/* line 82, ../sass/layout/_pgnavblock.scss */
 section.inPageNav {
   background-color: #566071b3;
   text-align: center;
@@ -301,14 +300,14 @@ section.inPageNav {
   color: #fedecb;
   font-weight: 600;
 }
-/* line 94, ../sass/layout/_pgnavblock.scss */
+/* line 93, ../sass/layout/_pgnavblock.scss */
 section.inPageNav .sectionLinks {
   position: unset;
   justify-content: baseline;
   justify-items: stretch;
   align-items: center;
 }
-/* line 101, ../sass/layout/_pgnavblock.scss */
+/* line 100, ../sass/layout/_pgnavblock.scss */
 section.inPageNav a {
   font-family: inherit;
   color: inherit;
@@ -319,21 +318,21 @@ section.inPageNav a {
   text-decoration: none;
   margin-bottom: 10px;
 }
-/* line 111, ../sass/layout/_pgnavblock.scss */
+/* line 110, ../sass/layout/_pgnavblock.scss */
 section.inPageNav a.button {
   color: #fedecb;
   border-color: #fedecb;
 }
-/* line 116, ../sass/layout/_pgnavblock.scss */
+/* line 115, ../sass/layout/_pgnavblock.scss */
 section.inPageNav a.button:hover {
   color: #3f424c;
   background-color: #fedecb;
 }
-/* line 121, ../sass/layout/_pgnavblock.scss */
+/* line 120, ../sass/layout/_pgnavblock.scss */
 section.inPageNav a img {
   height: 40px;
 }
-/* line 125, ../sass/layout/_pgnavblock.scss */
+/* line 124, ../sass/layout/_pgnavblock.scss */
 section.inPageNav a h2 {
   font-family: inherit;
   color: inherit;
@@ -341,7 +340,7 @@ section.inPageNav a h2 {
   font-size: 23px;
   text-transform: uppercase;
 }
-/* line 134, ../sass/layout/_pgnavblock.scss */
+/* line 133, ../sass/layout/_pgnavblock.scss */
 section.inPageNav p {
   font-family: inherit;
   color: inherit;
@@ -868,169 +867,99 @@ else=color:#64445c,border-color:#64445c*/
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
 /*Screen width 992px or less*/
 /*Screen width 992px or less*/
-@media (min-width: 768px) and (max-width: 991px) {
-  /**Parallax and Titles**/
+@media screen and (max-width: 991px) {
+  /**(SITE Pgs)Nav Block**/
   /* line 7, ../sass/helpers/_mediabreakpts.scss */
-  #topViewBox {
-    position: relative;
-    width: 100% auto;
-    display: -webkit-box;
-    background-color: #8badc6;
+  #navdrop {
+    background-image: url("../../../../Images/sheeth.png");
+    background-size: cover;
+    padding-bottom: 30vh;
   }
 
-  /* line 14, ../sass/helpers/_mediabreakpts.scss */
-  #ani1 {
-    background: url(../../../../Images/ANI1.png) fixed;
-    background-size: 100% auto;
-    background-position: initial;
-    background-repeat: no-repeat;
-    transform: translateZ(-1px);
-    perspective: 1px;
-    overflow-x: auto;
-    overflow-y: auto;
-    width: 100%;
-    height: -webkit-fill-available;
-  }
-
-  /* line 27, ../sass/helpers/_mediabreakpts.scss */
-  #btmViewBox {
-    position: relative;
-    width: 100% auto;
-    display: -webkit-box;
-    background-color: #8badc6;
-  }
-
-  /* line 34, ../sass/helpers/_mediabreakpts.scss */
-  #headsh {
-    background: url(../../../../Images/headsh.png) fixed;
-    background-size: 100% auto;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    transform: translateZ(-1px);
-    perspective: 1px;
-    overflow-x: auto;
-    overflow-y: auto;
-    width: 100%;
-    height: -webkit-fill-available;
-  }
-
-  /* line 47, ../sass/helpers/_mediabreakpts.scss */
-  #ani1 div.jumbo {
+  /* line 13, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks {
+    background-color: #e3e4e6;
     display: grid;
-    height: 100%;
-    grid-template: 1fr 1fr 1fr / 1fr;
-    perspective: 0.5px;
-    justify-items: center;
-    align-items: center;
-  }
-
-  /* line 56, ../sass/helpers/_mediabreakpts.scss */
-  .ani1 {
-    margin: 0 auto;
-    text-align: center;
-    grid-area: 2 / 1 / 3 / 2;
-    justify-items: left;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* line 65, ../sass/helpers/_mediabreakpts.scss */
-  .ani1 h1 {
-    font-size: 4em;
-    margin: .5em 0em 1.5em;
-    padding: 0px 10px;
-  }
-
-  /* line 71, ../sass/helpers/_mediabreakpts.scss */
-  a.btn-main {
-    font-size: 14px;
-    margin: 0px;
-    border-width: 3px;
-  }
-
-  /**Nav Block**/
-  /* line 78, ../sass/helpers/_mediabreakpts.scss */
-  section#navdrop.pgLinks {
-    position: relative;
-    display: grid;
-    grid-template: 1fr / 1fr;
+    grid-template: none;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
     padding: 8%;
-    background-image: url("../../../../Images/sheeth.png");
     background-size: 100% auto;
   }
-
-  /* line 91, ../sass/helpers/_mediabreakpts.scss */
-  div.linkContent.grid {
+  /* line 24, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent {
     position: relative;
     display: grid;
-    grid-area: 1 / 1 / 2 / 2;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-area: none;
+    grid-template: repeat(2, 35vmax)/repeat(2, 35vmax);
+    grid-column-gap: 10vw;
+    grid-row-gap: 20vh;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-    margin: 0px auto;
+    margin: 10vh 2vw -10vh;
+    /*Mid screen: side by side grid map*/
   }
-
-  /* line 103, ../sass/helpers/_mediabreakpts.scss */
-  div .blk1.col, div .blk2.col, div .blk3.col, div .blk4.col {
-    position: relative;
-    display: grid;
-    padding: 1em 3em 2em;
+  /* line 37, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col {
+    display: block;
+    width: 100%;
+    border: solid 2px;
+    height: auto;
+    padding: 6vh;
   }
-
-  /*Mid screen: side by side grid map*/
-  /* line 110, ../sass/helpers/_mediabreakpts.scss */
-  div .blk1.col {
+  /* line 44, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col img {
+    height: 10vh;
+  }
+  /* line 48, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col h2 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+  }
+  /* line 53, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col p {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+  }
+  /* line 58, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col .button {
+    font-size: 2.5em;
+    margin: 0px;
+    border-width: 3px 0px;
+    width: max-content;
+    justify-self: center;
+  }
+  /* line 68, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-
-  /* line 114, ../sass/helpers/_mediabreakpts.scss */
-  div .blk2.col {
+  /* line 72, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk2 {
     grid-area: 1 / 2 / 2 / 3;
   }
-
-  /* line 118, ../sass/helpers/_mediabreakpts.scss */
-  div .blk3.col {
+  /* line 76, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk3 {
     grid-area: 2 / 1 / 2 / 2;
   }
-
-  /* line 122, ../sass/helpers/_mediabreakpts.scss */
-  div .blk4.col {
+  /* line 80, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk4 {
     grid-area: 2 / 2 / 3 / 3;
-  }
-
-  /*Mid(&sm) screen: nav block item boxes*/
-  /* line 127, ../sass/helpers/_mediabreakpts.scss */
-  div.mediabox {
-    display: inline-block;
-    background-color: #fbe3d559;
-    border: #ccbab3 1px solid;
-    text-align: center;
-    padding: 1em;
-    margin: .75em;
-    width: 200px;
-  }
-
-  /* line 137, ../sass/helpers/_mediabreakpts.scss */
-  footer {
-    padding: 2px 0;
   }
 }
 /*Screen width 422px or less*/
-@media only screen and (max-width: 768px) {
-  /* line 144, ../sass/helpers/_mediabreakpts.scss */
+@media screen and (max-width: 767px) {
+  /* line 89, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
     font-size: 3em;
     margin: .5em 0em 1.5em;
     padding: 0px 10px;
   }
 
-  /* line 150, ../sass/helpers/_mediabreakpts.scss */
+  /* line 95, ../sass/helpers/_mediabreakpts.scss */
   a.btn-main {
     font-size: 14px;
     margin: 0px;
@@ -1038,55 +967,70 @@ else=color:#64445c,border-color:#64445c*/
   }
 
   /*nav-block in-line grid map*/
-  /* line 157, ../sass/helpers/_mediabreakpts.scss */
-  div.linkContent.grid {
-    position: inherit;
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+  /* line 102, ../sass/helpers/_mediabreakpts.scss */
+  #navdrop {
+    padding-bottom: 5vh;
   }
 
-  /*nav-block in-line grid map*/
-  /* line 164, ../sass/helpers/_mediabreakpts.scss */
-  div.blk1.col {
+  /* line 106, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks {
+    display: block;
+    grid-area: none;
+    grid-template: none;
+  }
+  /* line 112, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent {
+    grid-area: none;
+    grid-template: repeat(4, 75vmax)/1fr;
+    grid-row-gap: 10%;
+    margin: 5vh;
+    /*nav-block in-line grid map*/
+  }
+  /* line 118, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col {
+    display: block;
+    width: 100%;
+    border: solid 2px;
+    height: auto;
+    padding: 8vh 0em;
+  }
+  /* line 125, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col img {
+    height: 10vh;
+  }
+  /* line 129, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col h2 {
+    font-size: 3em;
+    margin-bottom: .75em;
+  }
+  /* line 134, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+  /* line 139, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col .button {
+    font-size: 3em;
+    margin: 0px;
+    border-width: 3px 0px;
+    width: max-content;
+    justify-self: center;
+  }
+  /* line 149, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-
-  /* line 168, ../sass/helpers/_mediabreakpts.scss */
-  div.blk2.col {
+  /* line 153, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
-
-  /* line 172, ../sass/helpers/_mediabreakpts.scss */
-  div.blk3.col {
+  /* line 157, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-
-  /* line 176, ../sass/helpers/_mediabreakpts.scss */
-  div.blk4.col {
+  /* line 161, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .blk4 {
     grid-area: 4 / 1 / 5 / 2;
-  }
-
-  /* line 180, ../sass/helpers/_mediabreakpts.scss */
-  div.blk1.col, div.blk2.col, div.blk3.col, div.blk4.col {
-    position: relative;
-    display: grid;
-    padding: 1em 3em 2em;
-  }
-
-  /* line 186, ../sass/helpers/_mediabreakpts.scss */
-  div.mediabox {
-    display: inline-block;
-    background-color: #fbe3d559;
-    border: #ccbab3 1px solid;
-    text-align: center;
-    padding: 1em;
-    margin: 0em;
-    width: 200px;
-  }
-
-  /* line 196, ../sass/helpers/_mediabreakpts.scss */
-  footer {
-    padding: 2px 0;
   }
 }
 /**************/
