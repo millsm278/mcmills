@@ -1,145 +1,213 @@
 /*******NAV-BLOCKS*******/
 /*******NAV-BLOCKS*******/
-
-/**(SITE Pgs)Nav Block**/
-/*section grid rules called from helpers/_grid.scss*/
-#navdrop {
-  background-image: url("../../../../Images/sheeta.png");
-  background-size: cover;
-}
-
-section.pgLinks {
-  background-color: #e3e4e6;
-  text-align: center;
-  position: relative;
-
-  font-family: 'Raleway', sans-serif;
-  color: #7d7d82;
-  font-weight: 600;
-  line-height: 1.4;
-
-  margin: 0px auto;
-  padding: 3%;
-  text-align: center;
-
-  .linkContent {
-    position: unset;
-    justify-content: baseline;
-    justify-items: center;
-    align-items: center;
-
-    .col {
-      padding: 3em 0em;
-    }
-  }
-
-  a {
-    font-family: inherit;
-    color: inherit;
-    font-weight: inherit;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    text-decoration: none;
-    margin-bottom: 10px;
-
-    &.button {
-      border-color: #7d7d82;
-    }
-
-    &.button:hover {
-      color: #feece1;
-      background-color: #7d7d82;
-    }
-
-    img {
-      height: 40px;
-    }
-
-    h2 {
-      font-family: inherit;
-      color: inherit;
-      font-weight: inherit;
-      font-size: 23px;
-      text-transform: uppercase;
-    }
-  }
-
-  p {
-    font-family: inherit;
-    color: inherit;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    
-  }
-}
-
 /**(W/IN PG)Nav Block**/
 /**(W/IN PG)Nav Block**/
-/*section grid rules called from helpers/_grid.scss*/
-section.inPageNav {
+/* main { div .jumbotron { */
+section.inPageNav /* #lgScrnBar */ {
+  display: grid;
+  margin: 0 auto 5vh;
+  height: fit-content;
+  width: 80vw;
+  padding: 5% 0;
   background-color: #566071b3;
+  border: 2px solid #fedecb;
   text-align: center;
-  position: relative;
-  margin: 10%;
-  padding: 8% 2%;
-
   font-family: 'Raleway', sans-serif;
   color: #fedecb;
   font-weight: 600;
 
   .sectionLinks {
-    position: unset;
-    justify-content: baseline;
-    justify-items: stretch;
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
     align-items: center;
-  }
 
-  a {
-    font-family: inherit;
-    color: inherit;
-    font-weight: inherit;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    text-decoration: none;
-    margin-bottom: 10px;
+    .col /* .link1 .link2 .link3 */ {
+      padding: 5% 0%;
 
-    &.button {
-      color: #fedecb;
-      border-color: #fedecb;
+      .link1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .link2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .link3 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+
+      a /* .icon */ {
+        font-family: inherit;
+        color: inherit;
+        font-weight: inherit;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        text-decoration: none;
+        margin-bottom: 10px;
+
+        img {
+          height: 40px;
+        }
+
+        h2 {
+          font-family: inherit;
+          color: inherit;
+          font-weight: inherit;
+          font-size: 23px;
+          text-transform: uppercase;
+        }
+
+        &.button {
+          color: #fedecb;
+          border-color: #fedecb;}
+        }
+
+      p {
+        font-family: inherit;
+        color: inherit;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+      }
     }
-
-    &.button:hover {
-      color: #3f424c;
-      background-color: #fedecb;
-    }
-
-    img {
-      height: 40px;
-    }
-
-    h2 {
-      font-family: inherit;
-      color: inherit;
-      font-weight: inherit;
-      font-size: 23px;
-      text-transform: uppercase;
-    }
-  }
-
-  p {
-    font-family: inherit;
-    color: inherit;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    
   }
 }
+
+
+/**(SITE Pgs)Nav Block**/
+/**(SITE Pgs)Nav Block**/
+section{
+  &#navdrop {
+    background-image: url("../../../../Images/sheeta.png");
+    background-size: cover;
+  }
+
+  &.pgLinks {
+    grid-template: 1fr / 1fr 8fr 1fr;
+    background-color: #e3e4e6;
+    text-align: center;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    color: #7d7d82;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0px auto;
+    padding: 3%;
+    text-align: center;
+
+    .linkContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-area: 1 / 2 / 2 / 3;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+
+      .blk1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .blk2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .blk3 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+
+      .blk4 {
+        grid-area: 1 / 4 / 2 / 5;
+      }
+
+      .col /* .blk1 .blk2 .blk3 .blk4 */ {
+         padding: 3em 0em;
+
+        a /* #icon */ {
+          font-family: inherit;
+          color: inherit;
+          font-weight: inherit;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+          text-decoration: none;
+          margin-bottom: 10px;
+
+          img {
+            height: 40px;
+          }
+
+          h2 {
+            font-family: inherit;
+            color: inherit;
+            font-weight: inherit;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          &.button {
+            border-color: #7d7d82;
+          }
+
+          &.button:hover {
+            color: #feece1;
+            background-color: #7d7d82;
+          }
+        }
+
+        p {
+          font-family: inherit;
+          color: inherit;
+          font-weight: 400;
+          font-size: 14px;
+          padding: 0 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+/***   
+
+//w/in-pg nav: DOM 
+//w/in-pg nav
+main {
+  div .jumbotron {  //jumbotron content w/in div.container precedes inPageNav
+    section .inPageNav #lgScrnBar {
+      div .sectionLinks {
+        div .col .link1 .link2 .link3 {
+          a .icon {
+            img {}
+            h2 {}
+          }
+          p {}
+          a .button {}
+        }
+      }
+    }
+  }        
+}
+
+//w/in-pg nav
+section #navdrop .pgLinks {
+  div .linkContent {
+    div .col .blk1 .blk2 .blk3 .blk4 {
+      a #icon {
+        img {}
+        h2 {}
+      }
+      p {}
+      a .button {}
+    }
+  }
+}
+
 /**************/
 /**************/

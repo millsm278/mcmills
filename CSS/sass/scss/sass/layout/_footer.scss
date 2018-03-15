@@ -6,26 +6,34 @@ footer {
   background-color: #6c8fa7;
   background-image: url("../../../../Images/sheeta.png");
   box-shadow: inset 0 0 0 1000px rgba(108, 143, 167, 0.7);
+
+  .container {
+    text-align: -webkit-right;
+    -webkit-margin-end: 0px;
+    margin-top: .5em;
+
+    p {
+      font-family: "Lucida Grande", sans-serif;
+      font-style: oblique;
+      font-size: 13px;
+      text-align: start;
+      font-weight: 700;
+      display: inline-block;
+      padding: 3px 40px 3px 3px;
+      color: #afc2cf;
+      background-color: hsla(240, 2%, 33%, 0.25);
+      -webkit-margin-end: -20px;
+    }
+  }
 }
 
-footer div.container {
-  text-align: -webkit-right;
-  -webkit-margin-end: 0px;
-  margin-top: .5em;
-}
+/***
 
-footer p {
-  font-family: "Lucida Grande", sans-serif;
-  font-style: oblique;
-  font-size: 13px;
-  text-align: start;
-  font-weight: 700;
-  display: inline-block;
-  padding: 3px 40px 3px 3px;
-  color: #afc2cf;
-  background-color: hsla(240, 2%, 33%, 0.25);
-  -webkit-margin-end: -20px;
-}
+//footer: DOM
+footer {
+  div .container {
+    p {}
+  }
 
 /**************/
 /**************/

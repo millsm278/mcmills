@@ -2,30 +2,67 @@
 /*******PORTFOLIO PG SPECIFIC STYLING*******/
 
 /**PORTFOLIOpg: Jumbotron - Content/Container**/
-div.jumbotron.portfolio {
-  background-image: url("../../../../Images/KIEV2.png");
+main {
+  .jumbotron.portfolio {
+    background-image: url("../../../../Images/KIEV2.png");
 
-  .container {
-  	
-  	.title {
+    .container {
+      .title {
 
-  	  h1 {
-        margin: 12% 0px 6%;
-  	  }
-  	}
+        .title-text {
+          h1 {}
+        }
 
-  	.btn-main {
-  	  margin: 0 auto;
-    }
+        .title-button {
 
-    /**OTHERpg: (W/IN-Pg)Nav block**/
-    section.inPageNav {
-      margin: 8% 10% 10%;
+          a #buttNormal .btn-main .resbutt {}
+
+        }
+      }
     }
   }
 }
 
 
+/***
+
+//portfolioPg: DOM
+//portfolioPg: jumbotron & title
+main {
+  div .jumbotron .portfolio {
+    div .container {
+      div .title {
+
+        div .title-text {
+          h1 #imgscroll {}
+        }
+
+        div .title-button {
+          a #buttNormal .btn-main .resbutt {}
+        }
+
+      }
+    }
+  }
+}
+
+//portfoloioPg: w/in-pg nav (nested in div.jumbotron)
+main {
+  div .jumbotron .portfolio {  //jumbotron content w/in div.container precedes inPageNav
+    section .inPageNav .portfolio #lgScrnBar {
+      div .sectionLinks {
+        div .col .link1 .link2 .link3 {
+          a .icon {
+            img {}
+            h2 {}
+          }
+          p {}
+          a .button {}
+        }
+      }
+    }
+  }
+}
 
 /**************/
 /**************/

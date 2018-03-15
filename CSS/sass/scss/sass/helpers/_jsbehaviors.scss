@@ -32,11 +32,6 @@ header.nav.scrolled {
 /**PORTFOLIO: TITLE: (f)Dissapear on Scroll**/
 /*#imgscroll if(finalSize<-100)=color:hsla(22,96%,89%,.10),border-color:hsla(22,96%,89%,.10); 
 else=color:hsla(22,96%,89%,1),border-color:hsla(22,96%,89%,1)*/
-/*Additional ID Aattached Styles*/
-#imgscroll {
-  display: inline-flex;
-  text-align: center;
-}
 
 /**PORTFOLIO: BUTTON: (f)Dissapear on Scroll**/
 /*.resButt to #buttTop if(finalSize< -200); else(#buttNormal)*/

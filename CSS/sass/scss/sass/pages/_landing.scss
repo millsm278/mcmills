@@ -1,7 +1,11 @@
 /*******LANDING PG SPECIFIC STYLING*******/
 /*******LANDING PG SPECIFIC STYLING*******/
-
-/**LANDINGpg: Jumbotron - Content/Container**/
+div.jumbotron.landingpage {
+  background-image: url("../../../../Images/landing.png");
+  background-size: cover;
+  height: 900px;
+}
+/**LANDINGpg: Jumbotron - Content/Container
 div.jumbotron.landingpage{
   background-position: center;
   display: grid;
@@ -36,10 +40,11 @@ div.pinkAppear.landing h3 {
   border: none;
 }
 
-/**LANDINGpg: Main Buttons**/
+**LANDINGpg: Main Buttons**
 a.btn-main.pinkAppear {
   margin-top: 5em;
 }
+**/
 
 /**************/
 /**************/

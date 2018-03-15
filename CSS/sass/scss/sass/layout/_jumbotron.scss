@@ -1,49 +1,73 @@
 /*******'JUMBOTRON'*******/
 /*******'JUMBOTRON'*******/
-/**Jumbotron - Content Container**/
-
 main {
-  width: 100% auto;
+  width: 100vmax;
   height: max-content;
   text-align: center;
-  position: relative;
-  top: 0px;
 
   .jumbotron {
     background-size: cover;
-    max-height: 1000px;
-    background-position: right;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 4fr 1fr;
-    justify-items: center;
+    background-position: center;
+    width: 100vmax;
     margin: 0 auto;
+    overflow: hidden;
 
     .container {
-      grid-area: 2 / 2 / 3 / 3;
+      display: grid;
+      height: fit-content;
       justify-items: center;
-      margin: 0 auto;
+      align-items: center;
 
       .title {
-        margin: 0 auto;
+        margin: 25vh auto 35vh;
 
-        h1 {
-          color: #fedcc8;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 600;
-          font-size: 64px;
-          margin: 2em 0em 0em;
-          padding: 0px 10px;
-          text-transform: uppercase;
-          border: solid 2px;
-          border-color: #fedcc8;
-          word-spacing: 0.2em;
+        .title-text {
+          h1 /* #imgscroll */ {
+            color: #fedcc8;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 5em;
+            margin: 15% auto;
+            padding: 0px 12px;
+            text-transform: uppercase;
+            border: solid 2px;
+            border-color: #fedcc8;
+            word-spacing: 0.2em;
+          }
+        }
+
+        .title-button {
+          margin: 20% auto 0;
+
+          .btn-main .resButt /* #buttNormal */ {}
         }
       }
     }
   }
 }
 
-/**Jumbotron Title & Texts**/
+
+/***
+
+//jumbotron: DOM
+main {
+  div .jumbotron {
+    div .container {
+      div .title {
+
+        div .title-text {
+          h1 #imgscroll {}
+        }
+
+        div .title-button {
+          a #buttNormal .btn-main .resButt {}
+        }
+      }
+    }
+  }
+}
+
+***/
 
 /**************/
 /**************/

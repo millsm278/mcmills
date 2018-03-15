@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 	} else {
 		$('#imgscrollOther').css({
-			'color': '#3e445b',
+			'color': '#292d3d',
 			//'border-color': '#feece1'
 		});
 	}
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
 	} else {
 		$('#textscrollOther, #textscrollOther').css({
-			'color': '#3e445b',
+			'color': '#292d3d',
 			//'border-color': '#64445c',
 		});
 	}

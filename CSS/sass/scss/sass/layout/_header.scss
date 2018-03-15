@@ -1,48 +1,54 @@
 /*******HEADER*******/
 /*******HEADER*******/
-header.nav {
-  background-color: #8fafc678;
-  position: fixed;
-  z-index: 5;
-  width: -webkit-fill-available;  
-}
-
 header {
-
+  &.nav {  //checked
+    background-color: #8fafc678;
+    position: fixed;
+    z-index: 5;
+    width: 100vmax;
+  }
   ul {
     display: grid;
-    grid-template: 1fr/ 1fr repeat(5, 1fr) 1fr;
+    grid-template: 1fr/1fr repeat(5, 1fr) 1fr;
     -webkit-padding-start: initial;
-    justify-items:  center;
+    justify-items: center;
   }
 
-  nav ul li {
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 1.2em;
-    display: inline-flex;
-    justify-content: space-around;
-    list-style-type: disc;
-    padding-left: 1em;
-    padding-right: 1em;
+  nav {
 
-    a {
-      text-decoration: none;
-      cursor: pointer;
-      color: #fedecb;
-    }
+    ul {
 
-    a:hover, a:focus {
-      color: #fedecb;
-      text-decoration: none;
-    }
+      li { 
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 1.2em;
+        display: inline-flex;
+        justify-content: space-around;
+        list-style-type: disc;
+        padding-left: 1em;
+        padding-right: 1em;
 
-    a:active, a:hover {
-      outline: #fedecb;
-      outline-style: solid;
-      outline-width: thin;
-      outline-offset: .5em;
+        &#logo {
+          a:hover {
+            outline: none;
+          }
+
+          img {
+            height: 75px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+          }
+        }
+
+        &.current {
+          font-weight: bolder;
+
+          a {
+            border-bottom: solid 2px;
+          }
+        }
+      }
     }
   }
 
@@ -50,28 +56,56 @@ header {
     grid-column-start: 2;
   }
 
-  li.current {
-    font-weight: bolder;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fedecb;
   }
 
-  li.current a {
-    border-bottom: solid 2px;
+  a:hover, a:focus {
+    color: #fedecb;
+    text-decoration: none;
   }
 
-  #logo {
+  a:active, a:hover {
+    outline: #fedecb;
+    outline-style: solid;
+    outline-width: thin;
+    outline-offset: .5em;
+  }
+}
 
-    img {
-      height: 75px;
-      margin-top: 10px;
-      margin-bottom: 0px;
-    }
 
-    a:hover {
-      outline: none;
+
+
+
+/***
+//header: DOM
+header {
+  .nav {
+    nav {
+      ul {
+        li { 
+          .n1 .n2  .n3 .n4 {}
+          .current {}
+          #logo {}
+          a {
+            img {}
+          }
+        }
+      }
     }
   }
 }
 
+header .nav
+  nav
+    ul
+      li .n1 .n2  .n3 .n4 .current #logo 
+        a 
+          img
+
+***/
 
 /**************/
 /**************/

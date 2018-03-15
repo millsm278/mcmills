@@ -1,21 +1,69 @@
 /*******CONTACT PG SPECIFIC STYLING*******/
 /*******CONTACT PG SPECIFIC STYLING*******/
 /**CONTACTpg: Jumbotron - Content/Container**/
-.jumbotron.contact {
-  background-image: url("../../../../Images/atelier.png");
+main {
+  .jumbotron.contact {
+    background-image: url("../../../../Images/atelier.png");
 
-  .container {
-  	
-  	.title {
+    .container {
+      .title {
+        margin: 10vh auto 0vh;
 
-  	  h1 {
-  	  	margin: 1.5em 0em .3em;
-  	  }
-  	}
+        .title-text {
+          h1 {}
+        }
 
-  	.btn-main {
-  	  margin: 0 auto;
-  	}
+        div .title-button {
+          display: none;
+        }
+      }
+    }
+
+    section.inPageNav.contact {
+
+      .sectionLinks {
+        padding: 3vh 2vw;
+      }
+    }
+  }
+}
+
+/***
+//contactPg: DOM
+//contactPg: jumbotron & title
+main {
+  div .jumbotron .contact {
+    div .container {
+      div .title {
+
+        div .title-text {
+          h1 #imgscroll {}
+        }
+
+        div .title-button {
+          a #buttNormal .btn-main .resButt {}
+        }
+
+      }
+    }
+  }
+}
+
+//contactPg: w/in-pg nav (nested in div.jumbotron)
+main {
+  div .jumbotron .contact {  //jumbotron content w/in div.container precedes inPageNav
+    section .inPageNav .contact #lgScrnBar {
+      div .sectionLinks {
+        div .col .link1 .link2 .link3 {
+          a .icon {
+            img {}
+            h2 {}
+          }
+          p {}
+          a .button {}
+        }
+      }
+    }
   }
 }
 
