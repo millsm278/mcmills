@@ -1,20 +1,21 @@
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
+@import "helpers/variables";
+@import "helpers/placeholders";
 //Screen width 1100px or more
-@media screen and (min-width: 1100px) {
-  * {
-    width: 100vmaxx;
-  }
+@media only screen and (min-width: 1100px) {
 
   html {
+    width: $vp-width-LwxSh;
     body {
-      width: 100vmax;
+      width: $vp-width-LwxSh;
       position: center;
       overflow-x: hidden;
     }
   }
   
   main {
+    width: $vp-width-LwxSh;
     div{
       &.jumbotron {
         display: table;
@@ -24,7 +25,7 @@
         #lgScrnBar {
           float: left;
           clear: left;
-          width: 100vmax;
+          width: $vp-width-LwxSh;
           border-width: 2px 0px;
         }
       }
@@ -34,17 +35,13 @@
 }
 
 
-
-//Screen width 991px or less
-@media screen and (max-width: 890px){
-
-  * {
-    width: 100vmaxx;
-  }
+/*//Screen width 991px or less
+@media only screen and (max-width: 890px){
 
   html {
+    width: $vp-width-LwxSh;
     body {
-      width: 100vmax;
+      width: $vp-width-LwxSh;
       position: center;
       overflow-x: hidden;
 
@@ -62,8 +59,8 @@
 
         #ani1, #headsh {
           background-size: cover;
-          width: 100vmax;
-          height: 100vmin;
+          width: $vp-width-LwxSh;
+          height: $vp-height-LwxSh;
         }
 
         //rest jumbotron
@@ -76,7 +73,7 @@
             display: grid;
             position: relative;
             height: fit-content;
-            width: 80vw;
+            width: auto;
             margin: 0 auto;
             padding: 5% 0;
             background-color: #566071b3;
@@ -94,6 +91,7 @@
       //(SITE Pgs)Nav Block
       section{
         &#navdrop {
+          width: $vp-width-LwxSh;
           background-image: url("../../../../Images/sheeth.png");
           background-size: cover;
           padding: 8%;
@@ -171,123 +169,159 @@
       }
     }
   }
-}
+}*/
 
 //Screen width 675px or less
-@media screen and (max-width: 675px) {
+@media only screen and (max-width: 675px) {
   
-  * {
-    width: 100vmin;
-  }
-
   html {
+    width: $vp-width-SwxLh;
+    min-height: $vp-height-SwxLh;
+
     body {
-      width: 100vmin;
-      min-height: 100vmax;
+      width: $vp-width-SwxLh;
+      min-height: $vp-height-SwxLh;
       position: center;
       overflow-x: hidden;
+    }
+  }
 
-      header.nav {
-        width: 100vmin;
-      }
+  //header
+  header {
+    &.nav {
+      width: $vp-width-SwxLh;
+      ul {
+        grid-template: 1fr/repeat(5, 1fr);}
+      .n1 {
+        grid-column-start: 1;}
+    }
+  }
 
-      main {
-        min-height: 100vmax;
-        width: 100vmin;
+  //home
+  #ani1, #headsh {
+    background-size: cover;
+    width: $vp-width-SwxLh;
+    height: $vp-height-SwxLh;}
+  #ani div.jumbo {
+    width: $vp-width-SwxLh;}
+  .ani1 {
+    width: auto;
+    margin: 0 auto;
+    h1 {
+      font-size: 5vh;
+      margin: 1vh auto 3vh;}
+    a.btn-main {
+      font-size: 2vh;
+      margin: 0 auto;
+      border-width: .1vh;}
+  }
 
-        &#ani1, &#headsh {
-          background-size: cover;
-          width: 100vmin;
-          height: 100vmax;
+  //jumbotron standard
+  main {
+    width: $vp-width-SwxLh;
+    height: $vp-height-SwxLh;
 
-          div.jumbo {
-            width: 100vmin;
+    div.jumbotron {
+      width: $vp-width-SwxLh;
+      height: $vp-height-SwxLh;
+      text-align: center;
+      .container {
+        .title {
+          max-width: $vp-width-SwxLh;
+          margin: 25vh auto 35vh;
 
-            .ani1 {
-              width: auto;
-              margin: 0 auto;
-
-              h1 {
-                font-size: 5vh;
-                margin: 1vh auto 3vh;
-              }
-      
-              a.btn-main {
-                font-size: 2vh;
-                margin: 0 auto;
-                border-width: .1vh;
-              }
-            }
+          .title-text {
+            h1 {
+              margin: 10vh auto;}
           }
+          
+          .title-button {
+            margin: 10vh auto;}
         }
       }
+    }
+  }
+  //Site nav-block in-line grid map
+  section#navdrop {
+    background-image: url("../../../../Images/sheeth.png");
+    width: $vp-width-SwxLh;
+    min-height: $vp-height-SwxLh;
+  }
+  section.pgLinks {
+    margin: $hrz-center;
+    padding: 6vh 4vw 0vh;    display: block;
+    grid-area: none;
+    grid-template: none;
+    background-color: $light-grey;
+    text-align: center;
+    position: relative;
+    font-family: $main-content;
+    color: $med-grey;
 
+    .linkContent {
+      display: grid;
+      grid-template: repeat(4, 50vmax)/1fr;
+      grid-row-gap: 5vmax;
+      grid-area: none;
+      margin: 0;
       //nav-block in-line grid map
-      section {
-        &#navdrop {
-          padding-bottom: 5vh;
+      .blk1 {
+        grid-area: 1 / 1 / 2 / 2;}
+      .blk2 {
+        grid-area: 2 / 1 / 3 / 2;}
+      .blk3 {
+        grid-area: 3 / 1 / 4 / 2;}
+      .blk4 {
+        grid-area: 4 / 1 / 5 / 2;}
+
+      .col {
+        display: block;        
+        border: solid 2px;
+        height: auto;
+        width: auto;
+        padding: 4vh 0;
+        
+        a { 
+          font-family: $main-content;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $med-grey;
+          font-size: 2vh;
+          letter-spacing: 1.3;
+          text-decoration: none;
         }
+        img {
+          height: 10vh;
+          margin-top: .75vh;
+        }
+        h2 {
+          font-size: 3em;
+          margin-bottom: .75vh;}
+        p {
+          font-size: 2.75vh;
+          margin: 2vh auto 4vh;}
 
-        &.pgLinks {
-          display: block;
-          grid-area: none;
-          grid-template: none;
-
-
-          .linkContent {
-            grid-area: none;
-            grid-template: repeat(4, 75vmax) / 1fr;
-            grid-row-gap: 10%;
-            margin: 5vh;
-
-            //nav-block in-line grid map
-            .blk2 {
-              grid-area: 2 / 1 / 3 / 2;
-            }
-
-            .blk3 {
-              grid-area: 3 / 1 / 4 / 2;
-            }
-
-            .blk4 {
-              grid-area: 4 / 1 / 5 / 2;
-            }
-
-            .col {
-              display: block;
-              width: 100%;
-              border: solid 2px;
-              height: auto;
-              padding: 8vh 0em;
-
-              img {
-                height: 10vh;
-              }
-
-              h2 {
-                font-size: 3em;
-                margin-bottom: .75em;
-              }
-
-              p {
-                font-size: 1.5em;
-                margin-bottom: 2em;
-              }
-
-              .button {
-                font-size: 3em;
-                margin: 0px;
-                border-width: 3px 0px;
-                width: max-content;
-                justify-self: center;
-              }
-            }
-          }
+        .button {
+          font-family: $main-content;
+          text-transform: uppercase;
+          font-weight: 800;
+          color: $med-grey;
+          border-color: $med-grey;
+          font-size: 2vh;
+          letter-spacing: 1.3;
+          border-style: $btn-box;
+          border-width: .5vh;
+          text-decoration: none;
+        }
+        .button:hover {
+          color: $lt-dust-pink;
+          background-color: $med-grey;
         }
       }
     }
   }
 }
+
 
 /**************/
 /**************/

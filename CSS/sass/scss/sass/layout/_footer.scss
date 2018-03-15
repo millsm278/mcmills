@@ -1,6 +1,9 @@
 /*******FOOTER*******/
 /*******FOOTER*******/
+@import "helpers/variables";
+
 footer {
+  width: $vp-width-LwxSh;
   text-align: -webkit-right;
   padding: 10px 20px;
   background-color: #6c8fa7;

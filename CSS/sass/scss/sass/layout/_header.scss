@@ -1,11 +1,13 @@
 /*******HEADER*******/
 /*******HEADER*******/
+@import "helpers/variables";
+
 header {
   &.nav {  //checked
     background-color: #8fafc678;
     position: fixed;
     z-index: 5;
-    width: 100vmax;
+    width: $vp-width-LwxSh;
   }
   ul {
     display: grid;
@@ -26,8 +28,8 @@ header {
         display: inline-flex;
         justify-content: space-around;
         list-style-type: disc;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1vw;
+        padding-right: 1vw;
 
         &#logo {
           a:hover {
@@ -35,9 +37,9 @@ header {
           }
 
           img {
-            height: 75px;
-            margin-top: 10px;
-            margin-bottom: 0px;
+            height: 13vh;
+            margin-top: 4vh;
+            margin-bottom: 2vh;
           }
         }
 
@@ -75,8 +77,19 @@ header {
   }
 }
 
-
-
+/*@media only screen and (max-width: 675px) {
+  //header
+  header {
+    &.nav {
+      width: $vp-width-SwxLh;
+      ul {
+        grid-template: 1fr/repeat(5, 1fr);
+      }
+      .n1 {
+        grid-column-start: 2;
+      }
+    }
+  }*/
 
 
 /***

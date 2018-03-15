@@ -1,14 +1,16 @@
 /*******'JUMBOTRON'*******/
 /*******'JUMBOTRON'*******/
+@import "helpers/variables";
+
 main {
-  width: 100vmax;
+  width: $vp-width-LwxSh;
   height: max-content;
   text-align: center;
 
   .jumbotron {
     background-size: cover;
     background-position: center;
-    width: 100vmax;
+    width: $vp-width-LwxSh;
     margin: 0 auto;
     overflow: hidden;
 
@@ -26,9 +28,9 @@ main {
             color: #fedcc8;
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
-            font-size: 5em;
-            margin: 15% auto;
-            padding: 0px 12px;
+            font-size: 7vh;
+            margin: 15vh auto;
+            padding: .5vh 3vw;
             text-transform: uppercase;
             border: solid 2px;
             border-color: #fedcc8;
@@ -37,7 +39,7 @@ main {
         }
 
         .title-button {
-          margin: 20% auto 0;
+          margin: 20vh auto 0;
 
           .btn-main .resButt /* #buttNormal */ {}
         }
@@ -45,7 +47,6 @@ main {
     }
   }
 }
-
 
 /***
 
