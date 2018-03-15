@@ -1,7 +1,10 @@
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
 //Screen width 1100px or more
-@media only screen and (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
+  * {
+    width: 100vmaxx;
+  }
 
   html {
     body {
@@ -34,6 +37,10 @@
 
 //Screen width 991px or less
 @media screen and (max-width: 890px){
+
+  * {
+    width: 100vmaxx;
+  }
 
   html {
     body {
@@ -168,6 +175,11 @@
 
 //Screen width 675px or less
 @media screen and (max-width: 675px) {
+  
+  * {
+    width: 100vmin;
+  }
+
   html {
     body {
       width: 100vmin;

@@ -1022,21 +1022,26 @@ else=color:#64445c,border-color:#64445c*/
 /**************/
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
-@media only screen and (min-width: 1100px) {
-  /* line 7, ../sass/helpers/_mediabreakpts.scss */
+@media screen and (min-width: 1100px) {
+  /* line 5, ../sass/helpers/_mediabreakpts.scss */
+  * {
+    width: 100vmaxx;
+  }
+
+  /* line 10, ../sass/helpers/_mediabreakpts.scss */
   html body {
     width: 100vmax;
     position: center;
     overflow-x: hidden;
   }
 
-  /* line 16, ../sass/helpers/_mediabreakpts.scss */
+  /* line 19, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron {
     display: table;
     padding: 0;
     padding: 10vh 0;
   }
-  /* line 21, ../sass/helpers/_mediabreakpts.scss */
+  /* line 24, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron #lgScrnBar {
     float: left;
     clear: left;
@@ -1045,32 +1050,37 @@ else=color:#64445c,border-color:#64445c*/
   }
 }
 @media screen and (max-width: 890px) {
-  /* line 39, ../sass/helpers/_mediabreakpts.scss */
+  /* line 41, ../sass/helpers/_mediabreakpts.scss */
+  * {
+    width: 100vmaxx;
+  }
+
+  /* line 46, ../sass/helpers/_mediabreakpts.scss */
   html body {
     width: 100vmax;
     position: center;
     overflow-x: hidden;
   }
-  /* line 48, ../sass/helpers/_mediabreakpts.scss */
+  /* line 55, ../sass/helpers/_mediabreakpts.scss */
   html body main div.jumbo {
     perspective: 0.5px;
   }
-  /* line 51, ../sass/helpers/_mediabreakpts.scss */
+  /* line 58, ../sass/helpers/_mediabreakpts.scss */
   html body main div.jumbo .ani1 {
     width: 90vmin;
   }
-  /* line 56, ../sass/helpers/_mediabreakpts.scss */
+  /* line 63, ../sass/helpers/_mediabreakpts.scss */
   html body main #ani1, html body main #headsh {
     background-size: cover;
     width: 100vmax;
     height: 100vmin;
   }
-  /* line 63, ../sass/helpers/_mediabreakpts.scss */
+  /* line 70, ../sass/helpers/_mediabreakpts.scss */
   html body main .jumbotron {
     display: block;
     grid-template: none;
   }
-  /* line 68, ../sass/helpers/_mediabreakpts.scss */
+  /* line 75, ../sass/helpers/_mediabreakpts.scss */
   html body main .jumbotron section.inPageNav {
     display: grid;
     position: relative;
@@ -1081,17 +1091,17 @@ else=color:#64445c,border-color:#64445c*/
     background-color: #566071b3;
     border: 2px solid #fedecb;
   }
-  /* line 79, ../sass/helpers/_mediabreakpts.scss */
+  /* line 86, ../sass/helpers/_mediabreakpts.scss */
   html body main .jumbotron section.inPageNav .sectionLinks .col {
     padding: 5% 20%;
   }
-  /* line 89, ../sass/helpers/_mediabreakpts.scss */
+  /* line 96, ../sass/helpers/_mediabreakpts.scss */
   html body section#navdrop {
     background-image: url("../../../../Images/sheeth.png");
     background-size: cover;
     padding: 8%;
   }
-  /* line 95, ../sass/helpers/_mediabreakpts.scss */
+  /* line 102, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks {
     background-color: #e3e4e6;
     display: grid;
@@ -1103,7 +1113,7 @@ else=color:#64445c,border-color:#64445c*/
     background-size: 100% auto;
     padding: 3%;
   }
-  /* line 106, ../sass/helpers/_mediabreakpts.scss */
+  /* line 113, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent {
     position: relative;
     display: grid;
@@ -1117,19 +1127,19 @@ else=color:#64445c,border-color:#64445c*/
     align-items: center;
     margin: auto;
   }
-  /* line 119, ../sass/helpers/_mediabreakpts.scss */
+  /* line 126, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .blk2 {
     grid-area: 1 / 2 / 2 / 3;
   }
-  /* line 123, ../sass/helpers/_mediabreakpts.scss */
+  /* line 130, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .blk3 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  /* line 127, ../sass/helpers/_mediabreakpts.scss */
+  /* line 134, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .blk4 {
     grid-area: 2 / 2 / 3 / 3;
   }
-  /* line 131, ../sass/helpers/_mediabreakpts.scss */
+  /* line 138, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col {
     display: block;
     width: 100%;
@@ -1139,21 +1149,21 @@ else=color:#64445c,border-color:#64445c*/
     border: solid 2px;
     background-color: #77777714;
   }
-  /* line 140, ../sass/helpers/_mediabreakpts.scss */
+  /* line 147, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col img {
     height: 10vh;
   }
-  /* line 144, ../sass/helpers/_mediabreakpts.scss */
+  /* line 151, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col h2 {
     font-size: 2.5em;
     margin-bottom: .5em;
   }
-  /* line 149, ../sass/helpers/_mediabreakpts.scss */
+  /* line 156, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col p {
     font-size: 1.25em;
     margin-bottom: 2em;
   }
-  /* line 154, ../sass/helpers/_mediabreakpts.scss */
+  /* line 161, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col .button {
     font-size: 2.5em;
     margin: 0px;
@@ -1163,78 +1173,83 @@ else=color:#64445c,border-color:#64445c*/
   }
 }
 @media screen and (max-width: 675px) {
-  /* line 172, ../sass/helpers/_mediabreakpts.scss */
+  /* line 179, ../sass/helpers/_mediabreakpts.scss */
+  * {
+    width: 100vmin;
+  }
+
+  /* line 184, ../sass/helpers/_mediabreakpts.scss */
   html body {
     width: 100vmin;
     min-height: 100vmax;
     position: center;
     overflow-x: hidden;
   }
-  /* line 178, ../sass/helpers/_mediabreakpts.scss */
+  /* line 190, ../sass/helpers/_mediabreakpts.scss */
   html body header.nav {
     width: 100vmin;
   }
-  /* line 182, ../sass/helpers/_mediabreakpts.scss */
+  /* line 194, ../sass/helpers/_mediabreakpts.scss */
   html body main {
     min-height: 100vmax;
     width: 100vmin;
   }
-  /* line 186, ../sass/helpers/_mediabreakpts.scss */
+  /* line 198, ../sass/helpers/_mediabreakpts.scss */
   html body main#ani1, html body main#headsh {
     background-size: cover;
     width: 100vmin;
     height: 100vmax;
   }
-  /* line 191, ../sass/helpers/_mediabreakpts.scss */
+  /* line 203, ../sass/helpers/_mediabreakpts.scss */
   html body main#ani1 div.jumbo, html body main#headsh div.jumbo {
     width: 100vmin;
   }
-  /* line 194, ../sass/helpers/_mediabreakpts.scss */
+  /* line 206, ../sass/helpers/_mediabreakpts.scss */
   html body main#ani1 div.jumbo .ani1, html body main#headsh div.jumbo .ani1 {
     width: auto;
     margin: 0 auto;
   }
-  /* line 198, ../sass/helpers/_mediabreakpts.scss */
+  /* line 210, ../sass/helpers/_mediabreakpts.scss */
   html body main#ani1 div.jumbo .ani1 h1, html body main#headsh div.jumbo .ani1 h1 {
     font-size: 5vh;
     margin: 1vh auto 3vh;
   }
-  /* line 203, ../sass/helpers/_mediabreakpts.scss */
+  /* line 215, ../sass/helpers/_mediabreakpts.scss */
   html body main#ani1 div.jumbo .ani1 a.btn-main, html body main#headsh div.jumbo .ani1 a.btn-main {
     font-size: 2vh;
     margin: 0 auto;
     border-width: .1vh;
   }
-  /* line 215, ../sass/helpers/_mediabreakpts.scss */
+  /* line 227, ../sass/helpers/_mediabreakpts.scss */
   html body section#navdrop {
     padding-bottom: 5vh;
   }
-  /* line 219, ../sass/helpers/_mediabreakpts.scss */
+  /* line 231, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks {
     display: block;
     grid-area: none;
     grid-template: none;
   }
-  /* line 225, ../sass/helpers/_mediabreakpts.scss */
+  /* line 237, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent {
     grid-area: none;
     grid-template: repeat(4, 75vmax)/1fr;
     grid-row-gap: 10%;
     margin: 5vh;
   }
-  /* line 232, ../sass/helpers/_mediabreakpts.scss */
+  /* line 244, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  /* line 236, ../sass/helpers/_mediabreakpts.scss */
+  /* line 248, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  /* line 240, ../sass/helpers/_mediabreakpts.scss */
+  /* line 252, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  /* line 244, ../sass/helpers/_mediabreakpts.scss */
+  /* line 256, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col {
     display: block;
     width: 100%;
@@ -1242,21 +1257,21 @@ else=color:#64445c,border-color:#64445c*/
     height: auto;
     padding: 8vh 0em;
   }
-  /* line 251, ../sass/helpers/_mediabreakpts.scss */
+  /* line 263, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col img {
     height: 10vh;
   }
-  /* line 255, ../sass/helpers/_mediabreakpts.scss */
+  /* line 267, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col h2 {
     font-size: 3em;
     margin-bottom: .75em;
   }
-  /* line 260, ../sass/helpers/_mediabreakpts.scss */
+  /* line 272, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col p {
     font-size: 1.5em;
     margin-bottom: 2em;
   }
-  /* line 265, ../sass/helpers/_mediabreakpts.scss */
+  /* line 277, ../sass/helpers/_mediabreakpts.scss */
   html body section.pgLinks .linkContent .col .button {
     font-size: 3em;
     margin: 0px;
