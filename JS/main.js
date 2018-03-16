@@ -44,13 +44,13 @@ $(document).ready(function () {
 
 
 	if (finalSize < -100) {
-		$('#textscrollOther, #textscrollOther').css({
+		$('#textscrollOther').css({
 			'color': '#feece11a',
 			//'border-color': '#feece11a',
 		});
 
 	} else {
-		$('#textscrollOther, #textscrollOther').css({
+		$('#textscrollOther').css({
 			'color': '#292d3d',
 			//'border-color': '#64445c',
 		});
