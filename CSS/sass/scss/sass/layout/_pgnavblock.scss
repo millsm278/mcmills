@@ -10,7 +10,7 @@ section.inPageNav /* #lgScrnBar */ {
   width: 80vw;
   padding: 5% 0;
   background-color: #566071b3;
-  border: 2px solid #fedecb;
+  border: 2px solid $dust-pink;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: #fedecb;
@@ -43,37 +43,37 @@ section.inPageNav /* #lgScrnBar */ {
         font-family: inherit;
         color: inherit;
         font-weight: inherit;
-        font-size: 14px;
+        font-size: 1em;
         text-transform: uppercase;
         letter-spacing: 1.3px;
         text-decoration: none;
-        margin-bottom: 10px;
+        margin-bottom: 2.5vh;
 
         img {
-          height: 40px;
+          height: 2.75em;
         }
 
         h2 {
           font-family: inherit;
           color: inherit;
           font-weight: inherit;
-          font-size: 23px;
+          font-size: 1.25em;
           text-transform: uppercase;
         }
 
         &.button {
-          color: #fedecb;
-          border-color: #fedecb;}
+          color: $dust-pink;
+          border-color: $dust-pink;}
         }
 
       p {
         font-family: inherit;
         color: inherit;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        padding: 0 20px;
-        margin-bottom: 20px;
+        font-size: .75em;
+        line-height: 1.25;
+        padding: 0;
+        margin-bottom: 2.5vh;
       }
     }
   }
@@ -157,7 +157,7 @@ section{
           }
 
           &.button:hover {
-            color: #feece1;
+            color: $dust-pink;
             background-color: #7d7d82;
           }
         }
