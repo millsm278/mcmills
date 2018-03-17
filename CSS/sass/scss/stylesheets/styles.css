@@ -148,50 +148,49 @@ header .nav
 /**************/
 /*******'JUMBOTRON'*******/
 /*******'JUMBOTRON'*******/
-@media only screen and (min-width: 426px) {
-  /* line 6, ../sass/layout/_jumbotron.scss */
-  main {
-    width: 100vmax;
-    height: max-content;
-    text-align: center;
-  }
-  /* line 11, ../sass/layout/_jumbotron.scss */
-  main .jumbotron {
-    background-size: cover;
-    background-position: center;
-    width: 100vmax;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  /* line 18, ../sass/layout/_jumbotron.scss */
-  main .jumbotron .container {
-    display: grid;
-    height: fit-content;
-    justify-items: center;
-    align-items: center;
-  }
-  /* line 24, ../sass/layout/_jumbotron.scss */
-  main .jumbotron .container .title {
-    margin: 25vh auto 35vh;
-  }
-  /* line 28, ../sass/layout/_jumbotron.scss */
-  main .jumbotron .container .title .title-text h1 {
-    color: #fedcc8;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 7vh;
-    margin: 15vh auto;
-    padding: .5vh 3vw;
-    text-transform: uppercase;
-    border: solid 2px;
-    border-color: #fedcc8;
-    word-spacing: 0.2em;
-  }
-  /* line 42, ../sass/layout/_jumbotron.scss */
-  main .jumbotron .container .title .title-button {
-    margin: 20vh auto 0;
-  }
+/* line 5, ../sass/layout/_jumbotron.scss */
+main {
+  width: 100vmax;
+  height: max-content;
+  text-align: center;
 }
+/* line 10, ../sass/layout/_jumbotron.scss */
+main .jumbotron {
+  background-size: cover;
+  background-position: center;
+  width: 100vmax;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 17, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container {
+  display: grid;
+  height: fit-content;
+  justify-items: center;
+  align-items: center;
+}
+/* line 23, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container .title {
+  margin: 25vh auto 35vh;
+}
+/* line 27, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container .title .title-text h1 {
+  color: #fedcc8;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 7vh;
+  margin: 15vh auto;
+  padding: .5vh 3vw;
+  text-transform: uppercase;
+  border: solid 2px;
+  border-color: #fedcc8;
+  word-spacing: 0.2em;
+}
+/* line 41, ../sass/layout/_jumbotron.scss */
+main .jumbotron .container .title .title-button {
+  margin: 20vh auto 0;
+}
+
 /***
 
 //jumbotron: DOM
@@ -723,14 +722,13 @@ body.resume {
   background-image: url("../../../../Images/sheeta.png");
   background-size: cover;
 }
-
 /* line 30, ../sass/pages/_portfolio.scss */
-div.container.resumePDF {
+body.resume div.container.resumePDF {
   width: max-content;
   margin: 15vh auto 5vh;
 }
 /* line 34, ../sass/pages/_portfolio.scss */
-div.container.resumePDF a.btn-main {
+body.resume div.container.resumePDF a.btn-main {
   margin: 0 auto;
   border: solid 2px;
   font-size: 3.5vh;
@@ -740,25 +738,24 @@ div.container.resumePDF a.btn-main {
   background-color: #d8cdc7;
 }
 /* line 44, ../sass/pages/_portfolio.scss */
-div.container.resumePDF a.btn-main:hover {
+body.resume div.container.resumePDF a.btn-main:hover {
   cursor: pointer;
   color: #d8cdc7;
   background-color: #777;
 }
 /* line 50, ../sass/pages/_portfolio.scss */
-div.container.resumePDF a.btn-main:focus {
+body.resume div.container.resumePDF a.btn-main:focus {
   cursor: pointer;
   color: #d8cdc7;
   background-color: #777;
 }
-
 /* line 57, ../sass/pages/_portfolio.scss */
-div.container.resume {
+body.resume div.container.resume {
   width: max-content;
   margin: 15vh auto;
 }
 /* line 61, ../sass/pages/_portfolio.scss */
-div.container.resume .c26 {
+body.resume div.container.resume .c26 {
   margin: 0 auto;
   border: 1px solid #000000;
 }
