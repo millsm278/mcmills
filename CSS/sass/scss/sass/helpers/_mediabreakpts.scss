@@ -2,6 +2,7 @@
 /*******MEDIA BEAKS/RESPONSIVE DESIGN*******/
 @import "helpers/variables";
 @import "helpers/placeholders";
+
 //Screen width 1100px or more
 @media only screen and (min-width: 1100px) {
 
@@ -169,7 +170,11 @@
     }
   }
 }*/
-
+@media only screen and (min-width: 426px) {
+  body {
+    max-width: $vp-width-LwxSh;
+  }
+}
 //Screen width 675px or less
 @media only screen and (max-width: 425px) {
   

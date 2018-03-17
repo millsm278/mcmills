@@ -1,47 +1,49 @@
 /*******'JUMBOTRON'*******/
 /*******'JUMBOTRON'*******/
 @import "helpers/variables";
-
-main {
-  width: $vp-width-LwxSh;
-  height: max-content;
-  text-align: center;
-
-  .jumbotron {
-    background-size: cover;
-    background-position: center;
+@media only screen and (min-width: 426px) {
+  
+  main {
     width: $vp-width-LwxSh;
-    margin: 0 auto;
-    overflow: hidden;
+    height: max-content;
+    text-align: center;
 
-    .container {
-      display: grid;
-      height: fit-content;
-      justify-items: center;
-      align-items: center;
+    .jumbotron {
+      background-size: cover;
+      background-position: center;
+      width: $vp-width-LwxSh;
+      margin: 0 auto;
+      overflow: hidden;
 
-      .title {
-        margin: 25vh auto 35vh;
+      .container {
+        display: grid;
+        height: fit-content;
+        justify-items: center;
+        align-items: center;
 
-        .title-text {
-          h1 /* #imgscroll */ {
-            color: #fedcc8;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 600;
-            font-size: 7vh;
-            margin: 15vh auto;
-            padding: .5vh 3vw;
-            text-transform: uppercase;
-            border: solid 2px;
-            border-color: #fedcc8;
-            word-spacing: 0.2em;
+        .title {
+          margin: 25vh auto 35vh;
+
+          .title-text {
+            h1 /* #imgscroll */ {
+              color: #fedcc8;
+              font-family: 'Raleway', sans-serif;
+              font-weight: 600;
+              font-size: 7vh;
+              margin: 15vh auto;
+              padding: .5vh 3vw;
+              text-transform: uppercase;
+              border: solid 2px;
+              border-color: #fedcc8;
+              word-spacing: 0.2em;
+            }
           }
-        }
 
-        .title-button {
-          margin: 20vh auto 0;
+          .title-button {
+            margin: 20vh auto 0;
 
-          .btn-main .resButt /* #buttNormal */ {}
+            .btn-main .resButt /* #buttNormal */ {}
+          }
         }
       }
     }

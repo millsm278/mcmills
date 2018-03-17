@@ -1,6 +1,6 @@
 /*******PORTFOLIO PG SPECIFIC STYLING*******/
 /*******PORTFOLIO PG SPECIFIC STYLING*******/
-
+@import "helpers/variables";
 /**PORTFOLIOpg: Jumbotron - Content/Container**/
 main {
   .jumbotron.portfolio {
@@ -20,6 +20,47 @@ main {
         }
       }
     }
+  }
+}
+
+body.resume{
+  background-image: url("../../../../Images/sheeta.png");
+  background-size: cover;
+}
+div.container.resumePDF {
+  width: max-content;
+  margin: 15vh auto 5vh;
+
+  a.btn-main {
+    margin: 0 auto;
+    border: solid 2px;
+    font-size: 3.5vh;
+    font-weight: bold;
+    padding: 1.25vh 1vw;
+    color: #777;
+    background-color: #d8cdc7;
+  }
+
+  a.btn-main:hover {
+    cursor: pointer;
+    color: #d8cdc7; 
+    background-color: #777;
+  }
+
+  a.btn-main:focus {
+    cursor: pointer;
+    color: #d8cdc7; 
+    background-color: #777;
+  }
+}
+
+div.container.resume {
+  width: max-content;
+  margin: 15vh auto;
+  
+  .c26 {
+    margin: 0 auto;
+    border: 1px solid #000000;
   }
 }
 
