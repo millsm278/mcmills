@@ -236,8 +236,7 @@
 
   #btmViewBox {
     width: $vp-width-SwxLh;
-    min-height: 40vmax;
-    max-height: 50vmax;
+    height: 40vmax;
     background: url(../../../../Images/headsh.png) no-repeat center center;
     background-size: 100%;
     overflow: hidden;
