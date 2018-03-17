@@ -276,7 +276,7 @@
     }
   }
 
-  main .jumbotron.other .container .title {
+  main div.jumbotron.other .container .title {
     margin: 18vh auto 8vh;
     .title-text {
       margin: 0 auto;
@@ -293,7 +293,7 @@
     display: none;}
 
 
-  main .jumbotron.contact .container .title {
+  main div.jumbotron.contact .container .title {
     margin: 14vh auto 0vh;}
   div.title-button.contact, div.title-button.other {
     display: none;}
@@ -412,9 +412,9 @@
     }
   }
 
-  div.container.linkContent::before {
+  div.container .linkContent::before {
     content: unset;}
-  div.container.linkContent::after {
+  div.container .linkContent::after {
     content: unset;}
 
   footer {

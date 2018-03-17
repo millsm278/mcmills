@@ -155,7 +155,7 @@ main {
   text-align: center;
 }
 /* line 10, ../sass/layout/_jumbotron.scss */
-main .jumbotron {
+main div.jumbotron {
   background-size: cover;
   background-position: center;
   width: 100vmax;
@@ -163,18 +163,18 @@ main .jumbotron {
   overflow: hidden;
 }
 /* line 17, ../sass/layout/_jumbotron.scss */
-main .jumbotron .container {
+main div.jumbotron .container {
   display: grid;
   height: fit-content;
   justify-items: center;
   align-items: center;
 }
 /* line 23, ../sass/layout/_jumbotron.scss */
-main .jumbotron .container .title {
+main div.jumbotron .container .title {
   margin: 25vh auto 35vh;
 }
 /* line 27, ../sass/layout/_jumbotron.scss */
-main .jumbotron .container .title .title-text h1 {
+main div.jumbotron .container .title .title-text h1 {
   color: #fedcc8;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -187,7 +187,7 @@ main .jumbotron .container .title .title-text h1 {
   word-spacing: 0.2em;
 }
 /* line 41, ../sass/layout/_jumbotron.scss */
-main .jumbotron .container .title .title-button {
+main div.jumbotron .container .title .title-button {
   margin: 20vh auto 0;
 }
 
@@ -713,7 +713,7 @@ main {
 /*******PORTFOLIO PG SPECIFIC STYLING*******/
 /**PORTFOLIOpg: Jumbotron - Content/Container**/
 /* line 6, ../sass/pages/_portfolio.scss */
-main .jumbotron.portfolio {
+main div.jumbotron.portfolio {
   background-image: url("../../../../Images/KIEV2.png");
 }
 
@@ -805,29 +805,29 @@ main {
 /*******OTHER PG SPECIFIC STYLING*******/
 /*******OTHER PG SPECIFIC STYLING*******/
 /* line 4, ../sass/pages/_other.scss */
-main .jumbotron.other {
+main div.jumbotron.other {
   background-image: url("../../../../Images/ludlow.png");
 }
 /* line 7, ../sass/pages/_other.scss */
-main .jumbotron.other .container {
+main div.jumbotron.other .container {
   padding-top: calc(2em + 95px);
 }
 /* line 10, ../sass/pages/_other.scss */
-main .jumbotron.other .container .title {
+main div.jumbotron.other .container .title {
   margin: 25vh auto 25vh;
 }
 /* line 13, ../sass/pages/_other.scss */
-main .jumbotron.other .container .title .title-text {
+main div.jumbotron.other .container .title .title-text {
   margin: 0 2vw;
 }
 /* line 16, ../sass/pages/_other.scss */
-main .jumbotron.other .container .title .title-text .imgscrollOther {
+main div.jumbotron.other .container .title .title-text .imgscrollOther {
   color: #292d3d;
   border: none;
   /* margin: 0 auto; */
 }
 /* line 21, ../sass/pages/_other.scss */
-main .jumbotron.other .container .title .title-text .imgscrollOther h3 {
+main div.jumbotron.other .container .title .title-text .imgscrollOther h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 2.75em;
@@ -838,7 +838,7 @@ main .jumbotron.other .container .title .title-text .imgscrollOther h3 {
   margin: 0em;
 }
 /* line 32, ../sass/pages/_other.scss */
-main .jumbotron.other .container .title .title-text .imgscrollOther h4 {
+main div.jumbotron.other .container .title .title-text .imgscrollOther h4 {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 400;
   font-size: 1.5em;
@@ -847,7 +847,7 @@ main .jumbotron.other .container .title .title-text .imgscrollOther h4 {
   margin: 0 auto;
 }
 /* line 42, ../sass/pages/_other.scss */
-main .jumbotron.other .container .title .title-text .title-button {
+main div.jumbotron.other .container .title .title-text .title-button {
   display: none;
 }
 
@@ -1365,25 +1365,25 @@ else=color:#64445c,border-color:#64445c*/
   }
 
   /* line 279, ../sass/helpers/_mediabreakpts.scss */
-  main .jumbotron.other .container .title {
+  main div.jumbotron.other .container .title {
     margin: 18vh auto 8vh;
   }
   /* line 281, ../sass/helpers/_mediabreakpts.scss */
-  main .jumbotron.other .container .title .title-text {
+  main div.jumbotron.other .container .title .title-text {
     margin: 0 auto;
   }
   /* line 283, ../sass/helpers/_mediabreakpts.scss */
-  main .jumbotron.other .container .title .title-text .imgscrollOther {
+  main div.jumbotron.other .container .title .title-text .imgscrollOther {
     background-color: rgba(210, 224, 232, 0.6);
     margin: -22vh 1vw;
     font-size: 1.75vh;
   }
   /* line 287, ../sass/helpers/_mediabreakpts.scss */
-  main .jumbotron.other .container .title .title-text .imgscrollOther h3 {
+  main div.jumbotron.other .container .title .title-text .imgscrollOther h3 {
     font-size: 2.75em;
   }
   /* line 288, ../sass/helpers/_mediabreakpts.scss */
-  main .jumbotron.other .container .title .title-text .imgscrollOther h4 {
+  main div.jumbotron.other .container .title .title-text .imgscrollOther h4 {
     font-size: 1.25em;
   }
 
@@ -1393,7 +1393,7 @@ else=color:#64445c,border-color:#64445c*/
   }
 
   /* line 296, ../sass/helpers/_mediabreakpts.scss */
-  main .jumbotron.contact .container .title {
+  main div.jumbotron.contact .container .title {
     margin: 14vh auto 0vh;
   }
 
@@ -1522,12 +1522,12 @@ else=color:#64445c,border-color:#64445c*/
   }
 
   /* line 415, ../sass/helpers/_mediabreakpts.scss */
-  div.container.linkContent::before {
+  div.container .linkContent::before {
     content: unset;
   }
 
   /* line 417, ../sass/helpers/_mediabreakpts.scss */
-  div.container.linkContent::after {
+  div.container .linkContent::after {
     content: unset;
   }
 
