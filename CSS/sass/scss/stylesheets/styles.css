@@ -1372,7 +1372,7 @@ else=color:#64445c,border-color:#64445c*/
 
   /* line 283, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title {
-    margin: 18vh auto 8vh;
+    margin: 18vh 0vw 8vh;
   }
   /* line 285, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text {
@@ -1400,7 +1400,7 @@ else=color:#64445c,border-color:#64445c*/
 
   /* line 300, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.contact .container .title {
-    margin: 14vh auto 0vh;
+    margin: 14vh 0vw 0vh;
   }
 
   /* line 302, ../sass/helpers/_mediabreakpts.scss */
