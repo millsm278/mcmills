@@ -354,6 +354,8 @@
       grid-area: none;
       margin: 0;
       padding: unset;
+      justify-items: unset;
+      align-items: unset;
 
       //nav-block in-line grid map
       .blk1 {
@@ -382,17 +384,17 @@
           font-size: 2vh;
           letter-spacing: 1.3px;
           text-decoration: none;
-        }
 
-        img {
-          height: 10vh;
-          margin-top: .75vh;
-        }
+          h2 {
+            font-size: 3em;
+            margin-bottom: .75vh;
+            margin-top: unset;
+          }
 
-        h2 {
-          font-size: 3em;
-          margin-bottom: .75vh;
-          margin-top: unset;
+          img {
+            height: 10vh;
+            margin-top: .75vh;
+          }
         }
 
         p {

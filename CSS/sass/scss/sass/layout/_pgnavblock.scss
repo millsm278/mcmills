@@ -89,7 +89,7 @@ section{
     background-size: cover;
   }
 
-  .pgLinks {
+  &.pgLinks {
     grid-template: 1fr / 1fr 8fr 1fr;
     background-color: #e3e4e6;
     text-align: center;

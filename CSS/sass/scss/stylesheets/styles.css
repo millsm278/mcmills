@@ -305,7 +305,7 @@ section#navdrop {
   background-size: cover;
 }
 /* line 92, ../sass/layout/_pgnavblock.scss */
-section .pgLinks {
+section.pgLinks {
   grid-template: 1fr / 1fr 8fr 1fr;
   background-color: #e3e4e6;
   text-align: center;
@@ -319,7 +319,7 @@ section .pgLinks {
   text-align: center;
 }
 /* line 105, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent {
+section.pgLinks .linkContent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-area: 1 / 2 / 2 / 3;
@@ -329,27 +329,27 @@ section .pgLinks .linkContent {
   align-items: center;
 }
 /* line 114, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .blk1 {
+section.pgLinks .linkContent .blk1 {
   grid-area: 1 / 1 / 2 / 2;
 }
 /* line 118, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .blk2 {
+section.pgLinks .linkContent .blk2 {
   grid-area: 1 / 2 / 2 / 3;
 }
 /* line 122, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .blk3 {
+section.pgLinks .linkContent .blk3 {
   grid-area: 1 / 3 / 2 / 4;
 }
 /* line 126, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .blk4 {
+section.pgLinks .linkContent .blk4 {
   grid-area: 1 / 4 / 2 / 5;
 }
 /* line 130, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col {
+section.pgLinks .linkContent .col {
   padding: 3em 0em;
 }
 /* line 133, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col a {
+section.pgLinks .linkContent .col a {
   font-family: inherit;
   color: inherit;
   font-weight: inherit;
@@ -360,11 +360,11 @@ section .pgLinks .linkContent .col a {
   margin-bottom: 10px;
 }
 /* line 143, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col a img {
+section.pgLinks .linkContent .col a img {
   height: 40px;
 }
 /* line 147, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col a h2 {
+section.pgLinks .linkContent .col a h2 {
   font-family: inherit;
   color: inherit;
   font-weight: inherit;
@@ -372,16 +372,16 @@ section .pgLinks .linkContent .col a h2 {
   text-transform: uppercase;
 }
 /* line 155, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col a.button {
+section.pgLinks .linkContent .col a.button {
   border-color: #7d7d82;
 }
 /* line 159, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col a.button:hover {
+section.pgLinks .linkContent .col a.button:hover {
   color: #fedecb;
   background-color: #7d7d82;
 }
 /* line 165, ../sass/layout/_pgnavblock.scss */
-section .pgLinks .linkContent .col p {
+section.pgLinks .linkContent .col p {
   font-family: inherit;
   color: inherit;
   font-weight: 400;
@@ -851,13 +851,6 @@ main div.jumbotron.other .container .title .title-text .title-button {
   display: none;
 }
 
-/** 
-section.inPageNav {
-  padding: 7% 2%;
-  border: solid 2px;
-  border-color: #feece1;
-}
-**/
 /***
 //otherPg specific: DOM
 
@@ -1460,24 +1453,26 @@ else=color:#64445c,border-color:#64445c*/
     grid-area: none;
     margin: 0;
     padding: unset;
+    justify-items: unset;
+    align-items: unset;
   }
-  /* line 359, ../sass/helpers/_mediabreakpts.scss */
+  /* line 361, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  /* line 361, ../sass/helpers/_mediabreakpts.scss */
+  /* line 363, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  /* line 363, ../sass/helpers/_mediabreakpts.scss */
+  /* line 365, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  /* line 365, ../sass/helpers/_mediabreakpts.scss */
+  /* line 367, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  /* line 368, ../sass/helpers/_mediabreakpts.scss */
+  /* line 370, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col {
     display: block;
     border: solid 2px;
@@ -1487,7 +1482,7 @@ else=color:#64445c,border-color:#64445c*/
     box-shadow: 0vh 3vw 5vh #71645e;
     background-color: #f5dace52;
   }
-  /* line 377, ../sass/helpers/_mediabreakpts.scss */
+  /* line 379, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col a {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -1497,23 +1492,23 @@ else=color:#64445c,border-color:#64445c*/
     letter-spacing: 1.3px;
     text-decoration: none;
   }
-  /* line 387, ../sass/helpers/_mediabreakpts.scss */
-  section.pgLinks .linkContent .col img {
-    height: 10vh;
-    margin-top: .75vh;
-  }
-  /* line 392, ../sass/helpers/_mediabreakpts.scss */
-  section.pgLinks .linkContent .col h2 {
+  /* line 388, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col a h2 {
     font-size: 3em;
     margin-bottom: .75vh;
     margin-top: unset;
   }
-  /* line 398, ../sass/helpers/_mediabreakpts.scss */
+  /* line 394, ../sass/helpers/_mediabreakpts.scss */
+  section.pgLinks .linkContent .col a img {
+    height: 10vh;
+    margin-top: .75vh;
+  }
+  /* line 400, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col p {
     font-size: 2.75vh;
     margin: 2vh auto 4vh;
   }
-  /* line 403, ../sass/helpers/_mediabreakpts.scss */
+  /* line 405, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col .button {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -1526,23 +1521,23 @@ else=color:#64445c,border-color:#64445c*/
     border-width: .5vh;
     text-decoration: none;
   }
-  /* line 416, ../sass/helpers/_mediabreakpts.scss */
+  /* line 418, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col .button:hover {
     color: #feece1;
     background-color: #7d7d82;
   }
 
-  /* line 424, ../sass/helpers/_mediabreakpts.scss */
+  /* line 426, ../sass/helpers/_mediabreakpts.scss */
   div.container.linkContent::before {
     content: unset;
   }
 
-  /* line 426, ../sass/helpers/_mediabreakpts.scss */
+  /* line 428, ../sass/helpers/_mediabreakpts.scss */
   div.container.linkContent::after {
     content: unset;
   }
 
-  /* line 429, ../sass/helpers/_mediabreakpts.scss */
+  /* line 431, ../sass/helpers/_mediabreakpts.scss */
   footer {
     width: 100vmin;
   }
