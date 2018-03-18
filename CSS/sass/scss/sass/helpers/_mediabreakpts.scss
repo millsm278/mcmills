@@ -215,10 +215,13 @@
     background: url("../../../../Images/ANI1media.png") no-repeat;
     background-size: 100%;
     width: $vp-width-SwxLh;
-    min-height: $vp-height-SwxLh;
+    // height: 0;
+    // padding-top: 159.92%; /* (img-height / img-width * container-width) (854 / 534 * 100) */
+    overflow: hidden;
 
     div.jumbo {
-    width: $vp-width-SwxLh;}
+    width: $vp-width-SwxLh;
+    margin: 67% auto;}
   }
 
   .ani1 {
@@ -236,7 +239,8 @@
 
   #btmViewBox {
     width: $vp-width-SwxLh;
-    height: 40vmax;
+    height: 0;
+    padding-top: 62.57%; /* (img-height / img-width * container-width) (1309 / 12092 * 100) */
     background: url(../../../../Images/headsh.png) no-repeat center center;
     background-size: 100%;
     overflow: hidden;

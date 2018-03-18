@@ -1299,128 +1299,131 @@ else=color:#64445c,border-color:#64445c*/
     background: url("../../../../Images/ANI1media.png") no-repeat;
     background-size: 100%;
     width: 100vmin;
-    min-height: 100vmax;
+    overflow: hidden;
   }
-  /* line 220, ../sass/helpers/_mediabreakpts.scss */
+  /* line 222, ../sass/helpers/_mediabreakpts.scss */
   #ani1 div.jumbo {
     width: 100vmin;
+    margin: 67% auto;
   }
 
-  /* line 224, ../sass/helpers/_mediabreakpts.scss */
+  /* line 227, ../sass/helpers/_mediabreakpts.scss */
   .ani1 {
     width: auto;
     margin: 0 auto;
     text-align: center;
   }
-  /* line 228, ../sass/helpers/_mediabreakpts.scss */
+  /* line 231, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
     font-size: 5vh;
     margin: 1vh auto 3vh;
   }
-  /* line 231, ../sass/helpers/_mediabreakpts.scss */
+  /* line 234, ../sass/helpers/_mediabreakpts.scss */
   .ani1 a.btn-main .indexbutt {
     font-size: 2vh;
     margin: 0 auto;
     border-width: .1vh;
   }
 
-  /* line 237, ../sass/helpers/_mediabreakpts.scss */
+  /* line 240, ../sass/helpers/_mediabreakpts.scss */
   #btmViewBox {
     width: 100vmin;
-    height: 40vmax;
+    height: 0;
+    padding-top: 62.57%;
+    /* (img-height / img-width * container-width) (1309 / 12092 * 100) */
     background: url(../../../../Images/headsh.png) no-repeat center center;
     background-size: 100%;
     overflow: hidden;
   }
 
-  /* line 245, ../sass/helpers/_mediabreakpts.scss */
+  /* line 249, ../sass/helpers/_mediabreakpts.scss */
   #headsh {
     width: unset;
     background: unset;
   }
 
-  /* line 251, ../sass/helpers/_mediabreakpts.scss */
+  /* line 255, ../sass/helpers/_mediabreakpts.scss */
   main {
     width: 100vmin;
     height: 100vmax;
   }
-  /* line 255, ../sass/helpers/_mediabreakpts.scss */
+  /* line 259, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron {
     width: 100vmin;
     min-height: 100vmax;
     text-align: center;
   }
-  /* line 262, ../sass/helpers/_mediabreakpts.scss */
+  /* line 266, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container .title {
     max-width: 100vmin;
     margin: 10vh auto 1vh;
   }
-  /* line 267, ../sass/helpers/_mediabreakpts.scss */
+  /* line 271, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container .title .title-text h1 {
     margin: 10vh auto;
   }
-  /* line 271, ../sass/helpers/_mediabreakpts.scss */
+  /* line 275, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container .title .title-button {
     margin: 6vh auto 8vh;
   }
 
-  /* line 279, ../sass/helpers/_mediabreakpts.scss */
+  /* line 283, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title {
     margin: 18vh auto 8vh;
   }
-  /* line 281, ../sass/helpers/_mediabreakpts.scss */
+  /* line 285, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text {
     margin: 0 auto;
   }
-  /* line 283, ../sass/helpers/_mediabreakpts.scss */
+  /* line 287, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text .imgscrollOther {
     background-color: rgba(210, 224, 232, 0.6);
     margin: -22vh 1vw;
     font-size: 1.75vh;
   }
-  /* line 287, ../sass/helpers/_mediabreakpts.scss */
+  /* line 291, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text .imgscrollOther h3 {
     font-size: 2.75em;
   }
-  /* line 288, ../sass/helpers/_mediabreakpts.scss */
+  /* line 292, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text .imgscrollOther h4 {
     font-size: 1.25em;
   }
 
-  /* line 292, ../sass/helpers/_mediabreakpts.scss */
+  /* line 296, ../sass/helpers/_mediabreakpts.scss */
   a#buttNormal.btn-main.otherbutt {
     display: none;
   }
 
-  /* line 296, ../sass/helpers/_mediabreakpts.scss */
+  /* line 300, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.contact .container .title {
     margin: 14vh auto 0vh;
   }
 
-  /* line 298, ../sass/helpers/_mediabreakpts.scss */
+  /* line 302, ../sass/helpers/_mediabreakpts.scss */
   div.title-button.contact, div.title-button.other {
     display: none;
   }
 
-  /* line 303, ../sass/helpers/_mediabreakpts.scss */
+  /* line 307, ../sass/helpers/_mediabreakpts.scss */
   div.jumbotron.portfolio, div.jumbotron.other, div.jumbotron.contact {
     display: table;
     padding: 0;
     padding: 10vh 0;
   }
-  /* line 308, ../sass/helpers/_mediabreakpts.scss */
+  /* line 312, ../sass/helpers/_mediabreakpts.scss */
   div.jumbotron.portfolio #lgScrnBar, div.jumbotron.other #lgScrnBar, div.jumbotron.contact #lgScrnBar {
     float: left;
     clear: left;
     width: 100vmin;
     border-width: 2px 0px;
   }
-  /* line 314, ../sass/helpers/_mediabreakpts.scss */
+  /* line 318, ../sass/helpers/_mediabreakpts.scss */
   div.jumbotron.portfolio #lgScrnBar .sectionLinks, div.jumbotron.other #lgScrnBar .sectionLinks, div.jumbotron.contact #lgScrnBar .sectionLinks {
     margin: 1vh 0vw;
   }
 
-  /* line 323, ../sass/helpers/_mediabreakpts.scss */
+  /* line 327, ../sass/helpers/_mediabreakpts.scss */
   section#navdrop {
     background-image: url("../../../../Images/sheeth.png");
     width: 100vmin;
@@ -1429,7 +1432,7 @@ else=color:#64445c,border-color:#64445c*/
     margin: 0 auto;
   }
 
-  /* line 330, ../sass/helpers/_mediabreakpts.scss */
+  /* line 334, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks {
     margin: "0 auto";
     display: block;
@@ -1441,7 +1444,7 @@ else=color:#64445c,border-color:#64445c*/
     font-family: "Raleway", sans-serif;
     color: #7d7d82;
   }
-  /* line 341, ../sass/helpers/_mediabreakpts.scss */
+  /* line 345, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent {
     display: grid;
     grid-template: repeat(4, 50vmax)/1fr;
@@ -1450,23 +1453,23 @@ else=color:#64445c,border-color:#64445c*/
     margin: 0;
     padding: unset;
   }
-  /* line 350, ../sass/helpers/_mediabreakpts.scss */
+  /* line 354, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  /* line 352, ../sass/helpers/_mediabreakpts.scss */
+  /* line 356, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  /* line 354, ../sass/helpers/_mediabreakpts.scss */
+  /* line 358, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  /* line 356, ../sass/helpers/_mediabreakpts.scss */
+  /* line 360, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  /* line 359, ../sass/helpers/_mediabreakpts.scss */
+  /* line 363, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col {
     display: block;
     border: solid 2px;
@@ -1476,7 +1479,7 @@ else=color:#64445c,border-color:#64445c*/
     box-shadow: 0vh 3vw 7vh #888888;
     background-color: #f5f5f552;
   }
-  /* line 368, ../sass/helpers/_mediabreakpts.scss */
+  /* line 372, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col a {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -1486,23 +1489,23 @@ else=color:#64445c,border-color:#64445c*/
     letter-spacing: 1.3px;
     text-decoration: none;
   }
-  /* line 378, ../sass/helpers/_mediabreakpts.scss */
+  /* line 382, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col img {
     height: 10vh;
     margin-top: .75vh;
   }
-  /* line 383, ../sass/helpers/_mediabreakpts.scss */
+  /* line 387, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col h2 {
     font-size: 3em;
     margin-bottom: .75vh;
     margin-top: unset;
   }
-  /* line 389, ../sass/helpers/_mediabreakpts.scss */
+  /* line 393, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col p {
     font-size: 2.75vh;
     margin: 2vh auto 4vh;
   }
-  /* line 394, ../sass/helpers/_mediabreakpts.scss */
+  /* line 398, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col .button {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -1515,23 +1518,23 @@ else=color:#64445c,border-color:#64445c*/
     border-width: .5vh;
     text-decoration: none;
   }
-  /* line 407, ../sass/helpers/_mediabreakpts.scss */
+  /* line 411, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col .button:hover {
     color: #feece1;
     background-color: #7d7d82;
   }
 
-  /* line 415, ../sass/helpers/_mediabreakpts.scss */
+  /* line 419, ../sass/helpers/_mediabreakpts.scss */
   div.container .linkContent::before {
     content: unset;
   }
 
-  /* line 417, ../sass/helpers/_mediabreakpts.scss */
+  /* line 421, ../sass/helpers/_mediabreakpts.scss */
   div.container .linkContent::after {
     content: unset;
   }
 
-  /* line 420, ../sass/helpers/_mediabreakpts.scss */
+  /* line 424, ../sass/helpers/_mediabreakpts.scss */
   footer {
     width: 100vmin;
   }
