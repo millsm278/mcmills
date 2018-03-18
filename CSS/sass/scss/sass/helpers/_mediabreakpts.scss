@@ -244,7 +244,7 @@
   #btmViewBox {
     width: $vp-width-SwxLh;
     height: 0;
-    padding-top: 60%; /* (img-height / img-width * container-width) (1309 / 12092 * 100) */
+    padding-top: 56%; /* (img-height / img-width * container-width) (1309 / 12092 * 100) */
     background: url(../../../../Images/headsh.png) no-repeat center center;
     background-size: 100%;
     overflow: hidden;
@@ -333,7 +333,7 @@
     background-image: url("../../../../Images/sheeth.png");
     width: $vp-width-SwxLh;
     min-height: $vp-height-SwxLh;
-    padding: 7vh 6vh 0;
+    padding: 8vh 6vh;
     margin: 0 auto;
   }
   section.pgLinks {
@@ -421,9 +421,9 @@
     }
   }
 
-  div.container .linkContent::before {
+  div.container.linkContent::before {
     content: unset;}
-  div.container .linkContent::after {
+  div.container.linkContent::after {
     content: unset;}
 
   footer {
