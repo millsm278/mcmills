@@ -1355,7 +1355,7 @@ else=color:#64445c,border-color:#64445c*/
   }
   /* line 264, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container {
-    height: unset;
+    height: auto;
   }
   /* line 267, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container .title {
