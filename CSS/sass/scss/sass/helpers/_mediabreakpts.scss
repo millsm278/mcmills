@@ -264,8 +264,7 @@
       .container {
 
         .title {
-          max-width: $vp-width-SwxLh;
-          margin: 10vh auto 1vh; //margin: 25vh auto 35vh;
+          margin: 15vh auto 1vh; //margin: 25vh auto 35vh;
 
           .title-text {
             h1 {
@@ -314,6 +313,8 @@
         clear: left;
         width: $vp-width-SwxLh;
         border-width: 2px 0px;
+        margin: 0 auto;
+        height: min-intrinsic;
 
         .sectionLinks {
           margin: 1vh 0vw;
