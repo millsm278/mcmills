@@ -13,7 +13,7 @@ $(document).ready(function () {
 	
 	console.log(finalSize);
 
-	/*if (finalSize < -70) {
+	if (finalSize < -70) {
 		$('#imgscroll').css({
 			'color': 'hsla(22, 96%, 89%, .10)',
 			'border-color': 'hsla(22, 96%, 89%, .10)'
@@ -90,7 +90,7 @@ $(document).ready(function () {
 	});
 }); 
 
-//**HEADER/NAV BAR Opacify on Scroll**///
+//**HEADER/NAV BAR Opacify on Scroll**//
 $(document).ready(function () {
 	$(window).bind('scroll', function(){
 
