@@ -1359,7 +1359,7 @@ else=color:#64445c,border-color:#64445c*/
   }
   /* line 267, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container .title {
-    margin: 15vh auto 1vh;
+    margin: 15vh 0vw 0vh;
   }
   /* line 271, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron .container .title .title-text h1 {
