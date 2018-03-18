@@ -230,11 +230,15 @@
     text-align:center;
     h1 {
       font-size: 2.25em;
-      margin: 1vh auto 3vh;}
+      margin: 1vh auto 8vh;}
     a {
-      font-size: 1.25em;
+      font-size: 1.2em;
       margin: 0 auto;
-      border-width: .1vh;}
+      border-width: 2px;
+      padding: 0px 3px 0px 5px;
+      line-height: .5px;
+      text-align: center;
+      letter-spacing: .15em;}
   }
 
   #btmViewBox {
