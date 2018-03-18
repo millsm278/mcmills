@@ -1315,12 +1315,12 @@ else=color:#64445c,border-color:#64445c*/
   }
   /* line 231, ../sass/helpers/_mediabreakpts.scss */
   .ani1 h1 {
-    font-size: 5vh;
+    font-size: 2.25em;
     margin: 1vh auto 3vh;
   }
   /* line 234, ../sass/helpers/_mediabreakpts.scss */
-  .ani1 a.btn-main .indexbutt {
-    font-size: 2vh;
+  .ani1 a {
+    font-size: 1.25em;
     margin: 0 auto;
     border-width: .1vh;
   }
