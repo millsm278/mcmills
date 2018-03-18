@@ -2,35 +2,39 @@
 /*******BUTTONS*******/
 /**Main Buttons**/
 a.btn-main {
-  color: #fedcc8;
+  color: $dust-pink;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 3vh;
   letter-spacing: 0.5vw;
   margin: 0 auto;
-  padding: .25vh 1vw;
+  padding: .5vh .25vw .5vh .75vw;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border-style: solid none;
   border-width: medium;
-  border-color: #fedcc8;
+  border-color: $dust-pink;
 }
 
 a.btn-main:hover {
   color: #9db8cc;
-  background-color: #fedcc8;
+  background-color: $dust-pink;
   text-decoration: none;
 }
 
 /**Site/w-in PG Nav Block - Buttons**/
 a.button {
-  padding: 3px;
+  color: $dust-pink;
+  border-color: $dust-pink;
+  padding: .5vh .5vw .5vh .7vw;
   border-style: solid none;
   border-width: 2px 0px;
 }
 
 a.button:hover {
+  color: #616161;
+  background-color: $dust-pink;
   text-decoration: none;
 }
 

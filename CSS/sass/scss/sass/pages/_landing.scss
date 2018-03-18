@@ -1,9 +1,15 @@
 /*******LANDING PG SPECIFIC STYLING*******/
 /*******LANDING PG SPECIFIC STYLING*******/
-div.jumbotron.landingpage {
+div.jumbotron.landing {
   background-image: url("../../../../Images/landing.png");
   background-size: cover;
   height: 900px;
+
+  .container .title .title-text h1 {
+    margin: 10vh 20vw;
+    font-size: 3em;
+    background-color: #6a8da640;
+  }
 }
 /**LANDINGpg: Jumbotron - Content/Container
 div.jumbotron.landingpage{
