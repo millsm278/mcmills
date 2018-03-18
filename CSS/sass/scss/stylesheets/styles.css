@@ -1428,7 +1428,7 @@ else=color:#64445c,border-color:#64445c*/
     background-image: url("../../../../Images/sheeth.png");
     width: 100vmin;
     min-height: 100vmax;
-    padding: 6vh;
+    padding: 7vh 6vh 0;
     margin: 0 auto;
   }
 
@@ -1476,8 +1476,8 @@ else=color:#64445c,border-color:#64445c*/
     height: auto;
     width: auto;
     padding: 4vh 0;
-    box-shadow: 0vh 3vw 7vh #888888;
-    background-color: #f5f5f552;
+    box-shadow: 0vh 3vw 5vh #71645e;
+    background-color: #f5dace52;
   }
   /* line 372, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col a {
