@@ -1194,19 +1194,19 @@ main {
 /*******CONTACT PG SPECIFIC STYLING*******/
 /**CONTACTpg: Jumbotron - Content/Container**/
 /* line 5, ../sass/pages/_contact.scss */
-main .jumbotron.contact {
+main div.jumbotron.contact {
   background-image: url("../../../../Images/atelier.png");
 }
 /* line 9, ../sass/pages/_contact.scss */
-main .jumbotron.contact .container .title {
+main div.jumbotron.contact .container .title {
   margin: 10vh auto 0vh;
 }
 /* line 16, ../sass/pages/_contact.scss */
-main .jumbotron.contact .container .title div .title-button {
+main div.jumbotron.contact .container .title div .title-button {
   display: none;
 }
 /* line 24, ../sass/pages/_contact.scss */
-main .jumbotron.contact section.inPageNav.contact .sectionLinks {
+main div.jumbotron.contact section.inPageNav.contact .sectionLinks {
   padding: 3vh 2vw;
 }
 
@@ -1251,63 +1251,23 @@ main {
 
 /**************/
 /**************/
+/******LANDING PG SPECIFIC STYLING*******/
 /*******LANDING PG SPECIFIC STYLING*******/
-/*******LANDING PG SPECIFIC STYLING*******/
-/* line 3, ../sass/pages/_landing.scss */
-div.jumbotron.landing {
+/* line 4, ../sass/pages/_landing.scss */
+main div.jumbotron.landing {
   background-image: url("../../../../Images/landing.png");
   background-size: cover;
   height: 900px;
 }
-/* line 8, ../sass/pages/_landing.scss */
-div.jumbotron.landing .container .title .title-text h1 {
+/* line 9, ../sass/pages/_landing.scss */
+main div.jumbotron.landing .container .title .title-text h1 {
   margin: 10vh 20vw;
   font-size: 3em;
   background-color: #6a8da640;
 }
 
-/**LANDINGpg: Jumbotron - Content/Container
-div.jumbotron.landingpage{
-  background-position: center;
-  display: grid;
-  grid-template: 1fr 3fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-div.jumbotron.landingpage div.container {
-  margin: 2em 0em 0em;
-  text-align: center;
-  grid-area: 2 / 2 / 3 / 5;
-  justify-items: center;
-}
-
-div.jumbotron.landingpage {
-  background-image: url("../../../../Images/landing.png");
-  background-size: cover;
-  height: 900px;
-}
-
-div.pinkAppear.landing h3 {
-  color: #fedecb;
-  font-weight: 500;
-  font-size: 2.5em;
-  font-style: normal;
-  margin: 2em 3em 2em;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-  word-spacing: 0.2em;
-  text-align: center;
-  border: none;
-}
-
-**LANDINGpg: Main Buttons**
-a.btn-main.pinkAppear {
-  margin-top: 5em;
-}
-**/
 /**************/
-/**************/
+/*************/
 /**HELPERS/_.sass file imports**/
 /*******JS CLASSES*******/
 /*******JS CLASSES*******/
@@ -1766,7 +1726,13 @@ else=color:#64445c,border-color:#64445c*/
     display: none;
   }
 
-  /* line 343, ../sass/helpers/_mediabreakpts.scss */
+  /* line 342, ../sass/helpers/_mediabreakpts.scss */
+  main div.jumbotron.landing {
+    background-size: cover;
+    height: 100vh;
+  }
+
+  /* line 347, ../sass/helpers/_mediabreakpts.scss */
   section.inPageNav {
     float: left;
     clear: left;
@@ -1776,16 +1742,16 @@ else=color:#64445c,border-color:#64445c*/
     height: min-intrinsic;
     padding: 2vh 0;
   }
-  /* line 352, ../sass/helpers/_mediabreakpts.scss */
+  /* line 356, ../sass/helpers/_mediabreakpts.scss */
   section.inPageNav .sectionLinks {
     margin: 1vh 0vw;
   }
-  /* line 354, ../sass/helpers/_mediabreakpts.scss */
+  /* line 358, ../sass/helpers/_mediabreakpts.scss */
   section.inPageNav .sectionLinks .col {
     padding: 5% 0;
   }
 
-  /* line 360, ../sass/helpers/_mediabreakpts.scss */
+  /* line 364, ../sass/helpers/_mediabreakpts.scss */
   section#navdrop {
     background-image: url("../../../../Images/sheeth.png");
     width: 100vmin;
@@ -1794,7 +1760,7 @@ else=color:#64445c,border-color:#64445c*/
     margin: 0 auto;
   }
 
-  /* line 367, ../sass/helpers/_mediabreakpts.scss */
+  /* line 371, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks {
     margin: 0 auto;
     display: block;
@@ -1806,7 +1772,7 @@ else=color:#64445c,border-color:#64445c*/
     font-family: "Raleway", sans-serif;
     color: #7d7d82;
   }
-  /* line 378, ../sass/helpers/_mediabreakpts.scss */
+  /* line 382, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent {
     display: grid;
     grid-template: repeat(4, 50vmax)/1fr;
@@ -1817,23 +1783,23 @@ else=color:#64445c,border-color:#64445c*/
     justify-items: unset;
     align-items: unset;
   }
-  /* line 389, ../sass/helpers/_mediabreakpts.scss */
+  /* line 393, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  /* line 391, ../sass/helpers/_mediabreakpts.scss */
+  /* line 395, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk2 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  /* line 393, ../sass/helpers/_mediabreakpts.scss */
+  /* line 397, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  /* line 395, ../sass/helpers/_mediabreakpts.scss */
+  /* line 399, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .blk4 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  /* line 398, ../sass/helpers/_mediabreakpts.scss */
+  /* line 402, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col {
     display: block;
     border: solid 2px;
@@ -1844,7 +1810,7 @@ else=color:#64445c,border-color:#64445c*/
     background: linear-gradient(#f9ece5e3, #f9ece5e3), url("../../../../Images/noir.png");
     background-size: 100%;
   }
-  /* line 408, ../sass/helpers/_mediabreakpts.scss */
+  /* line 412, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col a {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -1854,23 +1820,23 @@ else=color:#64445c,border-color:#64445c*/
     letter-spacing: 1.3px;
     text-decoration: none;
   }
-  /* line 417, ../sass/helpers/_mediabreakpts.scss */
+  /* line 421, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col a h2 {
     font-size: 3em;
     margin-bottom: .75vh;
     margin-top: unset;
   }
-  /* line 423, ../sass/helpers/_mediabreakpts.scss */
+  /* line 427, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col a img {
     height: 10vh;
     margin: .75vh 0 1.5vh;
   }
-  /* line 429, ../sass/helpers/_mediabreakpts.scss */
+  /* line 433, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col p {
     font-size: 2.75vh;
     margin: 2vh auto 4vh;
   }
-  /* line 434, ../sass/helpers/_mediabreakpts.scss */
+  /* line 438, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col .button {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
@@ -1883,23 +1849,23 @@ else=color:#64445c,border-color:#64445c*/
     border-width: 2px;
     text-decoration: none;
   }
-  /* line 447, ../sass/helpers/_mediabreakpts.scss */
+  /* line 451, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent .col .button:hover {
     color: #feece1;
     background-color: #7d7d82;
   }
 
-  /* line 455, ../sass/helpers/_mediabreakpts.scss */
+  /* line 459, ../sass/helpers/_mediabreakpts.scss */
   div.container.linkContent::before {
     content: unset;
   }
 
-  /* line 457, ../sass/helpers/_mediabreakpts.scss */
+  /* line 461, ../sass/helpers/_mediabreakpts.scss */
   div.container.linkContent::after {
     content: unset;
   }
 
-  /* line 460, ../sass/helpers/_mediabreakpts.scss */
+  /* line 464, ../sass/helpers/_mediabreakpts.scss */
   footer {
     width: 100vmin;
   }

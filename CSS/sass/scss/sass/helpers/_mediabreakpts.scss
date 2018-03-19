@@ -339,6 +339,10 @@
   div.title-button.contact, div.title-button.other {
     display: none; }
 
+  main div.jumbotron.landing {
+    background-size: cover;
+    height: 100vh;
+  }
     
   section.inPageNav {
     float: left;
