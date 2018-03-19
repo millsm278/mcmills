@@ -957,13 +957,18 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
   #media.media-aboutColRight .aboutCopy2 p {
     margin: 1vh 2vw 1vh 4vw;
   }
+  /* line 168, ../sass/pages/_about.scss */
+  #media.media-aboutColRight .aboutCopy2 a {
+    display: flex;
+    margin: 2em 3em 2em 4em;
+  }
 
-  /* line 171, ../sass/pages/_about.scss */
+  /* line 174, ../sass/pages/_about.scss */
   div.jumbotron.about div.container::before {
     content: unset;
   }
 
-  /* line 173, ../sass/pages/_about.scss */
+  /* line 176, ../sass/pages/_about.scss */
   div.jumbotron.about div.container::after {
     content: unset;
   }
