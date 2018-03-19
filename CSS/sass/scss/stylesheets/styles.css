@@ -867,15 +867,16 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
 @media only screen and (max-width: 450px) {
   /* line 86, ../sass/pages/_about.scss */
   main.about {
-    height: 100vmax;
+    height: 95vmax;
   }
   /* line 88, ../sass/pages/_about.scss */
   main.about div.jumbotron.about {
     background: url("../../../../Images/KIEVmedia.png") no-repeat;
     background-size: 100%;
     width: 100vmin;
+    height: 95vh;
   }
-  /* line 93, ../sass/pages/_about.scss */
+  /* line 94, ../sass/pages/_about.scss */
   main.about div.jumbotron.about .container {
     display: grid;
     grid-template: 1fr / 60% 40%;
@@ -883,15 +884,14 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
     justify-items: stretch;
     align-items: stretch;
     width: 100%;
-    margin: 2em 0em 1em;
-    height: 72vh;
+    margin: 5em 0em 1em;
+    height: 70vh;
   }
-  /* line 103, ../sass/pages/_about.scss */
+  /* line 104, ../sass/pages/_about.scss */
   main.about div.jumbotron.about .container .aboutColLeft {
     display: grid;
     background-color: #445969b5;
-    overflow: hidden;
-    grid-template: 12% 88% / 1fr;
+    grid-template: 8% 88% / 1fr;
     padding: 1vw;
     grid-area: 1 / 1/ 2 / 2;
     height: 100%;
@@ -904,7 +904,7 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
   }
   /* line 118, ../sass/pages/_about.scss */
   main.about div.jumbotron.about .container .aboutColLeft p {
-    font-size: 2.33vh;
+    font-size: 1.55em;
   }
   /* line 122, ../sass/pages/_about.scss */
   main.about div.jumbotron.about .container .aboutColLeft .aboutTitle {
@@ -913,7 +913,7 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
   /* line 125, ../sass/pages/_about.scss */
   main.about div.jumbotron.about .container .aboutColLeft .aboutTitle h1 {
     border: none;
-    font-size: 5vh;
+    font-size: 3.75em;
   }
   /* line 131, ../sass/pages/_about.scss */
   main.about div.jumbotron.about .container .aboutColLeft .aboutCopy1 {

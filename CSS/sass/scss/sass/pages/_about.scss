@@ -84,11 +84,12 @@ main {
 @media only screen and (max-width: 450px) {
 
   main.about {
-    height: 100vmax;
+    height: 95vmax;
     div.jumbotron.about {
       background: url("../../../../Images/KIEVmedia.png") no-repeat;
       background-size: 100%;
       width: $vp-width-SwxLh;
+      height: 95vh;
 
       .container /* .about */ {
         display: grid;
@@ -97,14 +98,13 @@ main {
         justify-items: stretch;
         align-items: stretch;
         width: 100%;
-        margin: 2em 0em 1em;
-        height: 72vh;
+        margin: 5em 0em 1em;
+        height: 70vh;
 
         .aboutColLeft {
           display: grid;
           background-color: #445969b5;
-          overflow: hidden;
-          grid-template: 12% 88% / 1fr;
+          grid-template: 8% 88% / 1fr;
           padding: 1vw;
           grid-area: 1 / 1/ 2 / 2;
           height: 100%;
@@ -116,7 +116,7 @@ main {
           }
 
           p {
-            font-size: 2.33vh;
+            font-size: 1.55em;
           }
 
           .aboutTitle {
@@ -124,7 +124,7 @@ main {
 
             h1 {            
               border: none;
-              font-size: 5vh;
+              font-size: 3.75em;
             }
           } 
 
