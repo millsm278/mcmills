@@ -446,7 +446,7 @@ section.inPageNav .sectionLinks .col a {
 /* line 43, ../sass/layout/_pgnavblock.scss */
 section.inPageNav .sectionLinks .col a img {
   height: 3.75em;
-  margin-bottom: 2.5vh;
+  margin-bottom: 2vh;
 }
 /* line 47, ../sass/layout/_pgnavblock.scss */
 section.inPageNav .sectionLinks .col a h2 {
@@ -455,7 +455,7 @@ section.inPageNav .sectionLinks .col a h2 {
   font-weight: inherit;
   font-size: 1.75em;
   text-transform: uppercase;
-  margin-bottom: 2.5vh;
+  margin-bottom: 2vh;
 }
 /* line 56, ../sass/layout/_pgnavblock.scss */
 section.inPageNav .sectionLinks .col p {
@@ -465,7 +465,7 @@ section.inPageNav .sectionLinks .col p {
   font-size: 1em;
   line-height: 1.5;
   padding: 0;
-  margin-bottom: 3.5vh;
+  margin-bottom: 3vh;
 }
 
 /**(SITE Pgs)Nav Block**/
@@ -677,9 +677,10 @@ a.button {
   padding: .5vh .25vw .5vh .5vw;
   border-style: solid none;
   border-width: 2px 0px;
+  margin: 1em 0 2em;
 }
 
-/* line 35, ../sass/components/_buttons.scss */
+/* line 36, ../sass/components/_buttons.scss */
 a.button:hover {
   color: #616161;
   background-color: #fedecb;
@@ -1690,7 +1691,7 @@ else=color:#64445c,border-color:#64445c*/
 
   /* line 322, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title {
-    margin: 18vh 0vw 8vh;
+    margin: 20vh 0vw 10vh;
   }
   /* line 324, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text {
@@ -1698,7 +1699,7 @@ else=color:#64445c,border-color:#64445c*/
   }
   /* line 326, ../sass/helpers/_mediabreakpts.scss */
   main div.jumbotron.other .container .title .title-text .imgscrollOther {
-    background-color: rgba(210, 224, 232, 0.6);
+    background-color: rgba(210, 224, 232, 0.15);
     margin: -22vh 1vw;
     font-size: 1.75vh;
   }
@@ -1744,7 +1745,7 @@ else=color:#64445c,border-color:#64445c*/
   }
   /* line 356, ../sass/helpers/_mediabreakpts.scss */
   section.inPageNav .sectionLinks {
-    margin: 1vh 0vw;
+    margin: 0;
   }
   /* line 358, ../sass/helpers/_mediabreakpts.scss */
   section.inPageNav .sectionLinks .col {
@@ -1775,7 +1776,7 @@ else=color:#64445c,border-color:#64445c*/
   /* line 382, ../sass/helpers/_mediabreakpts.scss */
   section.pgLinks .linkContent {
     display: grid;
-    grid-template: repeat(4, 50vmax)/1fr;
+    grid-template: repeat(4, 47vmax)/1fr;
     grid-row-gap: 5vmax;
     grid-area: none;
     margin: 0;

@@ -320,11 +320,11 @@
   }
 
   main div.jumbotron.other .container .title {
-    margin: 18vh 0vw 8vh;
+    margin: 20vh 0vw 10vh;
     .title-text {
       margin: 0 auto;
       .imgscrollOther {
-        background-color: rgba(210, 224, 232, 0.6);
+        background-color: rgba(210, 224, 232, 0.15);
         margin: -22vh 1vw;
         font-size: 1.75vh;
         h3 {font-size: 2.75em;}
@@ -354,7 +354,7 @@
     padding: 2vh 0;
 
     .sectionLinks {
-      margin: 1vh 0vw;
+      margin: 0;
       .col {
         padding: 5% 0; }
     }
@@ -381,7 +381,7 @@
 
     .linkContent {
       display: grid;
-      grid-template: repeat(4, 50vmax)/1fr;
+      grid-template: repeat(4, 47vmax) / 1fr;
       grid-row-gap: 5vmax;
       grid-area: none;
       margin: 0;
