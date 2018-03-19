@@ -1,14 +1,119 @@
 @charset "UTF-8";
-/*overall pg*/
-/* line 2, ../sass/styles.scss */
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 /**ASSETS/_.sass file imports**/
+/******FONT IMPORTS*******/
 /*******FONT IMPORTS*******/
-/*******FONT IMPORTS*******/
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Raleway Light Italic"), local("Raleway-LightItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw5qN_DNCb71ka4ZiO.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Raleway Light Italic"), local("Raleway-LightItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw5qN_AtCb71ka4Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Raleway Italic"), local("Raleway-Italic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNyCg4Q4FqL_KWxWMT.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Raleway Italic"), local("Raleway-Italic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNyCg4TYFqL_KWxQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgwvqJ_DNCb71ka4ZiO.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgwvqJ_AtCb71ka4Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Raleway SemiBold Italic"), local("Raleway-SemiBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgwkqV_DNCb71ka4ZiO.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Raleway SemiBold Italic"), local("Raleway-SemiBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgwkqV_AtCb71ka4Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw9qR_DNCb71ka4ZiO.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw9qR_AtCb71ka4Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 800;
+  src: local("Raleway ExtraBold Italic"), local("Raleway-ExtraBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw6qd_DNCb71ka4ZiO.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 800;
+  src: local("Raleway ExtraBold Italic"), local("Raleway-ExtraBoldItalic"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw6qd_AtCb71ka4Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Raleway Light"), local("Raleway-Light"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqhPANqczVsq4A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Raleway Light"), local("Raleway-Light"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqZPANqczVs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 /* latin-ext */
 @font-face {
   font-family: 'Raleway';
@@ -25,8 +130,79 @@ html, body {
   src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqhPANqczVsq4A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPANqczVs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwPIsWqhPANqczVsq4A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwPIsWqZPANqczVs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqhPANqczVsq4A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPANqczVs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqhPANqczVsq4A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPANqczVs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 /**************/
 /**************/
+/*overall pg*/
+/* line 5, ../sass/styles.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /**LAYOUT/_.sass file imports**/
 /*******HEADER*******/
 /*******HEADER*******/
@@ -297,8 +473,9 @@ section.inPageNav .sectionLinks .col p {
 section#navdrop {
   background-image: url("../../../../Images/sheeta.png");
   background-size: cover;
+  padding: 8vh 0vw;
 }
-/* line 78, ../sass/layout/_pgnavblock.scss */
+/* line 79, ../sass/layout/_pgnavblock.scss */
 section.pgLinks {
   grid-template: 1fr / 1fr 8fr 1fr;
   background-color: #e3e4e6;
@@ -312,7 +489,7 @@ section.pgLinks {
   padding: 1vh;
   text-align: center;
 }
-/* line 91, ../sass/layout/_pgnavblock.scss */
+/* line 92, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -322,64 +499,64 @@ section.pgLinks .linkContent {
   justify-items: center;
   align-items: center;
 }
-/* line 100, ../sass/layout/_pgnavblock.scss */
+/* line 101, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .blk1 {
   grid-area: 1 / 1 / 2 / 2;
 }
-/* line 102, ../sass/layout/_pgnavblock.scss */
+/* line 103, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .blk2 {
   grid-area: 1 / 2 / 2 / 3;
 }
-/* line 104, ../sass/layout/_pgnavblock.scss */
+/* line 105, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .blk3 {
   grid-area: 1 / 3 / 2 / 4;
 }
-/* line 106, ../sass/layout/_pgnavblock.scss */
+/* line 107, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .blk4 {
   grid-area: 1 / 4 / 2 / 5;
 }
-/* line 108, ../sass/layout/_pgnavblock.scss */
+/* line 109, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col {
   padding: 3em 0em;
 }
-/* line 111, ../sass/layout/_pgnavblock.scss */
+/* line 112, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col a {
-  font-family: inherit;
-  color: inherit;
+  font-family: "Raleway", sans-serif;
+  color: #7d7d82;
   font-weight: inherit;
-  font-size: 14px;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
-/* line 121, ../sass/layout/_pgnavblock.scss */
+/* line 122, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col a img {
-  height: 40px;
+  height: 4em;
 }
-/* line 124, ../sass/layout/_pgnavblock.scss */
+/* line 125, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col a h2 {
   font-family: inherit;
   color: inherit;
   font-weight: inherit;
-  font-size: 23px;
+  font-size: 2.25em;
   text-transform: uppercase;
 }
-/* line 131, ../sass/layout/_pgnavblock.scss */
+/* line 132, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col a.button {
   border-color: #7d7d82;
 }
-/* line 134, ../sass/layout/_pgnavblock.scss */
+/* line 135, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col a.button:hover {
-  color: #fedecb;
+  color: #f8ebe4;
   background-color: #7d7d82;
 }
-/* line 139, ../sass/layout/_pgnavblock.scss */
+/* line 140, ../sass/layout/_pgnavblock.scss */
 section.pgLinks .linkContent .col p {
   font-family: inherit;
   color: inherit;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.25em;
   padding: 0 20px;
   margin-bottom: 20px;
 }
@@ -495,7 +672,7 @@ a.btn-main:hover {
 a.button {
   color: #fedecb;
   border-color: #fedecb;
-  padding: .5vh .5vw .5vh .7vw;
+  padding: .5vh .25vw .5vh .5vw;
   border-style: solid none;
   border-width: 2px 0px;
 }
@@ -642,54 +819,61 @@ main div.jumbotron.about .container h1, main div.jumbotron.about .container p {
   color: #fedcc8;
   text-align: left;
   margin: 1vh 1vw;
-  font-size: 3vh;
+  font-size: 1.5em;
 }
-/* line 38, ../sass/pages/_about.scss */
+/* line 36, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColLeft {
   grid-template-rows: 1fr 4fr;
   grid-area: 1 / 1 / 2 / 2;
 }
-/* line 42, ../sass/pages/_about.scss */
+/* line 40, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColLeft .aboutTitle {
   grid-area: 1 / 1 / 2 / 2;
 }
-/* line 45, ../sass/pages/_about.scss */
+/* line 43, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColLeft .aboutTitle h1 {
+  font-family: Raleway;
   border: none;
-  font-size: 61px;
+  font-size: 4em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-/* line 51, ../sass/pages/_about.scss */
+/* line 52, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColLeft .aboutCopy1 {
   grid-area: 2 / 1 / 3 / 2;
 }
-/* line 58, ../sass/pages/_about.scss */
+/* line 59, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColRight {
   grid-template: 2fr 3fr / 1fr;
   grid-area: 1 / 2 / 2 / 3;
 }
-/* line 62, ../sass/pages/_about.scss */
+/* line 63, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColRight .aboutBody {
   grid-area: 1 / 1 / 2 / 2;
 }
-/* line 67, ../sass/pages/_about.scss */
+/* line 68, ../sass/pages/_about.scss */
 main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
   grid-area: 2 / 1 / 3 / 2;
 }
 
-/* line 77, ../sass/pages/_about.scss */
+/* line 78, ../sass/pages/_about.scss */
 .media-aboutColRight {
   display: none;
 }
 
 @media only screen and (max-width: 450px) {
   /* line 85, ../sass/pages/_about.scss */
-  main div.jumbotron.about {
+  main.about {
+    height: 86vmax;
+  }
+  /* line 87, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about {
     background: url("../../../../Images/KIEVmedia.png") no-repeat;
     background-size: 100%;
     width: 100vmin;
   }
-  /* line 90, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container {
+  /* line 92, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container {
     display: grid;
     grid-template: 1fr / 60% 40%;
     grid-column-gap: unset;
@@ -699,42 +883,41 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
     margin: 3.5em 1em 1em;
     height: 100%;
   }
-  /* line 100, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container .aboutColLeft {
+  /* line 102, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container .aboutColLeft {
     display: grid;
     background-color: #445969b5;
-    height: -webkit-fill-available;
     overflow: hidden;
     grid-template: 20% 80% / 1fr;
     padding: 1vw;
     grid-area: 1 / 1/ 2 / 2;
   }
-  /* line 109, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container .aboutColLeft h1, main div.jumbotron.about .container .aboutColLeft p {
+  /* line 110, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container .aboutColLeft h1, main.about div.jumbotron.about .container .aboutColLeft p {
     color: #fedcc8;
     text-align: left;
     margin: 1vh 1vw;
     font-size: 3vh;
   }
-  /* line 116, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container .aboutColLeft .aboutTitle {
+  /* line 117, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container .aboutColLeft .aboutTitle {
     grid-area: 1 / 1 / 2 / 2;
   }
-  /* line 119, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container .aboutColLeft .aboutTitle h1 {
+  /* line 120, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container .aboutColLeft .aboutTitle h1 {
     border: none;
     font-size: 5em;
   }
-  /* line 125, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container .aboutColLeft .aboutCopy1 {
+  /* line 126, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container .aboutColLeft .aboutCopy1 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  /* line 131, ../sass/pages/_about.scss */
-  main div.jumbotron.about .container .aboutColRight {
+  /* line 132, ../sass/pages/_about.scss */
+  main.about div.jumbotron.about .container .aboutColRight {
     display: none;
   }
 
-  /* line 138, ../sass/pages/_about.scss */
+  /* line 139, ../sass/pages/_about.scss */
   #media.media-aboutColRight {
     display: inline-grid;
     grid-template: 1fr / 1fr 1fr;
@@ -743,7 +926,7 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
     padding: 2vw;
     width: 100vw;
   }
-  /* line 146, ../sass/pages/_about.scss */
+  /* line 147, ../sass/pages/_about.scss */
   #media.media-aboutColRight p {
     color: #fedcc8;
     text-align: left;
@@ -751,35 +934,23 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
     font-size: 3vh;
     font-weight: 300;
   }
-  /* line 154, ../sass/pages/_about.scss */
+  /* line 155, ../sass/pages/_about.scss */
   #media.media-aboutColRight .aboutBody {
     grid-area: 1 / 1 / 2 / 2;
   }
-  /* line 159, ../sass/pages/_about.scss */
+  /* line 160, ../sass/pages/_about.scss */
   #media.media-aboutColRight .aboutCopy2 {
     grid-area: 1 / 2 / 1 / 3;
   }
 
-  /* line 165, ../sass/pages/_about.scss */
+  /* line 166, ../sass/pages/_about.scss */
   div.jumbotron.about div.container::before {
     content: unset;
   }
 
-  /* line 167, ../sass/pages/_about.scss */
+  /* line 168, ../sass/pages/_about.scss */
   div.jumbotron.about div.container::after {
     content: unset;
-  }
-}
-@media only screen and (max-width: 321px) {
-  /* line 172, ../sass/pages/_about.scss */
-  main.about {
-    height: 86vmax;
-  }
-  /* line 174, ../sass/pages/_about.scss */
-  main.about div.jumbotron.about {
-    max-height: unset;
-    min-height: unset;
-    height: 86vmax;
   }
 }
 /***

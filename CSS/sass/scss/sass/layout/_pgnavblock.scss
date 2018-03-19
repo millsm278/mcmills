@@ -73,6 +73,7 @@ section{
   &#navdrop {
     background-image: url("../../../../Images/sheeta.png");
     background-size: cover;
+    padding: 8vh 0vw;
   }
 
   &.pgLinks {
@@ -109,30 +110,30 @@ section{
          padding: 3em 0em;
 
         a /* #icon */ {
-          font-family: inherit;
-          color: inherit;
+          font-family: $main-content;
+          color: $med-grey;
           font-weight: inherit;
-          font-size: 14px;
+          font-size: 1em;
           text-transform: uppercase;
           letter-spacing: 1.3px;
           text-decoration: none;
-          margin-bottom: 10px;
+          margin-bottom: 1em;
 
           img {
-            height: 40px; }
+            height: 4em; }
 
           h2 {
             font-family: inherit;
             color: inherit;
             font-weight: inherit;
-            font-size: 23px;
+            font-size: 2.25em;
             text-transform: uppercase; }
 
           &.button {
             border-color: #7d7d82; }
 
           &.button:hover {
-            color: $dust-pink;
+            color: #f8ebe4;;
             background-color: #7d7d82; }
         }
 
@@ -140,7 +141,7 @@ section{
           font-family: inherit;
           color: inherit;
           font-weight: 400;
-          font-size: 14px;
+          font-size: 1.25em;
           padding: 0 20px;
           margin-bottom: 20px; }
       }

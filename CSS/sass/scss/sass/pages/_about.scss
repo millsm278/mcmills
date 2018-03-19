@@ -30,10 +30,8 @@ main {
         color: #fedcc8;
         text-align: left;
         margin: 1vh 1vw;
-        font-size: 3vh;
+        font-size: 1.5em;
       }
-
-
 
       .aboutColLeft {
         grid-template-rows: 1fr 4fr;
@@ -42,9 +40,12 @@ main {
         .aboutTitle {
           grid-area: 1 / 1 / 2 / 2;
 
-          h1 {            
+          h1 {
+            font-family: Raleway;
             border: none;
-            font-size: 61px;
+            font-size: 4em;
+            font-weight: 600;
+            text-transform: uppercase;
           }
         } 
 
@@ -81,7 +82,8 @@ main {
 //Screen width 450px or less
 @media only screen and (max-width: 450px) {
 
-  main {
+  main.about {
+    height: 86vmax;
     div.jumbotron.about {
       background: url("../../../../Images/KIEVmedia.png") no-repeat;
       background-size: 100%;
@@ -100,7 +102,6 @@ main {
         .aboutColLeft {
           display: grid;
           background-color: #445969b5;
-          height: -webkit-fill-available;
           overflow: hidden;
           grid-template: 20% 80% / 1fr;
           padding: 1vw;
@@ -166,17 +167,6 @@ main {
     content: unset;}
   div.jumbotron.about div.container::after {
     content: unset;}
-}
-
-@media only screen and (max-width: 321px) {
-  main.about {
-    height: 86vmax;
-    div.jumbotron.about {
-      max-height: unset;
-      min-height: unset;
-      height: 86vmax;
-    }
-  }
 }
 
 
