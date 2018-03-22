@@ -943,7 +943,7 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
   #media.media-aboutColRight p {
     color: #fedecb;
     text-align: left;
-    font-size: 2.33vh;
+    font-size: 1em;
     font-weight: 300;
   }
   /* line 161, ../sass/pages/_about.scss */
