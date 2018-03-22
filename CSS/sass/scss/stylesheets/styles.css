@@ -889,7 +889,7 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
     justify-items: stretch;
     align-items: stretch;
     width: 100%;
-    margin: 5.5vh 0 1vh;
+    margin: 5em 0 1em;
     height: 70vh;
   }
   /* line 105, ../sass/pages/_about.scss */
