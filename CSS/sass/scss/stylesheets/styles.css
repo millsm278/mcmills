@@ -1571,7 +1571,7 @@ else=color:#64445c,border-color:#64445c*/
     font-size: 2.5em;
   }
 }
-@media only screen and (max-width: 500px) and (landscape) {
+@media only screen and (max-width: 500px) {
   /* line 229, ../sass/helpers/_mediabreakpts.scss */
   html {
     width: 100vmin;
