@@ -14,13 +14,13 @@ main {
           margin: 0 2vw;
 
           .imgscrollOther {
-            color: #292d3d;            
+            color: $other-dark-quote;            
             border: none;
             /* margin: 0 auto; */
 
             h3 {
-              font-family: 'Raleway', sans-serif;
-              font-weight: 700;
+              font-family: $main-content;
+              font-weight: 600;
               font-size: 3em;
               text-transform: uppercase;
               word-spacing: 0.2em;
@@ -30,7 +30,7 @@ main {
             }
 
             h4 {
-              font-family: 'Nanum Myeongjo', serif;
+              font-family: $other-subtitle;
               font-weight: 400;
               font-size: 1.5em;
               font-style: italic; 

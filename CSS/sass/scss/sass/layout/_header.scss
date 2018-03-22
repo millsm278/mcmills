@@ -4,7 +4,7 @@
 
 header {
   &.nav {  //checked
-    background-color: #8fafc678;
+    background-color: $tran-blue-header;
     position: fixed;
     z-index: 5;
     width: $vp-width-LwxSh;
@@ -22,9 +22,9 @@ header {
 
       li { 
         align-items: center;
-        font-family: 'Raleway', sans-serif;
+        font-family: $main-content;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1.25em;
         display: inline-flex;
         justify-content: space-around;
         list-style-type: disc;
@@ -44,10 +44,11 @@ header {
         }
 
         &.current {
-          font-weight: bolder;
+          font-weight: 700;
 
           a {
             border-bottom: solid 2px;
+            font-family: $main-content;
           }
         }
       }
@@ -61,16 +62,16 @@ header {
   a {
     text-decoration: none;
     cursor: pointer;
-    color: #fedecb;
+    color: $dust-pink;
   }
 
   a:hover, a:focus {
-    color: #fedecb;
+    color: $dust-pink;
     text-decoration: none;
   }
 
   a:active, a:hover {
-    outline: #fedecb;
+    outline: $dust-pink;
     outline-style: solid;
     outline-width: thin;
     outline-offset: .5em;

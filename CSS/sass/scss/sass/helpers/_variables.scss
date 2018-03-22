@@ -1,7 +1,7 @@
 /*******VARIABLES*******/
 /*******VARIABLES*******/
 
-/*******responsive viewport units*******/
+/*******responsive full viewport units*******/
 $vp-width-LwxSh: 100vmax;
 $vp-width-SwxLh: 100vmin;
 $vp-height-LwxSh: 100vmin;
@@ -11,14 +11,36 @@ $vp-height-SwxLh: 100vmax;
 $hrz-center: 0 auto;
 
 /******colors*******/
-$light-grey: #e3e4e6;
+//THEME (site-wide) colors
+$dust-pink: #fedecb; //#fedcc8
+$dust-blue: #7795ab; //darker #6c8fa7
 $med-grey: #7d7d82;
-$lt-dust-pink: #feece1;
-$dust-pink: #fedecb;
-$tranBlue-Blks: rgba(100, 136, 160, 0.47);
+//other colors
+$lt-grey: #e3e4e6; //
+$lt-dust-pink: #feece1; //multiple(incluting: home title,)
+$xlt-dust-pink: #fef3eb; //fade on home title
+$lt-dust-blue: #9db8cc; //default .btn-main:hover disappear (pulled from ANI1.png)
+$dark-grey: #616161; //default .button:hover disappear 
+//element&page specific colors
+$tran-blue-header: rgba(143, 175, 198, 0.47); //header background window start //(window start)rgba(100, 136, 160, 0.47)
+$semitran-blue-header: rgba(108, 143, 167, 0.9); //header background: window scrolled
+$tran-blue-footer: rgba(108, 143, 167, 0.7); //footer transparent color layer over bkgrd img
+$lt-blue-footer-txt: #afc2cf; //footer light text color
+$tran-footer-txtBkg: rgba(82, 82, 86, 0.25); //footer text highlight/contrast background
+$titleButt-dissapear: rgba(254, 220, 200, 0.101);
+$titleButt-port-hover: #32222e;
+$tran-greyblue-blkBkg: rgba(86, 96, 113, 0.70); //inPgNav Blk backgrounds
+$tran-about-dkblue-textBkg: rgba(68, 89, 105, 0.7); //bio text cell bacground color (ovrlay KIEV.png)
+$about-dkblue-textBkg: rgb(81, 101, 118); // //bio tex bacground color for media only div
+$resume-grey-downloadBtn: #777777; //(resume.htm) resume download button (called from portfilio.scss)
+$resume-pinkgrey-downloadBtn: #d8cdc7; //(resume.htm) resume download button (called from portfilio.scss)
+$other-dark-quote: #292d3d; //other.html quote text color
+$tran-other-quote-mediaBkg: rgba(210, 224, 232, 0.15); //other.html quote background
 
 /******typeface******/
 $main-content: 'Raleway', sans-serif;
+$footer-brick-text: 'Lucida Grande', sans-serif;
+$other-subtitle: 'Nanum Myeongjo', serif;
 
 /******decoration*****/
 $btn-box: solid none;

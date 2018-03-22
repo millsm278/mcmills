@@ -5,26 +5,26 @@
 footer {
   width: $vp-width-LwxSh;
   text-align: -webkit-right;
-  padding: 10px 20px;
-  background-color: #6c8fa7;
+  padding: 1em 1.5em;
+  background-color: $dust-blue;
   background-image: url("../../../../Images/sheeta.png");
-  box-shadow: inset 0 0 0 1000px rgba(108, 143, 167, 0.7);
+  box-shadow: inset 0 0 0 1000px $tran-blue-footer;
 
   .container {
     text-align: -webkit-right;
-    -webkit-margin-end: 0px;
+    -webkit-margin-end: 0;
     margin-top: .5em;
 
     p {
-      font-family: "Lucida Grande", sans-serif;
+      font-family: $footer-brick-text;
       font-style: oblique;
-      font-size: 13px;
+      font-size: 1em;
       text-align: start;
       font-weight: 700;
       display: inline-block;
-      padding: 3px 40px 3px 3px;
-      color: #afc2cf;
-      background-color: hsla(240, 2%, 33%, 0.25);
+      padding: .25em 3em .25em .25em;
+      color: $lt-blue-footer-txt;
+      background-color: $tran-footer-txtBkg;
       -webkit-margin-end: -20px;
     }
   }

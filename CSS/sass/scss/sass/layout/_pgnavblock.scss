@@ -9,11 +9,11 @@ section.inPageNav /* #lgScrnBar */ {
   height: fit-content;
   width: 80vw;
   padding: 5vh 0;
-  background-color: #566071b3;
+  background-color: $tran-greyblue-blkBkg;
   border: 2px solid $dust-pink;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
-  color: #fedecb;
+  font-family: $main-content;
+  color: $dust-pink;
   font-weight: 600;
 
   .sectionLinks {
@@ -77,12 +77,12 @@ section{
   }
 
   &.pgLinks {
+    display: grid;
     grid-template: 1fr / 1fr 8fr 1fr;
-    background-color: #e3e4e6;
     text-align: center;
     position: relative;
-    font-family: 'Raleway', sans-serif;
-    color: #7d7d82;
+    font-family: $main-content;
+    color: $med-grey;
     font-weight: 600;
     line-height: 1.4;
     margin: 0 auto;
@@ -107,7 +107,7 @@ section{
       .blk4 { grid-area: 1 / 4 / 2 / 5; }
 
       .col /* .blk1 .blk2 .blk3 .blk4 */ {
-         padding: 3em 0em;
+         padding: 3em 1em;
 
         a /* #icon */ {
           font-family: $main-content;
@@ -126,16 +126,16 @@ section{
             font-family: inherit;
             color: inherit;
             font-weight: inherit;
-            font-size: 2.25em;
+            font-size: 2em;
             text-transform: uppercase; }
 
           &.button {
-            border-color: #7d7d82;
+            border-color: $med-grey;
             padding: 2px 1px 2px 2px; }
 
           &.button:hover {
-            color: #f8ebe4;;
-            background-color: #7d7d82; }
+            color: $lt-dust-pink;
+            background-color: $med-grey; }
         }
 
         p {

@@ -12,18 +12,18 @@ header.nav {
 }
 
 header.nav.scrolled {
-  background: rgba(143, 175, 198, 0.47); /* IE */
-  background: rgba(108, 143, 167, 0.9); /* NON-IE */
+  background: $semitran-blue-header; /* IE */
+  background: $semitran-blue-header; /* NON-IE */
 }
 
 /**HOME: BUTTON: (f)Dissapear on Scroll**/
 /*.indexButt to #indexButtTop if(finalSize<-200); else(#indexButtNormal)*/
 #indexButtTop {
-  color: #fedcc81a;
-  border-color: #fedcc81a;
+  color: $titleButt-dissapear;
+  border-color: $titleButt-dissapear
 }
 #indexButtNormal:hover {
-  color: #a2bcce;
+  color: $lt-dust-blue;
   text-decoration: none;
 }
 
@@ -36,11 +36,11 @@ else=color:hsla(22,96%,89%,1),border-color:hsla(22,96%,89%,1)*/
 /**PORTFOLIO: BUTTON: (f)Dissapear on Scroll**/
 /*.resButt to #buttTop if(finalSize< -200); else(#buttNormal)*/
 #buttTop {
-  color: #fedcc81a;
-  border-color: #fedcc81a;
+  color: $titleButt-dissapear;
+  border-color: $titleButt-dissapear;
 }
 #buttNormal:hover {
-  color: #32222e;
+  color: $titleButt-port-hover;
   text-decoration: none;
 }
 

@@ -3,11 +3,11 @@
 /**Main Buttons**/
 a.btn-main {
   color: $dust-pink;
-  font-family: 'Raleway', sans-serif;
+  font-family: $main-content;
   font-weight: 600;
   font-size: 3vh;
   letter-spacing: 0.5vw;
-  margin: 0 auto;
+  margin: $hrz-center;
   padding: .5vh .25vw .5vh .75vw;
   text-align: center;
   text-decoration: none;
@@ -18,7 +18,7 @@ a.btn-main {
 }
 
 a.btn-main:hover {
-  color: #9db8cc;
+  color: $lt-dust-blue;
   background-color: $dust-pink;
   text-decoration: none;
 }
@@ -28,13 +28,13 @@ a.button {
   color: $dust-pink;
   border-color: $dust-pink;
   padding: .5vh .25vw .5vh .5vw;
-  border-style: solid none;
+  border-style: $btn-box;
   border-width: 2px 0px;
   margin: 1em 0 2em;
 }
 
 a.button:hover {
-  color: #616161;
+  color: $dark-grey;
   background-color: $dust-pink;
   text-decoration: none;
 }

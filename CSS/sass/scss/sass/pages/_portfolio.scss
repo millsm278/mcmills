@@ -37,20 +37,20 @@ body.resume {
       font-size: 3.5vh;
       font-weight: bold;
       padding: 1.25vh 1vw;
-      color: #777;
-      background-color: #d8cdc7;
+      color: $resume-grey-downloadBtn;
+      background-color: $resume-pinkgrey-downloadBtn;
     }
 
     a.btn-main:hover {
       cursor: pointer;
-      color: #d8cdc7; 
-      background-color: #777;
+      color: $resume-pinkgrey-downloadBtn; 
+      background-color: $resume-grey-downloadBtn;
     }
 
     a.btn-main:focus {
       cursor: pointer;
-      color: #d8cdc7; 
-      background-color: #777;
+      color: $resume-pinkgrey-downloadBtn; 
+      background-color: $resume-grey-downloadBtn;
     }
   }
 

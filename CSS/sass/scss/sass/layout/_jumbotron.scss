@@ -25,15 +25,15 @@
 
           .title-text {
             h1 /* #imgscroll */ {
-              color: #fedcc8;
-              font-family: 'Raleway', sans-serif;
+              color: $dust-pink;
+              font-family: $main-content;
               font-weight: 600;
               font-size: 5em;
               margin: 15vh auto;
               padding: .5vh 1vw;
               text-transform: uppercase;
               border: solid 2px;
-              border-color: #fedcc8;
+              border-color: $dust-pink;
               word-spacing: 0.2em;
             }
           }

@@ -35,7 +35,25 @@
   }
 }
 
-//Screen width 991px or less
+//Screen width 950px or less
+@media only screen and (max-width: 950px){
+  section.pgLinks {
+    display: block;
+  }
+}
+
+
+
+//Screen width 880px or less
+@media only screen and (max-width: 880px){
+  .title-text{
+    h1{
+      font-size: 4em;
+    }
+  }
+}
+
+//Screen width 770px or less
 @media only screen and (max-width: 770px){
 
   html {
@@ -90,22 +108,22 @@
       margin: 0;
     }
   }
-  //(SITE Pgs)Nav Block
-  section.inPageNav {
+  //inPgNav Block
+  /*section.inPageNav {
     display: grid;
     position: relative;
     height: fit-content;
     width: auto;
     margin: -10vh auto 10vh;
     padding: 5% 0;
-    background-color: #566071b3;
-    border: 2px solid #fedecb;
+    background-color: $tran-greyblue-blkBkg;
+    border: 2px solid $dust-pink;
 
     .sectionLinks {
       .col {
         padding: 5% 20%; }
     }
-  }
+  }*/
   //(SITE Pgs)Nav Block
   section{
     &#navdrop {
@@ -124,7 +142,7 @@
       position: relative;
 
       .linkContent {
-        grid-template: repeat(2, 50vh)/repeat(2, 40vw);
+        grid-template: repeat(2, 42vh)/repeat(2, 40vw);
         grid-gap: 8vmax;
         padding: unset;
         justify-items: unset;
@@ -142,7 +160,7 @@
         .col {
           display: block;
           border: solid 2px;
-          height: auto;
+          height: fit-content;
           width: auto;
           padding: 4vh 0;
           box-shadow: 0vh 3vw 5vh #71645e;
@@ -154,29 +172,25 @@
             text-transform: uppercase;
             font-weight: 600;
             color: $med-grey;
-            font-size: 2vh;
             letter-spacing: 1.3px;
             text-decoration: none;
 
             h2 {
-              font-size: 2.25em;
-              margin-bottom: .75vh;
+              margin-bottom: .0;
               margin-top: 1vh; }
 
             img { 
               height: 10vh;
-              margin-top: .75vh;}
+              margin-top: 0;}
           }
 
           p {
-            font-size: 1.25em;
-            margin: 2vh auto 4vh;
+            margin: 2vh auto 3vh;
             line-height: 1.35; }
 
           .button {
-            font-size: 1.5em;
+            //font-size: 1.5em;
             margin: 0px;
-            border-width: 3px 0px;
             width: max-content;
             justify-self: center;
             line-height: 1;
@@ -199,10 +213,20 @@
   }
 }
 
+//Screen width 580px or less
+@media only screen and (max-width: 580px) {
+  div.jumbo .ani1 {
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+}
+/**@media only screen and (max-width: 450px) {**/
 
 
 //Screen width 450px or less
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
+
   
   html {
     width: $vp-width-SwxLh;
@@ -256,15 +280,16 @@
       text-align:center;
       h1 {
         font-size: 2.25em;
-        margin: 1vh auto 8vh;}
+        margin: 1vh auto 8vh; }
       a {
         font-size: 1.2em;
         margin: 0 auto;
-        border-width: 2px;
-        padding: 0px 3px 0px 5px;
-        line-height: .5px;
+        border-width: 1.5px;
+        padding: 1.2px 2px 1px 4px;
+        line-height: 1.5em;
         text-align: center;
-        letter-spacing: .15em;}
+        letter-spacing: .15em;
+        font-weight: 50; }
     }
   }
 
@@ -324,7 +349,7 @@
     .title-text {
       margin: 0 auto;
       .imgscrollOther {
-        background-color: rgba(210, 224, 232, 0.15);
+        background-color: $tran-other-quote-mediaBkg;
         margin: -22vh 1vw;
         font-size: 1.75vh;
         h3 {font-size: 2.75em;}
@@ -343,7 +368,7 @@
     background-size: cover;
     height: 100vh;
   }
-    
+  //PgNav Block  
   section.inPageNav {
     float: left;
     clear: left;
@@ -373,7 +398,6 @@
     display: block;
     grid-area: none;
     grid-template: none;
-    background-color: $light-grey;
     text-align: center;
     position: relative;
     font-family: $main-content;
