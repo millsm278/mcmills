@@ -100,7 +100,6 @@ main {
         align-items: stretch;
         width: 100%;
         margin: 5em 0 1em;
-        height: 70vh;
 
         .aboutColLeft {
           display: grid;
@@ -108,7 +107,7 @@ main {
           grid-template: 12% 86% / 1fr;
           padding: 1vw;
           grid-area: 1 / 1/ 2 / 2;
-          height: 380px;
+          height: 400px;
           overflow: scroll;
 
           h1, p {
