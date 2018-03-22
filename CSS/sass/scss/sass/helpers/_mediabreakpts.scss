@@ -221,11 +221,9 @@
     }
   }
 }
-/**@media only screen and (max-width: 450px) {**/
-
 
 //Screen width 450px or less
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (landscape) {
 
   
   html {
