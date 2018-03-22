@@ -899,7 +899,7 @@ main div.jumbotron.about .container .aboutColRight .aboutCopy2 {
     grid-template: 12% 86% / 1fr;
     padding: 1vw;
     grid-area: 1 / 1/ 2 / 2;
-    height: 65vh;
+    height: 380px;
     overflow: scroll;
   }
   /* line 114, ../sass/pages/_about.scss */
