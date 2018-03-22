@@ -25,15 +25,15 @@ main {
         background-color: $tran-about-dkblue-textBkg;
         height: 75vmin;
         overflow: scroll;
+        padding: 25px;
       }
 
       h1, p {
         color: $dust-pink;
         text-align: left;
-        margin: 2.5vh 2vw 0;
-        font-size: 1.3em;
+        margin: 0;
       }
-      p {font-size: 1.25em;}
+      p {font-size: 1.5em;}
 
       .aboutColLeft {
         grid-template-rows: 1fr 6fr;
@@ -45,7 +45,7 @@ main {
           h1 {
             font-family: Raleway;
             border: none;
-            font-size: 3em;
+            font-size: 4em;
             font-weight: 600;
             text-transform: uppercase;
           }
@@ -148,24 +148,25 @@ main {
     grid-template: 1fr / 2fr 1fr;
     grid-area: 2 / 1 / 3 / 1;
     background-color: $about-dkblue-textBkg;
-    padding: 2vw;
+    padding: .5em;
     width: 100vw;
 
     p {
       color: $dust-pink;
       text-align: left;
-      font-size: 1em;
+      font-size: 1.5em;
       font-weight: 300;
+      margin: .5em 1.5em;
     }
 
     .aboutBody {
       grid-area: 1 / 1 / 2 / 2;
-      p { margin: 1vh 4vw 1vh 2vw; }
+      p {}
     }
 
     .aboutCopy2 {
       grid-area: 1 / 2 / 1 / 3;
-      p { margin: 1vh 2vw 1vh 4vw; }
+      p {}
       a {
         display: flex;
         margin: 1.5em 1.5em 1.5em 1em;}
